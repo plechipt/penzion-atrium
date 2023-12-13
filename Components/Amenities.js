@@ -7,12 +7,12 @@ import {
   GardenWithPlaygroundIcon,
   GroupDiscountsIcon,
   TVIcon,
-  WheelchairIcon
+  WheelchairIcon,
 } from "@/assets/icons";
 
 const Amenities = () => {
   const data = [
-    { icon: <FreeWifiIcon className="w-20 h-14" />, text: "Free wi-fi" },
+    { icon: <FreeWifiIcon className="w-20 h-14" />, text: "Free Wi-Fi" },
     {
       icon: <GardenWithPlaygroundIcon className="w-20 h-14" />,
       text: "Garden with playground",

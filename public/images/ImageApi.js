@@ -24,7 +24,6 @@ const imgAPI = {
     "/images/vectors/sms2.png",
     "/images/vectors/us_flag.png",
     "/images/vectors/cz_flag.png",
-
   ],
   home_img: [
     "/images/gallery/1-home.png",
@@ -32,7 +31,7 @@ const imgAPI = {
     "/images/gallery/3-home.png",
     "/images/gallery/4-home.png",
   ],
-  accom_vectors:[
+  accom_vectors: [
     "/images/vectors/shower.png",
     "/images/vectors/tv2.png",
     "/images/vectors/toilet.png",
@@ -44,23 +43,20 @@ const imgAPI = {
     "/images/vectors/tv2.png",
     "/images/vectors/front.png",
     "/images/vectors/profile.png",
-
   ],
-  accom_img:[
+  accom_img: [
     "/images/gallery/tvImage.png",
     "/images/gallery/tvImage_resp.png",
   ],
-  ser_img:[
+  ser_img: [
     "/images/gallery/ser1.png",
     "/images/gallery/ser2.png",
     "/images/gallery/ser3.png",
     "/images/gallery/ser1_resp.png",
     "/images/gallery/ser2_resp.png",
     "/images/gallery/ser3_resp.png",
-
-
   ],
-  ser_vectors:[
+  ser_vectors: [
     "/images/vectors/icon (1).png",
     "/images/vectors/icon (2).png",
     "/images/vectors/icon (3).png",
@@ -70,11 +66,10 @@ const imgAPI = {
     "/images/vectors/icon (7).png",
     "/images/vectors/icon (8).png",
     "/images/vectors/icon (9).png",
-   "/images/vectors/icon (10).png",
-   "/images/vectors/icon (11).png",
-
+    "/images/vectors/icon (10).png",
+    "/images/vectors/icon (11).png",
   ],
-  surr_img:[
+  surr_img: [
     "/images/gallery/sur1.png",
     "/images/gallery/sur2.png",
     "/images/gallery/sur3.png",
@@ -86,6 +81,6 @@ const imgAPI = {
     "/images/gallery/sur3_resp.png",
     "/images/gallery/sur4_resp.png",
     "/images/gallery/sur5_resp.png",
-  ]
+  ],
 };
 export default imgAPI;

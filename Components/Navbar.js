@@ -1,6 +1,5 @@
 // components/Navbar.js
 "use client";
-import { BookNowIcon, CzechRIcon, USFlagIcon } from "@/assets/icons";
 import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
@@ -8,6 +7,9 @@ import { useRef, useState } from "react";
 import images from "../public/images/ImageApi.js";
 import content from "../public/text.json";
 import { Button } from "./ui/button";
+import { Menu, X } from "lucide-react";
+import USFlag from "@/assets/png/united-states-flag-icon.png";
+import CzechFlag from "@/assets/png/czech-republic-flag-icon.png";
 import {
   Select,
   SelectContent,
@@ -15,9 +17,12 @@ import {
   SelectTrigger,
   SelectValue,
 } from "./ui/select";
-import { Menu, X } from "lucide-react";
-import USFlag from "@/assets/png/united-states-flag-icon.png";
-import CzechFlag from "@/assets/png/czech-republic-flag-icon.png";
+import {
+  MainLogoIcon,
+  BookNowIcon,
+  CzechRIcon,
+  USFlagIcon,
+} from "@/assets/icons";
 
 const Navbar = () => {
   const headerRef = useRef(null);

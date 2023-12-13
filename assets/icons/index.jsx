@@ -1,4 +1,5 @@
 export { default as BookNowIcon } from "../svg/book_now.svg";
+export { default as MainLogoIcon } from "../svg/main_logo.svg";
 
 // Our Amenities
 export { default as FreeWifiIcon } from "../svg/free_wifi.svg";
