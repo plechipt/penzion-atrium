@@ -11,7 +11,7 @@ import { FaFacebookF, FaInstagram } from "react-icons/fa6";
 
 const Footer = () => {
   return (
-    <footer className="bg-slate-900 w-full text-white">
+    <footer className="bg-[#03122D] w-full text-white">
       <div className="container py-12 grid grid-cols-1 lg:grid-cols-3 place-content-center place-items-center lg:place-items-start gap-6">
         {/* Logo */}
         <div className="lg:space-y-6">
