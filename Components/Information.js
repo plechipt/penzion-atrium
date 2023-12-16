@@ -8,7 +8,7 @@ const Information = () => {
   return (
     <div className="container py-8">
       <div className="text-2xl font-bold mb-6">{text.Info}</div>
-      <div className="text-sm mb-4">{text.Info_t1}</div>
+      <div className="mb-4">{text.Info_t1}</div>
       <div className="mb-4">
         {words.map((word, index) => (
           <span

@@ -109,7 +109,7 @@ const Navbar = () => {
             <div className="mx-auto w-full max-w-[302px] flex flex-col gap-16">
               <nav className="gap-6 flex flex-col">
                 <Link
-                  className="text-xl font-bold text-[#414141]"
+                  className="text-xl font-bold"
                   href="/accomodation"
                   onClick={() => {
                     setIsMenuOpen(false);
@@ -118,7 +118,7 @@ const Navbar = () => {
                   {content.nav_accom}
                 </Link>
                 <Link
-                  className="text-xl font-bold text-[#414141]"
+                  className="text-xl font-bold"
                   href="/services"
                   onClick={() => {
                     setIsMenuOpen(false);
@@ -127,7 +127,7 @@ const Navbar = () => {
                   {content.nav_ser}
                 </Link>
                 <Link
-                  className="text-xl font-bold text-[#414141]"
+                  className="text-xl font-bold"
                   href="/surroundings"
                   onClick={() => {
                     setIsMenuOpen(false);
@@ -136,7 +136,7 @@ const Navbar = () => {
                   {content.nav_surr}
                 </Link>
                 <Link
-                  className="text-xl font-bold text-[#414141]"
+                  className="text-xl font-bold"
                   href="/contact"
                   onClick={() => {
                     setIsMenuOpen(false);
