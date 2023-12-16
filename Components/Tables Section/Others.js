@@ -30,7 +30,7 @@ const Others = () => {
             <div className="flex items-center gap-4 even:ml-auto">
               {meal.icon}
               <div className="space-y-1">
-                <div className="text-neutral-700 text-base font-semibold leading-relaxed">
+                <div className="text-base font-semibold leading-relaxed">
                   {meal.title}
                 </div>
                 <p className=" text-neutral-700 text-sm font-normal">

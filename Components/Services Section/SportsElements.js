@@ -64,7 +64,7 @@ const SportsElements = () => {
       {data.map((item) => (
         <div key={item.id} className="flex gap-4 items-center">
           {item.icon}
-          <p className=" text-neutral-700 text-lg font-normal">{item.text}</p>
+          <p className="text-neutral-700 text-lg font-normal">{item.text}</p>
         </div>
       ))}
     </div>

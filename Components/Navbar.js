@@ -181,22 +181,16 @@ const Navbar = () => {
       {/* Right side with language dropdown, links and button */}
       <div className="hidden lg:flex items-center gap-8 ">
         <nav className="hidden lg:flex gap-6">
-          <Link
-            className="text-base font-bold text-[#414141]"
-            href="/accomodation"
-          >
+          <Link className="text-base font-bold " href="/accomodation">
             {content.nav_accom}
           </Link>
-          <Link className="text-base font-bold text-[#414141]" href="/services">
+          <Link className="text-base font-bold " href="/services">
             {content.nav_ser}
           </Link>
-          <Link
-            className="text-base font-bold text-[#414141]"
-            href="/surroundings"
-          >
+          <Link className="text-base font-bold " href="/surroundings">
             {content.nav_surr}
           </Link>
-          <Link className="text-base font-bold text-[#414141]" href="/contact">
+          <Link className="text-base font-bold " href="/contact">
             {content.nav_contact}
           </Link>
         </nav>

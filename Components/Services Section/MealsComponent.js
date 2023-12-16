@@ -41,7 +41,9 @@ const MealComponent = () => {
 
       {/* Right Part with Meal Details */}
       <div className=" w-full space-y-6 max-w-[720px]">
-        <h2 className="text-2xl font-bold mb-2 text-center md:text-start">Meals</h2>
+        <h2 className="text-2xl font-bold mb-2 text-center md:text-start">
+          Meals
+        </h2>
         <p className="text-gray-600">{text.meal_1}</p>
 
         <div className="mt-6 space-y-3 w-full max-w-[200px]">
@@ -49,7 +51,7 @@ const MealComponent = () => {
             <div key={i} className="w-full flex items-center justify-between">
               <div className="flex items-center gap-4 even:ml-auto">
                 {meal.icon}
-                <p className=" text-neutral-700 text-base font-normal leading-relaxed ">
+                <p className="text-base font-normal leading-relaxed ">
                   {meal.title}
                 </p>
               </div>

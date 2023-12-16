@@ -67,10 +67,7 @@ const ContactUs = () => {
 
             <form className="h-full flex flex-col justify-between" id="form">
               <div className="mb-4">
-                <Label
-                  className="text-gray-700 text-base font-medium pb-2"
-                  htmlFor="name"
-                >
+                <Label className="text-base font-medium pb-2" htmlFor="name">
                   Name
                 </Label>
                 <input
@@ -78,15 +75,12 @@ const ContactUs = () => {
                   id="name"
                   required
                   type="text"
-                  placeholder="Your Name"
+                  placeholder="Your name..."
                 />
               </div>
 
               <div className="mb-4">
-                <Label
-                  className="text-gray-700 text-base font-medium pb-2"
-                  htmlFor="email"
-                >
+                <Label className="text-base font-medium pb-2" htmlFor="email">
                   Email
                 </Label>
                 <input
@@ -94,7 +88,7 @@ const ContactUs = () => {
                   id="email"
                   type="email"
                   required
-                  placeholder="Your Email"
+                  placeholder="Your email..."
                 />
               </div>
 
@@ -110,7 +104,7 @@ const ContactUs = () => {
                   rows={4}
                   id="message"
                   required
-                  placeholder="Your Message"
+                  placeholder="Your message..."
                 ></textarea>
               </div>
 

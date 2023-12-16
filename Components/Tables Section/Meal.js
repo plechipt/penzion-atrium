@@ -30,7 +30,7 @@ const Meal = ({ mealText }) => {
           <div key={i} className="w-full flex items-center justify-between">
             <div className="flex items-center gap-4 even:ml-auto">
               {meal.icon}
-              <p className=" text-neutral-700 text-base font-normal leading-relaxed ">
+              <p className="text-base font-normal leading-relaxed ">
                 {meal.title}
               </p>
             </div>

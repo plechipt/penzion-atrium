@@ -53,9 +53,7 @@ const Amenities = () => {
             className="flex flex-col items-center gap-4 w-full max-w-[140px]"
           >
             {item.icon}
-            <p className="text-base text-neutral-700 text-center font-bold">
-              {item.text}
-            </p>
+            <p className="text-base  text-center font-bold">{item.text}</p>
           </div>
         ))}
       </div>
