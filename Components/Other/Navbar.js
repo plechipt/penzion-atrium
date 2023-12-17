@@ -1,26 +1,29 @@
 // components/Navbar.js
 "use client";
+import { useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
+import { Menu, X } from "lucide-react";
+
 import Image from "next/image";
 import Link from "next/link";
-import { useRef, useState } from "react";
-import { Button } from "../ui/button.jsx";
-import { Menu, X } from "lucide-react";
+
 import USFlag from "@/assets/png/united-states-flag-icon.png";
 import CzechFlag from "@/assets/png/czech-republic-flag-icon.png";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "../ui/select.jsx";
 import {
   MainLogoIcon,
   BookNowIcon,
   CzechRIcon,
   USFlagIcon,
 } from "@/assets/icons";
+
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/Components/ui/select.jsx";
+import { Button } from "@/Components/ui/button.jsx";
 
 import content from "@/public/text.json";
 import images from "@/public/images/ImageApi.js";

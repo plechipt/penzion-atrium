@@ -1,11 +1,13 @@
 "use client";
-import { BookNowIcon, UserIcon } from "@/assets/icons";
-import Image from "next/image";
 import { useState } from "react";
-import { default as imgAPI } from "../../public/images/ImageApi";
+import Image from "next/image";
+import { BookNowIcon, UserIcon } from "@/assets/icons";
+
+import { Button } from "@/Components/ui/button";
+import Dropdown from "@/Components/Other/Dropdown";
+
 import text from "@/public/text.json";
-import Dropdown from "../Other/Dropdown";
-import { Button } from "../ui/button";
+import { default as imgAPI } from "@/public/images/ImageApi";
 
 const CustomComponent = ({ heading, desc }) => {
   const [dropdownValue, setDropdownValue] = useState(

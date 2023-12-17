@@ -1,8 +1,9 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import SurroundingElement from "./SurroundingElement";
+
+import text from "@/public/text.json";
 import imgAPI from "@/public/images/ImageApi";
-import text from "../../public/text.json";
 
 const Surroundings = () => {
   const [isMobile, setIsMobile] = useState(false);

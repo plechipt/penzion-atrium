@@ -1,6 +1,6 @@
+import { Label } from "@/Components/ui/label";
+import { Button } from "@/Components/ui/button";
 import { LocationIcon, PhoneIcon, SMSIcon } from "@/assets/icons";
-import { Button } from "../ui/button";
-import { Label } from "../ui/label";
 
 const ContactUs = () => {
   return (

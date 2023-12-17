@@ -1,8 +1,9 @@
 // components/Sports.js
-import { ImageIcon } from "@/assets/icons";
-import imgAPI from "@/public/images/ImageApi";
 import Image from "next/image";
 import SportsElements from "./SportsElements";
+
+import { ImageIcon } from "@/assets/icons";
+import imgAPI from "@/public/images/ImageApi";
 
 const Sports = () => {
   return (

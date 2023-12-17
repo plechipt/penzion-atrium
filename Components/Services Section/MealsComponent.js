@@ -1,8 +1,9 @@
 // components/MealComponent.js
-import imgAPI from "@/public/images/ImageApi";
 import Image from "next/image";
-import text from "../../public/text.json";
 import { CupIcon, ImageIcon, SupperIcon } from "@/assets/icons";
+
+import text from "@/public/text.json";
+import imgAPI from "@/public/images/ImageApi";
 
 const meals = [
   {

@@ -1,12 +1,14 @@
 // Hero.js
 "use client";
 import React, { useState } from "react";
-import { DatePicker } from "@/Components/Other/DatePicker";
 import Image from "next/image";
-import Img from "@/public/images/ImageApi";
-import text from "@/public/text.json";
-import { Button } from "../ui/button";
 import { BookNowIcon } from "@/assets/icons";
+
+import { Button } from "@/Components/ui/button";
+import { DatePicker } from "@/Components/Other/DatePicker";
+
+import text from "@/public/text.json";
+import Img from "@/public/images/ImageApi";
 
 const Hero = () => {
   const [checkInDate, setCheckInDate] = useState(null);
