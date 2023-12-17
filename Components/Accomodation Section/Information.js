@@ -1,5 +1,5 @@
 import React from "react";
-import text from "../public/text.json";
+import text from "@/public/text.json";
 const Information = () => {
   const { Info_t2 } = text;
 

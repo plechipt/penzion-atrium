@@ -12,7 +12,7 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from "@/Components/ui/popover";
-import { Label } from "./ui/label";
+import { Label } from "../ui/label";
 
 export function DatePicker({ date, setDate, label, placeholder }) {
   return (
@@ -30,7 +30,11 @@ export function DatePicker({ date, setDate, label, placeholder }) {
               "w-full justify-between text-left font-normal border border-neutral-200 bg-neutral-100"
             )}
           >
-            {date ? format(date, "PPP") : <span className="text-neutral-700 text-base">{placeholder}</span>}
+            {date ? (
+              format(date, "PPP")
+            ) : (
+              <span className="text-neutral-700 text-base">{placeholder}</span>
+            )}
             <CalendarIcon className="h-4 w-4 text-neutral-700" />
           </Button>
         </div>

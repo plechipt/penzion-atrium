@@ -2,10 +2,10 @@
 import { BookNowIcon, UserIcon } from "@/assets/icons";
 import Image from "next/image";
 import { useState } from "react";
-import { default as imgAPI } from "../public/images/ImageApi";
-import text from "../public/text.json";
-import Dropdown from "./Dropdown";
-import { Button } from "./ui/button";
+import { default as imgAPI } from "../../public/images/ImageApi";
+import text from "@/public/text.json";
+import Dropdown from "../Other/Dropdown";
+import { Button } from "../ui/button";
 
 const CustomComponent = ({ heading, desc }) => {
   const [dropdownValue, setDropdownValue] = useState(
@@ -83,7 +83,6 @@ const CustomComponent = ({ heading, desc }) => {
           </div>
         </div>
       </div>
-   
     </div>
   );
 };

@@ -4,9 +4,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { useRef, useState } from "react";
-import images from "../public/images/ImageApi.js";
-import content from "../public/text.json";
-import { Button } from "./ui/button";
+import { Button } from "../ui/button.jsx";
 import { Menu, X } from "lucide-react";
 import USFlag from "@/assets/png/united-states-flag-icon.png";
 import CzechFlag from "@/assets/png/czech-republic-flag-icon.png";
@@ -16,13 +14,16 @@ import {
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "./ui/select";
+} from "../ui/select.jsx";
 import {
   MainLogoIcon,
   BookNowIcon,
   CzechRIcon,
   USFlagIcon,
 } from "@/assets/icons";
+
+import content from "@/public/text.json";
+import images from "@/public/images/ImageApi.js";
 
 const Navbar = () => {
   const headerRef = useRef(null);

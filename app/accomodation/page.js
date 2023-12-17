@@ -1,8 +1,9 @@
-import Floor from "@/Components/Floor";
-import Information from "@/Components/Information";
-import Tables from "@/Components/Tables Section/Tables";
-import text from "../../public/text.json";
-import ResponsiveFloor from "../../Components/ResponsiveFloor";
+import Floor from "@/Components/Accomodation Section/Floor";
+import Information from "@/Components/Accomodation Section/Information";
+import Tables from "@/Components/Accomodation Section/Tables Section/Tables";
+import ResponsiveFloor from "../../Components/Accomodation Section/ResponsiveFloor";
+
+import text from "@/public/text.json";
 
 export default function Page() {
   return (

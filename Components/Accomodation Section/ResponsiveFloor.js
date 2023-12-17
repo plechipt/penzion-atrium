@@ -1,10 +1,10 @@
 "use client";
 import { UserIcon } from "@/assets/icons";
 import { useState } from "react";
-import imgAPI from "../public/images/ImageApi";
-import Dropdown from "./Dropdown";
-import ImageEffect from "./ImageEffect";
-import { Button } from "./ui/button";
+import imgAPI from "../../public/images/ImageApi";
+import Dropdown from "../Other/Dropdown";
+import ImageEffect from "../Other/ImageEffect";
+import { Button } from "../ui/button";
 import { BookNowIcon } from "@/assets/icons";
 
 const ResponsiveFloor = ({ heading, desc }) => {

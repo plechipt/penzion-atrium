@@ -1,11 +1,11 @@
 // Hero.js
 "use client";
 import React, { useState } from "react";
-import { DatePicker } from "@/Components/DatePicker";
+import { DatePicker } from "@/Components/Other/DatePicker";
 import Image from "next/image";
-import Img from "../public/images/ImageApi";
-import text from "../public/text.json";
-import { Button } from "./ui/button";
+import Img from "@/public/images/ImageApi";
+import text from "@/public/text.json";
+import { Button } from "../ui/button";
 import { BookNowIcon } from "@/assets/icons";
 
 const Hero = () => {
