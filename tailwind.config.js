@@ -20,6 +20,9 @@ module.exports = {
     },
     extend: {
       colors: {
+        indigo: {
+          900: "#234480",
+        },
         text: "#253871",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

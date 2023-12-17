@@ -20,7 +20,7 @@ const Hero = () => {
           <span>Discover </span>
           <span className="bg-primary-gradient inline-block text-transparent bg-clip-text">
             Trutnov
-          </span>{" "}
+          </span>
           <span>&apos;s Hidden Gem</span>
         </h2>
         <p className="text-neutral-700 text-base text-center lg:text-start lg:text-xl font-light">
