@@ -4,8 +4,8 @@ import { Label } from "../ui/label";
 
 const ContactUs = () => {
   return (
-    <div className="py-8 lg:py-12">
-      <h1 className="md:text-5xl text-4xl font-bold mb-8 lg:mb-12 text-center">
+    <div className="py-8 lg:py-10">
+      <h1 className="md:text-5xl text-4xl font-bold mb-8 lg:mb-8 text-center">
         Contact Us
       </h1>
 

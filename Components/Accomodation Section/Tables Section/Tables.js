@@ -19,7 +19,7 @@ const BorderedBox = ({ headerText, section }) => {
 
 const Tables = () => {
   return (
-    <div className="mt-16 container w-full">
+    <div className="mt-10 container w-full">
       <h1 className="md:text-5xl text-4xl font-bold mb-12 text-center">
         Our Accommodation
       </h1>

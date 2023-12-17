@@ -9,7 +9,7 @@ export default function Page() {
   return (
     <main>
       <Tables />
-      <div className="w-full space-y-8 mt-8">
+      <div className="w-full space-y-8 mt-20">
         <Floor heading="Ground Floor" desc={text.first_floor} />
         <Floor heading="First Floor" desc={text.ground_floor} />
 

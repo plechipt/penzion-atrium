@@ -24,8 +24,8 @@ const Surroundings = () => {
     };
   }, []);
   return (
-    <div className="container py-10 lg:py-16">
-      <h1 className="md:text-5xl text-4xl font-bold mb-8 lg:mb-12 text-center">
+    <div className="container py-10 lg:py-10">
+      <h1 className="md:text-5xl text-4xl font-bold mb-8 lg:mb-8 text-center">
         Surroundings
       </h1>
       <SurroundingElement
