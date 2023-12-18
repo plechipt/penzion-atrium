@@ -38,7 +38,7 @@ const CustomComponent = ({ heading, desc }) => {
 
             {/* Icon at Bottom Left Corner */}
             <div className="absolute bottom-3 right-3 ">
-              <a href="">
+              <a href={imgAPI.accom_img[0]} target="_blank">
                 <Image
                   width={12}
                   height={12}

@@ -21,11 +21,11 @@ const SurroundingElement = ({
       {/* Left Part with Image */}
 
       <Image
-        alt={heading}
         width={573}
         height={310}
         className="w-full lg:w-1/2 max-h-[310px] object-cover rounded-lg"
         src={large_img}
+        alt={heading}
       />
 
       {/* Right Part with Heading and Text */}
