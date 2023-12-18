@@ -75,7 +75,7 @@ const Navbar = () => {
             width={180}
             height={40}
             src={images.home_vectors[0]}
-            alt="Icon"
+            alt="Main Icon"
           />
         </Link>
       </div>

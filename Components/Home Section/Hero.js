@@ -61,10 +61,10 @@ const Hero = () => {
       {/* Right side */}
       <div className="w-full max-w-[609px] p-4">
         <Image
+          alt="City Image"
           width={570}
           height={564}
           src={Img.home_vectors[3]}
-          alt="card"
           className="rounded h-full w-full "
         />
       </div>

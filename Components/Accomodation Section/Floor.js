@@ -33,7 +33,7 @@ const CustomComponent = ({ heading, desc }) => {
               sizes="100vw"
               src={imgAPI.accom_img[0]}
               className="w-full max-w-[240px] h-[150px]"
-              alt="Background"
+              alt="Room Image"
             />
 
             {/* Icon at Bottom Left Corner */}
@@ -44,7 +44,7 @@ const CustomComponent = ({ heading, desc }) => {
                   height={12}
                   sizes="100vw"
                   src={imgAPI.accom_vectors[9]}
-                  alt="Icon"
+                  alt="Icon Image"
                   className="w-9 h-9"
                 />
               </a>
