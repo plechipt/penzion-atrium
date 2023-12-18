@@ -6,6 +6,7 @@ const Information = () => {
 
   // Split the text into an array of words
   const words = Info_t2.split(" ");
+
   return (
     <div className="container py-8">
       <div className="text-2xl font-bold mb-6">{text.Info}</div>

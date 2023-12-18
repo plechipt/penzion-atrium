@@ -1,7 +1,7 @@
 import Floor from "@/Components/Accomodation Section/Floor/Floor";
 import Tables from "@/Components/Accomodation Section/Tables/Tables";
 import Information from "@/Components/Accomodation Section/Information";
-import ResponsiveFloor from "@/Components/Accomodation Section/ResponsiveFloor";
+import ResponsiveFloor from "@/Components/Accomodation Section/ResponsiveFloor/ResponsiveFloor";
 
 import text from "@/public/text.json";
 

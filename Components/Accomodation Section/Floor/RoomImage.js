@@ -14,7 +14,7 @@ const RoomImage = () => {
       />
 
       {/* Icon at Bottom Left Corner */}
-      <div className="absolute bottom-3 right-3 ">
+      <div className="absolute bottom-2 right-2 ">
         <a href={imgAPI.accom_img[0]} target="_blank">
           <Image
             width={12}
