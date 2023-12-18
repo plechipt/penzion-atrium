@@ -1,5 +1,5 @@
+import SkiComponent from "@/Components/Services Section/Ski/Ski";
 import Sports from "@/Components/Services Section/Sports/Sports";
-import SkiComponent from "@/Components/Services Section/SkiComponent";
 import MealsComponent from "@/Components/Services Section/Meals/Meals";
 
 const page = () => {
