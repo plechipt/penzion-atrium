@@ -10,9 +10,11 @@ const Sports = () => {
     <div className="flex flex-col lg:flex-row items-center mb-4 gap-6 lg:gap-14">
       {/* Left Part with Image */}
       <div className="relative w-full lg:max-w-[440px] h-72 lg:h-[437px]">
-        <div className="absolute bottom-2 right-2 w-12 h-12 rounded-lg flex items-center justify-center bg-white">
-          <ImageIcon className="w-5 h-4" />
-        </div>
+        <a href={imgAPI.ser_img[4]} target="_blank">
+          <div className="absolute bottom-2 right-2 w-12 h-12 rounded-lg flex items-center justify-center bg-white">
+            <ImageIcon className="w-5 h-4" />
+          </div>
+        </a>
         <Image
           width={440}
           height={437}
