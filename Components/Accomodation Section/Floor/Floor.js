@@ -1,6 +1,6 @@
 import RoomImage from "./RoomImage";
-import NumberOfPeople from "./NumberOfPeople";
 import PriceOfRooms from "./PriceOfRooms";
+import NumberOfPeople from "./NumberOfPeople";
 import DropdownButton from "./DropdownButton";
 
 const CustomComponent = ({ heading, desc }) => {
