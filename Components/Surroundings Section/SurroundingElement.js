@@ -19,7 +19,6 @@ const SurroundingElement = ({
       className={` flex ${flexDirectionClass} gap-4 lg:gap-12 items-center justify-between py-6 lg:py-4`}
     >
       {/* Left Part with Image */}
-
       <Image
         width={573}
         height={310}
