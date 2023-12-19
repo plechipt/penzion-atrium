@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import { Button } from "@/Components/ui/button";
 import Dropdown from "@/Components/Other/Dropdown";
@@ -7,7 +7,6 @@ import Dropdown from "@/Components/Other/Dropdown";
 import text from "@/public/text.json";
 import { BookNowIcon } from "@/assets/icons";
 
-import { prices } from "@/utils/prices";
 import { calculatePrice } from "@/utils/calculatePrice";
 
 const shortTermPeople = [1, 2, 3, 4, 5, 6, 7, 8];
@@ -23,28 +22,52 @@ const options = [
 const DropdownButton = ({
   divClass,
   buttonClass,
+  numberOfPeople,
   setNumberOfPeople,
+  peopleOptions,
   setPeopleOptions,
+  stayType,
+  setStayType,
+  setTouristPrice,
+  setStandardPrice,
 }) => {
   const [dropdownValue, setDropdownValue] = useState(
     "Short-term stay (1-6 days)"
   );
 
-  const onInputClick = (value) => {
-    const price = calculatePrice("short", 3, "TOURIST");
+  useEffect(() => {
+    // Calculate the final price
+    if (stayType !== undefined && numberOfPeople !== undefined) {
+      setTouristPrice(calculatePrice(stayType, numberOfPeople, "TOURIST"));
+      setStandardPrice(calculatePrice(stayType, numberOfPeople, "STANDARD"));
+    }
+  }, [
+    peopleOptions,
+    numberOfPeople,
+    stayType,
+    setStayType,
+    setTouristPrice,
+    setStandardPrice,
+  ]);
 
+  const onInputClick = (value) => {
     setDropdownValue(value);
     setNumberOfPeople(1);
 
     if (value == options[0]) {
+      setStayType("short");
       setPeopleOptions(shortTermPeople);
     }
     if (value == options[1]) {
+      setStayType("medium");
       setPeopleOptions(mediumTermPeople);
     }
     if (value == options[2]) {
+      setStayType("long");
       setPeopleOptions(longTermPeople);
     }
+
+    console.log(stayType);
   };
 
   return (

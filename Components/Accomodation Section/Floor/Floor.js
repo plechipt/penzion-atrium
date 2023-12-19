@@ -7,6 +7,10 @@ import NumberOfPeople from "../NumberOfPeople";
 import DropdownButton from "../DropdownButton";
 
 const CustomComponent = ({ heading, desc }) => {
+  const [touristPrice, setTouristPrice] = useState(500);
+  const [standardPrice, setStandardPrice] = useState(600);
+
+  const [stayType, setStayType] = useState("short");
   const [numberOfPeople, setNumberOfPeople] = useState(1);
   const [peopleOptions, setPeopleOptions] = useState([1, 2, 3, 4, 5, 6, 7, 8]);
 
@@ -32,13 +36,18 @@ const CustomComponent = ({ heading, desc }) => {
             numberOfPeople={numberOfPeople}
             setNumberOfPeople={setNumberOfPeople}
             peopleOptions={peopleOptions}
+            stayType={stayType}
+            setStayType={setStayType}
           />
 
           {/* Element 3: Vertical Line */}
           <div className="border h-36"></div>
 
           {/* Element 4 and 5: Text and Subtext */}
-          <PriceOfRooms />
+          <PriceOfRooms
+            touristPrice={touristPrice}
+            standardPrice={standardPrice}
+          />
 
           {/* Element 6: Dropdown */}
           <DropdownButton
@@ -47,7 +56,13 @@ const CustomComponent = ({ heading, desc }) => {
             }
             divClass={"flex flex-col gap-y-4 items-center"}
             setNumberOfPeople={setNumberOfPeople}
+            numberOfPeople={numberOfPeople}
+            peopleOptions={peopleOptions}
             setPeopleOptions={setPeopleOptions}
+            stayType={stayType}
+            setStayType={setStayType}
+            setTouristPrice={setTouristPrice}
+            setStandardPrice={setStandardPrice}
           />
         </div>
       </div>
