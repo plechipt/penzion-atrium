@@ -3,12 +3,12 @@ import { useState } from "react";
 
 import RoomImage from "./RoomImage";
 import PriceOfRooms from "./PriceOfRooms";
-import NumberOfPeople from "./NumberOfPeople";
+import NumberOfPeople from "../NumberOfPeople";
 import DropdownButton from "../DropdownButton";
 
 const CustomComponent = ({ heading, desc }) => {
-  const [peopleOptions, setPeopleOptions] = useState("");
   const [numberOfPeople, setNumberOfPeople] = useState(1);
+  const [peopleOptions, setPeopleOptions] = useState([1, 2, 3, 4, 5, 6, 7, 8]);
 
   return (
     <div className="container">
@@ -25,6 +25,9 @@ const CustomComponent = ({ heading, desc }) => {
 
           {/* Element 2: Text with Icon */}
           <NumberOfPeople
+            containerClass={"flex flex-col gap-4"}
+            pClass={"text-2xl font-bold text-indigo-900"}
+            divClass={"flex items-center gap-1"}
             numberOfPeople={numberOfPeople}
             setNumberOfPeople={setNumberOfPeople}
             peopleOptions={peopleOptions}

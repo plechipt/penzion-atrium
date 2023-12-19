@@ -9,8 +9,8 @@ import NumberOfPeople from "../NumberOfPeople";
 import DropdownButton from "../DropdownButton";
 
 const ResponsiveFloor = ({ heading, desc }) => {
-  const [peopleOptions, setPeopleOptions] = useState("");
   const [numberOfPeople, setNumberOfPeople] = useState(1);
+  const [peopleOptions, setPeopleOptions] = useState([1, 2, 3, 4, 5, 6, 7, 8]);
 
   return (
     <div className="block lg:hidden mb-4 mx-4">
@@ -23,7 +23,14 @@ const ResponsiveFloor = ({ heading, desc }) => {
       <div className="flex-col items-center bg-floor  rounded">
         <div className="flex justify-between mb-4">
           {/* Element 1 */}
-          <NumberOfPeople />
+          <NumberOfPeople
+            containerClass={"flex flex-col"}
+            pClass={"md:text-2xl text-base font-bold text-indigo-900"}
+            divClass={"flex items-center mt-1"}
+            numberOfPeople={numberOfPeople}
+            setNumberOfPeople={setNumberOfPeople}
+            peopleOptions={peopleOptions}
+          />
 
           {/* Element 2 */}
           <PriceOfRooms />
