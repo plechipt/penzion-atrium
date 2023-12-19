@@ -1,11 +1,17 @@
+"use client";
+import { useState } from "react";
+
 import imgAPI from "@/public/images/ImageApi";
 import ImageEffect from "@/Components/Other/ImageEffect";
 
 import PriceOfRooms from "./PriceOfRooms";
-import NumberOfPeople from "./NumberOfPeople";
-import DropdownButton from "./DropdownButton";
+import NumberOfPeople from "../NumberOfPeople";
+import DropdownButton from "../DropdownButton";
 
 const ResponsiveFloor = ({ heading, desc }) => {
+  const [peopleOptions, setPeopleOptions] = useState("");
+  const [numberOfPeople, setNumberOfPeople] = useState(1);
+
   return (
     <div className="block lg:hidden mb-4 mx-4">
       {/* Heading and Subtext */}
@@ -30,7 +36,14 @@ const ResponsiveFloor = ({ heading, desc }) => {
         />
 
         {/* Element 5 */}
-        <DropdownButton />
+        <DropdownButton
+          buttonClass={
+            "bg-primary-gradient text-base py-3 px-4 gap-2.5 flex items-center justify-center font-bold w-full"
+          }
+          divClass={"flex flex-col gap-2 mt-4 w-full"}
+          setNumberOfPeople={setNumberOfPeople}
+          setPeopleOptions={setPeopleOptions}
+        />
       </div>
     </div>
   );

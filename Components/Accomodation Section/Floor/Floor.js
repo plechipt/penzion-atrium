@@ -4,7 +4,7 @@ import { useState } from "react";
 import RoomImage from "./RoomImage";
 import PriceOfRooms from "./PriceOfRooms";
 import NumberOfPeople from "./NumberOfPeople";
-import DropdownButton from "./DropdownButton";
+import DropdownButton from "../DropdownButton";
 
 const CustomComponent = ({ heading, desc }) => {
   const [peopleOptions, setPeopleOptions] = useState("");
@@ -38,6 +38,10 @@ const CustomComponent = ({ heading, desc }) => {
 
           {/* Element 6: Dropdown */}
           <DropdownButton
+            buttonClass={
+              "bg-primary-gradient text-base py-3 px-4 gap-2.5 hidden lg:flex items-center justify-center font-bold w-full"
+            }
+            divClass={"flex flex-col gap-y-4 items-center"}
             setNumberOfPeople={setNumberOfPeople}
             setPeopleOptions={setPeopleOptions}
           />

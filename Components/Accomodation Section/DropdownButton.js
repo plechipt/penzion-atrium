@@ -17,7 +17,12 @@ const options = [
   "Long-term stay (1 or more months; price per month)",
 ];
 
-const DropdownButton = ({ setNumberOfPeople, setPeopleOptions }) => {
+const DropdownButton = ({
+  divClass,
+  buttonClass,
+  setNumberOfPeople,
+  setPeopleOptions,
+}) => {
   const [dropdownValue, setDropdownValue] = useState(
     "Short-term stay (1-6 days)"
   );
@@ -38,13 +43,13 @@ const DropdownButton = ({ setNumberOfPeople, setPeopleOptions }) => {
   };
 
   return (
-    <div className="flex flex-col gap-y-4 items-center">
+    <div className={divClass}>
       <Dropdown
         options={options}
         value={dropdownValue}
         onChange={(value) => onInputClick(value)}
       />
-      <Button className="bg-primary-gradient text-base py-3 px-4 gap-2.5 hidden lg:flex items-center justify-center font-bold w-full">
+      <Button className={buttonClass}>
         <BookNowIcon className="w-4 h-4" />
         {text.nav_btn}
       </Button>
