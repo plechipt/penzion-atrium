@@ -51,6 +51,7 @@ export { default as FacebookIcon } from "../svg/facebook.svg";
 export { default as InstagramIcon } from "../svg/instagram.svg";
 
 export { default as UserIcon } from "../svg/user.svg";
+export { default as UserIcon2 } from "../svg/user2.svg";
 
 // Flags
 export { default as USFlagIcon } from "../svg/united-states-flag-icon.svg";

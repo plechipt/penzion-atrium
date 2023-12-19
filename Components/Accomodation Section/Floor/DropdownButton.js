@@ -7,6 +7,12 @@ import Dropdown from "@/Components/Other/Dropdown";
 import text from "@/public/text.json";
 import { BookNowIcon } from "@/assets/icons";
 
+const options = [
+  "Short-term stay (1-6 days)",
+  "Long-term stay (1-10 days)",
+  "Long-term stay (1-20 days)",
+];
+
 const DropdownButton = () => {
   const [dropdownValue, setDropdownValue] = useState(
     "Short-term stay (1-6 days)"
@@ -15,6 +21,7 @@ const DropdownButton = () => {
   return (
     <div className="flex flex-col gap-y-4 items-center">
       <Dropdown
+        options={options}
         value={dropdownValue}
         onChange={(value) => setDropdownValue(value)}
       />
