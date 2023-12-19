@@ -1,8 +1,9 @@
-import { UserIcon } from "@/assets/icons";
+import { UserIcon, UserIcon2 } from "@/assets/icons";
 
 import Dropdown from "@/Components/Other/Dropdown";
 
 const NumberOfPeople = ({
+  type,
   containerClass,
   pClass,
   divClass,
@@ -20,7 +21,11 @@ const NumberOfPeople = ({
           value={numberOfPeople}
           onChange={(value) => setNumberOfPeople(value)}
         />
-        <UserIcon className="w-5 h-5" />
+        {type === "desktop" ? (
+          <UserIcon className="w-5 h-5" />
+        ) : (
+          <UserIcon2 className="w-5 h-5 ml-1" />
+        )}
       </div>
     </div>
   );

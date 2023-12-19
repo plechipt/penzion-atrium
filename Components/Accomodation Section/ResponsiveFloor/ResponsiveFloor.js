@@ -24,6 +24,7 @@ const ResponsiveFloor = ({ heading, desc }) => {
         <div className="flex justify-between mb-4">
           {/* Element 1 */}
           <NumberOfPeople
+            type="mobile"
             containerClass={"flex flex-col"}
             pClass={"md:text-2xl text-base font-bold text-indigo-900"}
             divClass={"flex items-center mt-1"}

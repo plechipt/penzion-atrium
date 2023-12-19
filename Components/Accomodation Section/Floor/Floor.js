@@ -25,6 +25,7 @@ const CustomComponent = ({ heading, desc }) => {
 
           {/* Element 2: Text with Icon */}
           <NumberOfPeople
+            type="desktop"
             containerClass={"flex flex-col gap-4"}
             pClass={"text-2xl font-bold text-indigo-900"}
             divClass={"flex items-center gap-1"}
