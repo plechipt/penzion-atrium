@@ -4,7 +4,7 @@ import content from "@/public/text.json";
 const DesktopLinks = () => {
   return (
     <nav className="hidden lg:flex gap-6">
-      <Link className="text-base font-bold " href="/accomodation">
+      <Link className="text-base font-bold " href="/accommodation">
         {content.nav_accom}
       </Link>
       <Link className="text-base font-bold " href="/services">

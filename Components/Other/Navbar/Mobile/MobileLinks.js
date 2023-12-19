@@ -6,7 +6,7 @@ const MobileLinks = ({ setIsMenuOpen }) => {
     <nav className="gap-6 flex flex-col">
       <Link
         className="text-xl font-bold"
-        href="/accomodation"
+        href="/accommodation"
         onClick={() => {
           setIsMenuOpen(false);
         }}
