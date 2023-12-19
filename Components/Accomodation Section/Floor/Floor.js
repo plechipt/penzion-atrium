@@ -1,9 +1,15 @@
+"use client";
+import { useState } from "react";
+
 import RoomImage from "./RoomImage";
 import PriceOfRooms from "./PriceOfRooms";
 import NumberOfPeople from "./NumberOfPeople";
 import DropdownButton from "./DropdownButton";
 
 const CustomComponent = ({ heading, desc }) => {
+  const [peopleOptions, setPeopleOptions] = useState("");
+  const [numberOfPeople, setNumberOfPeople] = useState(1);
+
   return (
     <div className="container">
       <div className="w-full hidden lg:block">
@@ -18,7 +24,11 @@ const CustomComponent = ({ heading, desc }) => {
           <RoomImage />
 
           {/* Element 2: Text with Icon */}
-          <NumberOfPeople />
+          <NumberOfPeople
+            numberOfPeople={numberOfPeople}
+            setNumberOfPeople={setNumberOfPeople}
+            peopleOptions={peopleOptions}
+          />
 
           {/* Element 3: Vertical Line */}
           <div className="border h-36"></div>
@@ -27,7 +37,10 @@ const CustomComponent = ({ heading, desc }) => {
           <PriceOfRooms />
 
           {/* Element 6: Dropdown */}
-          <DropdownButton />
+          <DropdownButton
+            setNumberOfPeople={setNumberOfPeople}
+            setPeopleOptions={setPeopleOptions}
+          />
         </div>
       </div>
     </div>
