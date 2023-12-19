@@ -7,6 +7,9 @@ import Dropdown from "@/Components/Other/Dropdown";
 import text from "@/public/text.json";
 import { BookNowIcon } from "@/assets/icons";
 
+import { prices } from "@/utils/prices";
+import { calculatePrice } from "@/utils/calculatePrice";
+
 const shortTermPeople = [1, 2, 3, 4, 5, 6, 7, 8];
 const mediumTermPeople = [1, 2, 3, 4];
 const longTermPeople = [1, 2, 3];
@@ -28,6 +31,8 @@ const DropdownButton = ({
   );
 
   const onInputClick = (value) => {
+    const price = calculatePrice("short", 3, "TOURIST");
+
     setDropdownValue(value);
     setNumberOfPeople(1);
 
