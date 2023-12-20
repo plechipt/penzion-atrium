@@ -5,36 +5,13 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/Components/ui/select.jsx";
-import Image from "next/image";
+import NavbarData from "@/data/NavbarData";
 
 import { useRouter } from "@/navigation";
 
-import USFlag from "@/assets/png/united-states-flag-icon.png";
-import CzechFlag from "@/assets/png/czech-republic-flag-icon.png";
-
-const languagesDesktop = [
-  {
-    code: "cs",
-    name: "CZ",
-    flag: (
-      <div className="w-5 h-5 flex items-center justify-center rounded-full overflow-hidden">
-        <Image className="w-full h-full" src={CzechFlag} alt="US Flag" />
-      </div>
-    ),
-  },
-  {
-    code: "en",
-    name: "EN",
-    flag: (
-      <div className="w-5 h-5 flex items-center justify-center rounded-full overflow-hidden">
-        <Image className="w-full h-full" src={USFlag} alt="US Flag" />
-      </div>
-    ),
-  },
-];
-
 const DesktopLanguageSwitcher = () => {
   const router = useRouter();
+  const { languagesDesktop } = NavbarData();
 
   const handleLanguageChange = (value) => {
     router.push("/", { locale: value });

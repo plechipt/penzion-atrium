@@ -5,17 +5,13 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/Components/ui/select.jsx";
-import { CzechRIcon, USFlagIcon } from "@/assets/icons";
+import NavbarData from "@/data/NavbarData";
 
 import { useRouter } from "@/navigation";
 
-const languagesMobile = [
-  { code: "cs", name: "CZ", flag: <CzechRIcon className="w-6" /> },
-  { code: "en", name: "EN", flag: <USFlagIcon className="w-6" /> },
-];
-
 const MobileLanguageSwitcher = () => {
   const router = useRouter();
+  const { languagesMobile } = NavbarData();
 
   const handleLanguageChange = (value) => {
     router.push("/", { locale: value });

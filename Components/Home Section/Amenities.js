@@ -1,7 +1,7 @@
 import AmenitiesData from "@/data/HomeData";
 
 const Amenities = () => {
-  const data = AmenitiesData();
+  const amenities = AmenitiesData();
 
   return (
     <div className="container max-w-fit mx-auto mb-16 mt-10 lg:my-16 text-center">
@@ -10,7 +10,7 @@ const Amenities = () => {
       </h1>
 
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-10 place-items-center place-content-center ">
-        {data.map((item, index) => (
+        {amenities.map((item, index) => (
           <div
             key={index}
             className="flex flex-col items-center gap-4 w-full max-w-[140px]"
