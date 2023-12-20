@@ -1,29 +1,8 @@
-import { SkiResortsIcon } from "@/assets/icons";
-
-const data = [
-  {
-    id: 1,
-    icon: <SkiResortsIcon className="w-8 h-8" />,
-    text: "Ski park Mladé Buky (8 km)",
-  },
-  {
-    id: 2,
-    icon: <SkiResortsIcon className="w-8 h-8" />,
-    text: "Ski resort Černá Hora (14 km)",
-  },
-  {
-    id: 3,
-    icon: <SkiResortsIcon className="w-8 h-8" />,
-    text: "Ski area Petříkovice (9 km)",
-  },
-  {
-    id: 4,
-    icon: <SkiResortsIcon className="w-8 h-8" />,
-    text: "Ski area Žacléř (15 km)",
-  },
-];
+import ServicesData from "@/data/ServicesData";
 
 const SkiText = () => {
+  const { ski } = ServicesData();
+
   return (
     <div className=" w-full space-y-6 max-w-[720px]">
       <h2 className="text-2xl font-bold mb-2 text-center md:text-start">
@@ -35,7 +14,7 @@ const SkiText = () => {
       </p>
 
       <div className="space-y-5">
-        {data.map((item) => (
+        {ski.map((item) => (
           <div key={item.id} className="flex gap-4 items-center">
             {item.icon}
             <p className=" text-neutral-700 text-lg font-normal">{item.text}</p>

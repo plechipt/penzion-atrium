@@ -1,25 +1,9 @@
 import text from "@/public/text.json";
-import { CupIcon, SupperIcon } from "@/assets/icons";
-
-const meals = [
-  {
-    icon: <CupIcon className="w-5 h-5" />,
-    title: "Breakfast",
-    price: 80,
-  },
-  {
-    icon: <SupperIcon className="w-5 h-5" />,
-    title: "Half board",
-    price: 160,
-  },
-  {
-    icon: <SupperIcon className="w-5 h-5" />,
-    title: "Full Board",
-    price: 240,
-  },
-];
+import AccommodationData from "@/data/AccommodationData";
 
 const MealsText = () => {
+  const { meals } = AccommodationData();
+
   return (
     <div className=" w-full space-y-6 max-w-[720px]">
       <h2 className="text-2xl font-bold mb-2 text-center md:text-start">
