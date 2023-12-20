@@ -1,4 +1,4 @@
-import React from "react";
+// ServicesData.js
 import {
   AsphaltCircuitIcon,
   AthleticStadiumIcon,
@@ -12,58 +12,61 @@ import {
   VolleyBallHallIcon,
   SkiResortsIcon,
 } from "@/assets/icons";
+import { useTranslations } from "next-intl";
 
 const ServicesData = () => {
+  const t = useTranslations("Services");
+
   const sports = [
     {
       id: 1,
       icon: <SportsHallIcon className="w-8 h-9" />,
-      text: "Sports Hall",
+      text: t("sportsHall"),
     },
     {
       id: 2,
       icon: <AthleticStadiumIcon className="w-8 h-9" />,
-      text: "Athletic Stadium",
+      text: t("athleticStadium"),
     },
     {
       id: 3,
       icon: <MultipurposeGymIcon className="w-8 h-9" />,
-      text: "Multipurpose Gym",
+      text: t("multipurposeGym"),
     },
     {
       id: 4,
       icon: <MultipurposeCourtIcon className="w-8 h-9" />,
-      text: "Multipurpose Court",
+      text: t("multipurposeCourt"),
     },
     {
       id: 5,
       icon: <GymnasticHallIcon className="w-8 h-9" />,
-      text: "Gymnastic Hall",
+      text: t("gymnasticHall"),
     },
     {
       id: 6,
       icon: <VolleyBallHallIcon className="w-8 h-9" />,
-      text: "Beach Volleyball Court",
+      text: t("beach"),
     },
     {
       id: 7,
       icon: <FitnessGymIcon className="w-8 h-9" />,
-      text: "Fitness Gym",
+      text: t("fitnessGym"),
     },
     {
       id: 8,
       icon: <AsphaltCircuitIcon className="w-8 h-9" />,
-      text: "Asphalt Circuit",
+      text: t("asphaltCircuit"),
     },
     {
       id: 9,
       icon: <ClimbingWallIcon className="w-8 h-9" />,
-      text: "Climbing Wall",
+      text: t("climbingWall"),
     },
     {
       id: 10,
       icon: <SkiTrailsIcon className="w-8 h-9" />,
-      text: "Cross-country Ski trails",
+      text: t("ski"),
     },
   ];
 
@@ -71,22 +74,22 @@ const ServicesData = () => {
     {
       id: 1,
       icon: <SkiResortsIcon className="w-8 h-8" />,
-      text: "Ski park Mladé Buky (8 km)",
+      text: t("mladeBuky"),
     },
     {
       id: 2,
       icon: <SkiResortsIcon className="w-8 h-8" />,
-      text: "Ski resort Černá Hora (14 km)",
+      text: t("cernaHora"),
     },
     {
       id: 3,
       icon: <SkiResortsIcon className="w-8 h-8" />,
-      text: "Ski area Petříkovice (9 km)",
+      text: t("petrikovice"),
     },
     {
       id: 4,
       icon: <SkiResortsIcon className="w-8 h-8" />,
-      text: "Ski area Žacléř (15 km)",
+      text: t("zacler"),
     },
   ];
 

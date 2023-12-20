@@ -34,7 +34,22 @@
     "tvTitle": "Borrowing TV",
     "tvDescription": "Only for Tourist Rooms"
   },
-  "Services": {},
+  "Services": {
+    "sportsHall": "Sports Hall",
+    "athleticStadium": "Athletic Stadium",
+    "multipurposeGym": "Multipurpose Gym",
+    "multipurposeCourt": "Multipurpose Court",
+    "gymnasticHall": "Gymnastic Hall",
+    "beach": "Beach Volleyball Court",
+    "fitnessGym": "Fitness Gym",
+    "asphaltCircuit": "Asphalt Circuit",
+    "climbingWall": "Climbing Wall",
+    "ski": "Cross-country Ski trails",
+    "mladeBuky": "Ski park Mladé Buky (8 km)",
+    "cernaHora": "Ski resort Černá Hora (14 km)",
+    "petrikovice": "Ski area Petříkovice (9 km)",
+    "zacler": "Ski area Žacléř (15 km)"
+  },
   "Surroundings": {},
   "Contact": {}
 }

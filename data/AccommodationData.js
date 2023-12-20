@@ -9,7 +9,7 @@ import {
   TVSquareIcon,
   ToiletIcon,
 } from "@/assets/icons";
-import { useTranslations } from "next-intl"; // Replace with the actual translation library you're using
+import { useTranslations } from "next-intl";
 
 const AccommodationData = () => {
   const t = useTranslations("Accommodation");
