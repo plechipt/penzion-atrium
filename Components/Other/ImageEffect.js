@@ -15,7 +15,7 @@ const ImageEffect = ({ img1, img2 }) => {
 
       {/* Icon at Bottom Left Corner */}
       <div className="absolute bottom-2 right-2 ">
-        <a href="">
+        <a href={img1} target="_blank">
           <Image
             width="0"
             height="0"
