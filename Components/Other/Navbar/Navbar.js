@@ -4,15 +4,14 @@ import { AnimatePresence, motion } from "framer-motion";
 
 import BookNow from "./BookNow";
 import MainIcon from "./MainIcon";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 // Mobile
 import MobileLinks from "./Mobile/MobileLinks";
 import HamburgerMenu from "./Mobile/HamburgerMenu";
-import MobileLanguageSwitcher from "./Mobile/MobileLanguageSwitcher";
 
 // Desktop
 import DesktopLinks from "./Desktop/DesktopLinks";
-import DesktopLanguageSwitcher from "./Desktop/DesktopLanguageSwitcher";
 
 const Navbar = () => {
   const headerRef = useRef(null);
@@ -48,7 +47,7 @@ const Navbar = () => {
               <MobileLinks setIsMenuOpen={setIsMenuOpen} />
               <div className="space-y-4">
                 {/* Language Dropdown */}
-                <MobileLanguageSwitcher />
+                <LanguageSwitcher triggerClassName="w-full border-0 border-transparent bg-neutral-50 rounded-lg" />
 
                 {/* Button */}
                 <BookNow buttonClassName="bg-primary-gradient w-full text-base py-3 px-4 gap-2.5 flex items-center justify-center font-bold" />
@@ -64,7 +63,7 @@ const Navbar = () => {
 
         <div className="flex items-center gap-4">
           {/* Language Dropdown */}
-          <DesktopLanguageSwitcher />
+          <LanguageSwitcher triggerClassName="w-[101px] border-0 border-transparent bg-neutral-50 rounded-lg" />
 
           {/* Button */}
           <BookNow buttonClassName="bg-primary-gradient text-base py-3 px-4 gap-2.5 hidden lg:flex items-center justify-center font-bold" />

@@ -9,7 +9,7 @@ import NavbarData from "@/data/NavbarData";
 
 import { useRouter } from "@/navigation";
 
-const DesktopLanguageSwitcher = () => {
+const LanguageSwitcher = ({ triggerClassName }) => {
   const router = useRouter();
   const { languagesDesktop } = NavbarData();
 
@@ -19,7 +19,7 @@ const DesktopLanguageSwitcher = () => {
 
   return (
     <Select onValueChange={handleLanguageChange} defaultValue="cs">
-      <SelectTrigger className="w-[101px] border-0 border-transparent bg-neutral-50 rounded-lg">
+      <SelectTrigger className={triggerClassName}>
         <SelectValue
           className="w-full flex items-center gap-2 font-bold"
           placeholder="Select Language"
@@ -43,4 +43,4 @@ const DesktopLanguageSwitcher = () => {
   );
 };
 
-export default DesktopLanguageSwitcher;
+export default LanguageSwitcher;
