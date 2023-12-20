@@ -1,49 +1,8 @@
-import {
-  BathtubIcon,
-  FridgeIcon,
-  TVSquareIcon,
-  ToiletIcon,
-} from "@/assets/icons";
-
-const tourists = [
-  {
-    icon: <BathtubIcon className="w-5 h-5" />,
-    title: "Shared",
-  },
-  {
-    icon: <TVSquareIcon className="w-5 h-5" />,
-    title: "Shared",
-  },
-  {
-    icon: <ToiletIcon className="w-5 h-5" />,
-    title: "Shared",
-  },
-  {
-    icon: <FridgeIcon className="w-5 h-5" />,
-    title: "Shared",
-  },
-];
-
-const standards = [
-  {
-    icon: <BathtubIcon className="w-5 h-5" />,
-    title: "Private",
-  },
-  {
-    icon: <TVSquareIcon className="w-5 h-5" />,
-    title: "Private",
-  },
-  {
-    icon: <ToiletIcon className="w-5 h-5" />,
-    title: "Private",
-  },
-  {
-    icon: <FridgeIcon className="w-5 h-5" />,
-    title: "Shared",
-  },
-];
+import AccommodationData from "@/data/AccommodationData";
 
 const Rooms = () => {
+  const { tourists, standards } = AccommodationData();
+
   return (
     <div className="p-6 w-full">
       <h4 className="text-center text-black text-xl font-bold leading-loose">

@@ -1,5 +1,40 @@
 {
-  "Index": {
-    "title": "Hello world!"
-  }
+  "General": {
+    "bookNow": "Book Now"
+  },
+  "Navbar": {},
+  "Footer": {},
+  "Home": {
+    "discover": "Discover",
+    "subtext": "Our prime and affordable location near the historical center of Trutnov ensures convenience and easy access to all the attractions the city has to offer.",
+    "checkIn": "Check In",
+    "checkInDate": "Check-in Date",
+    "checkOut": "Check Out",
+    "checkOutDate": "Check-out Date",
+
+    "wifi": "Free Wi-Fi",
+    "garden": "Garden with playground",
+    "beds": "Beds from 200 Kč (8 €) per night",
+    "parking": "Free parking",
+    "wheelchair": "Wheelchair accessible",
+    "bus": "Close to the bus terminal and train station",
+    "groups": "Group discounts and long stay discounts",
+    "tv": "Kitchen and meeting room with TV"
+  },
+  "Accommodation": {
+    "shared": "Shared",
+    "private": "Private",
+    "breakfast": "Breakfast",
+    "halfBoard": "Half board",
+    "fullBoard": "Full Board",
+    "transportTitle": "Transport",
+    "transportDescription": "VW Transporter, max. 8 people",
+    "laundryTitle": "Laundry",
+    "laundryDescription": "Max. 7kg",
+    "tvTitle": "Borrowing TV",
+    "tvDescription": "Only for Tourist Rooms"
+  },
+  "Services": {},
+  "Surroundings": {},
+  "Contact": {}
 }

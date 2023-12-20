@@ -1,44 +1,7 @@
-"use client";
-import {
-  BedsIcon,
-  BusIcon,
-  FreeParkingIcon,
-  FreeWifiIcon,
-  GardenWithPlaygroundIcon,
-  GroupDiscountsIcon,
-  TVIcon,
-  WheelchairIcon,
-} from "@/assets/icons";
+import AmenitiesData from "@/data/HomeData";
 
 const Amenities = () => {
-  const data = [
-    { icon: <FreeWifiIcon className="w-20 h-14" />, text: "Free Wi-Fi" },
-    {
-      icon: <GardenWithPlaygroundIcon className="w-20 h-14" />,
-      text: "Garden with playground",
-    },
-    {
-      icon: <BedsIcon className="w-20 h-14" />,
-      text: "Beds from 200 Kč (8 €) per night",
-    },
-    { icon: <FreeParkingIcon className="w-20 h-14" />, text: "Free parking" },
-    {
-      icon: <WheelchairIcon className="w-20 h-14" />,
-      text: "Wheelchair accessible",
-    },
-    {
-      icon: <BusIcon className="w-20 h-14" />,
-      text: "Close to the bus terminal and train station.",
-    },
-    {
-      icon: <GroupDiscountsIcon className="w-20 h-14" />,
-      text: "Group discounts and long stay discounts",
-    },
-    {
-      icon: <TVIcon className="w-20 h-14" />,
-      text: "Kitchen and meeting room with TV",
-    },
-  ];
+  const data = AmenitiesData();
 
   return (
     <div className="container max-w-fit mx-auto mb-16 mt-10 lg:my-16 text-center">

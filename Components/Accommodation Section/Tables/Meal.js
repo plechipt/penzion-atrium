@@ -1,24 +1,8 @@
-import { CupIcon, SupperIcon } from "@/assets/icons";
-
-const meals = [
-  {
-    icon: <CupIcon className="w-5 h-5" />,
-    title: "Breakfast",
-    price: 80,
-  },
-  {
-    icon: <SupperIcon className="w-5 h-5" />,
-    title: "Half board",
-    price: 160,
-  },
-  {
-    icon: <SupperIcon className="w-5 h-5" />,
-    title: "Full Board",
-    price: 240,
-  },
-];
+import AccommodationData from "@/data/AccommodationData";
 
 const Meal = ({ mealText }) => {
+  const { meals } = AccommodationData();
+
   return (
     <div className="p-6 w-full">
       <p className="text-center text-neutral-700 text-base font-normal leading-relaxed">
