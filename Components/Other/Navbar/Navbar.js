@@ -2,6 +2,7 @@
 import { useState, useRef } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 
+import BookNow from "./BookNow";
 import MainIcon from "./MainIcon";
 
 // Mobile
@@ -12,8 +13,6 @@ import MobileLanguageSwitcher from "./Mobile/MobileLanguageSwitcher";
 // Desktop
 import DesktopLinks from "./Desktop/DesktopLinks";
 import DesktopLanguageSwitcher from "./Desktop/DesktopLanguageSwitcher";
-import DesktopBookNow from "./Desktop/DesktopBookNow";
-import MobileBookNow from "./Mobile/MobileBookNow";
 
 const Navbar = () => {
   const headerRef = useRef(null);
@@ -52,7 +51,7 @@ const Navbar = () => {
                 <MobileLanguageSwitcher />
 
                 {/* Button */}
-                <MobileBookNow />
+                <BookNow buttonClassName="bg-primary-gradient w-full text-base py-3 px-4 gap-2.5 flex items-center justify-center font-bold" />
               </div>
             </div>
           </motion.div>
@@ -68,7 +67,7 @@ const Navbar = () => {
           <DesktopLanguageSwitcher />
 
           {/* Button */}
-          <DesktopBookNow />
+          <BookNow buttonClassName="bg-primary-gradient text-base py-3 px-4 gap-2.5 hidden lg:flex items-center justify-center font-bold" />
         </div>
       </div>
     </header>
