@@ -66,8 +66,6 @@ const DropdownButton = ({
       setStayType("long");
       setPeopleOptions(longTermPeople);
     }
-
-    console.log(stayType);
   };
 
   return (

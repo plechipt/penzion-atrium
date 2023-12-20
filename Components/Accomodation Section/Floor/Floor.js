@@ -36,8 +36,6 @@ const CustomComponent = ({ heading, desc }) => {
             numberOfPeople={numberOfPeople}
             setNumberOfPeople={setNumberOfPeople}
             peopleOptions={peopleOptions}
-            stayType={stayType}
-            setStayType={setStayType}
           />
 
           {/* Element 3: Vertical Line */}

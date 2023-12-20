@@ -3,14 +3,15 @@ import { prices } from "./prices";
 export const calculatePrice = (stayType, numberOfPeople, roomCategory) => {
   // Validate input parameters
   if (!(stayType in prices) || !(roomCategory in prices[stayType])) {
-    throw new Error("Invalid stay type or room category");
+    console.log("Invalid stay type or room category");
   }
 
   const priceMatrix = prices[stayType][roomCategory];
+  console.log(priceMatrix.length);
 
   // Validate the number of people
   if (numberOfPeople < 1 || numberOfPeople > priceMatrix.length) {
-    throw new Error(`Invalid number of people for ${stayType} stay`);
+    console.log(`Invalid number of people for ${stayType} stay`);
   }
 
   // Calculate the price based on the number of people
@@ -20,5 +21,5 @@ export const calculatePrice = (stayType, numberOfPeople, roomCategory) => {
 };
 
 // Example usage:
-const price = calculatePrice("long", 3, "TOURIST");
-console.log(`The price is ${price} Kč`);
+//const price = calculatePrice("long", 3, "TOURIST");
+//console.log(`The price is ${price} Kč`);
