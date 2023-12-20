@@ -39,7 +39,7 @@ const standards = [
   },
   {
     icon: <FridgeIcon className="w-5 h-5" />,
-    title: "Private",
+    title: "Shared",
   },
 ];
 

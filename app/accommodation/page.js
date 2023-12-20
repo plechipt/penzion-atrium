@@ -10,9 +10,9 @@ export default function Page() {
     <main>
       <Tables />
       <div className="w-full space-y-8 mt-20">
-        <Floor heading="Ground Floor" desc={text.first_floor} />
+        <Floor heading="Choose a room" desc={text.first_floor} />
 
-        <ResponsiveFloor heading="Ground Floor" desc={text.first_floor} />
+        <ResponsiveFloor heading="Choose a room" desc={text.first_floor} />
       </div>
       <Information />
     </main>

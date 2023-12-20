@@ -10,8 +10,6 @@ const NumberOfPeople = ({
   numberOfPeople,
   setNumberOfPeople,
   peopleOptions,
-  stayType,
-  setStayType,
 }) => {
   return (
     <div className={containerClass}>
