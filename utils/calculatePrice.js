@@ -7,7 +7,6 @@ export const calculatePrice = (stayType, numberOfPeople, roomCategory) => {
   }
 
   const priceMatrix = prices[stayType][roomCategory];
-  console.log(priceMatrix.length);
 
   // Validate the number of people
   if (numberOfPeople < 1 || numberOfPeople > priceMatrix.length) {

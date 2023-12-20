@@ -1,4 +1,8 @@
 /** @type {import('next').NextConfig} */
+
+// Internaliztion
+const withNextIntl = require("next-intl/plugin")("./i18n.js");
+
 const nextConfig = {
   webpack(config) {
     config.module.rules.push({
@@ -19,4 +23,6 @@ const nextConfig = {
   },
 };
 
-module.exports = nextConfig;
+module.exports = withNextIntl({
+  ...nextConfig,
+});
