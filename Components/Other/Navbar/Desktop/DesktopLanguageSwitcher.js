@@ -33,7 +33,7 @@ const languagesDesktop = [
 
 const DesktopLanguageSwitcher = () => {
   return (
-    <Select defaultValue="en">
+    <Select defaultValue="cs">
       <SelectTrigger className="w-[101px] border-0 border-transparent bg-neutral-50 rounded-lg">
         <SelectValue
           className="w-full flex items-center gap-2 font-bold"
