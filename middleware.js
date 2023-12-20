@@ -1,17 +1,16 @@
-import locales from "@/translation/locales";
 import createMiddleware from "next-intl/middleware";
+import { locales, localePrefix } from "@/navigation";
 
 export default createMiddleware({
   // A list of all locales that are supported
-  locales: locales,
-
-  //localePrefix: "as-needed",
+  locales,
+  localePrefix,
 
   // Used when no locale matches
   defaultLocale: "cs",
 });
 
+// Only applies this middleware to files in the app directory
 export const config = {
-  // Match only internationalized pathnames
-  matcher: ["/", "/(cs|en)/:path*"],
+  matcher: ["/((?!api|_next|.*\\..*).*)"],
 };
