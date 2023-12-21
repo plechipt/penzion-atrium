@@ -3,16 +3,32 @@ import Tables from "@/Components/Accommodation Section/Tables/Tables";
 import Information from "@/Components/Accommodation Section/Information";
 import ResponsiveFloor from "@/Components/Accommodation Section/ResponsiveFloor/ResponsiveFloor";
 
-import text from "@/public/text.json";
+import { useTranslations } from "next-intl";
 
 export default function Page() {
+  const t = useTranslations("Accommodation");
+
   return (
     <main>
       <Tables />
       <div className="w-full space-y-8 mt-20">
-        <Floor heading="Choose a room" desc={text.first_floor} />
+        <Floor
+          heading={t("chooseRoomTitle")}
+          desc={t("chooseRoomDescription")}
+          bedRoom={t("bedRoom")}
+          shortTermStay={t("shortTermStay")}
+          mediumTermStay={t("mediumTermStay")}
+          longTermStay={t("longTermStay")}
+        />
 
-        <ResponsiveFloor heading="Choose a room" desc={text.first_floor} />
+        <ResponsiveFloor
+          heading={t("chooseRoomTitle")}
+          desc={t("chooseRoomDescription")}
+          bedRoom={t("bedRoom")}
+          shortTermStay={t("shortTermStay")}
+          mediumTermStay={t("mediumTermStay")}
+          longTermStay={t("longTermStay")}
+        />
       </div>
       <Information />
     </main>

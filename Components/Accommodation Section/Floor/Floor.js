@@ -6,7 +6,14 @@ import PriceOfRooms from "./PriceOfRooms";
 import NumberOfPeople from "../NumberOfPeople";
 import DropdownButton from "../DropdownButton";
 
-const CustomComponent = ({ heading, desc }) => {
+const CustomComponent = ({
+  heading,
+  desc,
+  bedRoom,
+  shortTermStay,
+  mediumTermStay,
+  longTermStay,
+}) => {
   const [touristPrice, setTouristPrice] = useState(500);
   const [standardPrice, setStandardPrice] = useState(600);
 
@@ -36,6 +43,7 @@ const CustomComponent = ({ heading, desc }) => {
             numberOfPeople={numberOfPeople}
             setNumberOfPeople={setNumberOfPeople}
             peopleOptions={peopleOptions}
+            bedRoom={bedRoom}
           />
 
           {/* Element 3: Vertical Line */}
@@ -61,6 +69,9 @@ const CustomComponent = ({ heading, desc }) => {
             setStayType={setStayType}
             setTouristPrice={setTouristPrice}
             setStandardPrice={setStandardPrice}
+            shortTermStay={shortTermStay}
+            mediumTermStay={mediumTermStay}
+            longTermStay={longTermStay}
           />
         </div>
       </div>

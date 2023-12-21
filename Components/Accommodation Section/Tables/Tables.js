@@ -1,7 +1,9 @@
-import React from "react";
+import { useTranslations } from "next-intl";
+
 import Rooms from "./Rooms";
 import Meal from "./Meal";
 import Others from "./Others";
+
 import text from "@/public/text.json";
 
 const BorderedBox = ({ headerText, section }) => {
@@ -18,19 +20,24 @@ const BorderedBox = ({ headerText, section }) => {
 };
 
 const Tables = () => {
+  const t = useTranslations("Accommodation");
+
   return (
     <div className="mt-10 container w-full">
       <h1 className="md:text-5xl text-4xl font-bold mb-12 text-center">
-        Our Accommodation
+        {t("title")}
       </h1>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-fit place-content-center place-items-center gap-6 lg:gap-8 w-full mx-auto md:[&>*:nth-child(3)]:col-span-2 lg:[&>*:nth-child(3)]:col-span-1">
-        <BorderedBox headerText="Room Type" section={<Rooms />} />
+        <BorderedBox headerText={t("roomTypeTitle")} section={<Rooms />} />
         <BorderedBox
-          headerText="Meal"
-          section={<Meal mealText={text.accom_meal} />}
+          headerText={t("mealTitle")}
+          section={<Meal mealText={t("mealDescription")} />}
         />
-        <BorderedBox headerText="Other services" section={<Others />} />
+        <BorderedBox
+          headerText={t("otherServicesTitle")}
+          section={<Others />}
+        />
       </div>
     </div>
   );

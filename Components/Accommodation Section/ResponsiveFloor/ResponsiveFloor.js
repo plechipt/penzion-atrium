@@ -8,7 +8,14 @@ import PriceOfRooms from "./PriceOfRooms";
 import NumberOfPeople from "../NumberOfPeople";
 import DropdownButton from "../DropdownButton";
 
-const ResponsiveFloor = ({ heading, desc }) => {
+const ResponsiveFloor = ({
+  heading,
+  desc,
+  bedRoom,
+  shortTermStay,
+  mediumTermStay,
+  longTermStay,
+}) => {
   const [touristPrice, setTouristPrice] = useState(500);
   const [standardPrice, setStandardPrice] = useState(600);
 
@@ -35,6 +42,7 @@ const ResponsiveFloor = ({ heading, desc }) => {
             numberOfPeople={numberOfPeople}
             setNumberOfPeople={setNumberOfPeople}
             peopleOptions={peopleOptions}
+            bedRoom={bedRoom}
           />
 
           {/* Element 2 */}
@@ -64,6 +72,9 @@ const ResponsiveFloor = ({ heading, desc }) => {
           setStayType={setStayType}
           setTouristPrice={setTouristPrice}
           setStandardPrice={setStandardPrice}
+          shortTermStay={shortTermStay}
+          mediumTermStay={mediumTermStay}
+          longTermStay={longTermStay}
         />
       </div>
     </div>

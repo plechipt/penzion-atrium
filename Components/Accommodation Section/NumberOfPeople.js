@@ -1,5 +1,4 @@
 import { UserIcon, UserIcon2 } from "@/assets/icons";
-
 import Dropdown from "@/Components/Other/Dropdown";
 
 const NumberOfPeople = ({
@@ -10,10 +9,13 @@ const NumberOfPeople = ({
   numberOfPeople,
   setNumberOfPeople,
   peopleOptions,
+  bedRoom,
 }) => {
   return (
     <div className={containerClass}>
-      <p className={pClass}>{numberOfPeople} Bed Room</p>
+      <p className={pClass}>
+        {numberOfPeople} {bedRoom}
+      </p>
       <div className={divClass}>
         {/*<p className="text-2xl font-bold text-indigo-900">{dropdownValue}</p>*/}
         <Dropdown

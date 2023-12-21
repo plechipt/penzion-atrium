@@ -13,12 +13,6 @@ const shortTermPeople = [1, 2, 3, 4, 5, 6, 7, 8];
 const mediumTermPeople = [1, 2, 3, 4];
 const longTermPeople = [1, 2, 3];
 
-const options = [
-  "Short-term stay (1-6 days)",
-  "Medium-term stay (1 or more weeks; price per day)",
-  "Long-term stay (1 or more months; price per month)",
-];
-
 const DropdownButton = ({
   divClass,
   buttonClass,
@@ -30,10 +24,12 @@ const DropdownButton = ({
   setStayType,
   setTouristPrice,
   setStandardPrice,
+  shortTermStay,
+  mediumTermStay,
+  longTermStay,
 }) => {
-  const [dropdownValue, setDropdownValue] = useState(
-    "Short-term stay (1-6 days)"
-  );
+  const [dropdownValue, setDropdownValue] = useState(shortTermStay);
+  const options = [shortTermStay, mediumTermStay, longTermStay];
 
   useEffect(() => {
     // Calculate the final price

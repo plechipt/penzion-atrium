@@ -3,7 +3,6 @@ import text from "@/public/text.json";
 import { useTranslations } from "next-intl";
 
 const Information = () => {
-  const { Info_t2 } = text;
   const t = useTranslations("Accommodation");
 
   // Split the text into an array of words
@@ -11,8 +10,10 @@ const Information = () => {
 
   return (
     <div className="container py-8">
-      <div className="text-2xl font-bold mb-6">{text.Info}</div>
-      <div className="mb-4">{text.Info_t1}</div>
+      <div className="text-2xl font-bold mb-6">
+        {t("informationNoticeTitle")}
+      </div>
+      <div className="mb-4">{t("informationNoticeDescription1")}</div>
       <div className="mb-4">
         {text2.map((word, index) => (
           <span

@@ -1,12 +1,18 @@
 "use client";
-import React, { useState } from "react";
+import { useState } from "react";
 
 import { BookNowIcon } from "@/assets/icons";
 
 import { Button } from "@/Components/ui/button";
 import { DatePicker } from "@/Components/Other/DatePicker";
 
-const DatePick = () => {
+const DatePick = ({
+  checkInTitle,
+  checkInPlaceholder,
+  checkOutTitle,
+  checkOutPlaceholder,
+  bookNow,
+}) => {
   const [checkInDate, setCheckInDate] = useState(null);
   const [checkOutDate, setCheckOutDate] = useState(null);
 
@@ -16,8 +22,8 @@ const DatePick = () => {
         {/* Check-in section */}
         <div className="mb-4 flex-1">
           <DatePicker
-            label="Check In:"
-            placeholder="Check-in Date"
+            label={checkInTitle}
+            placeholder={checkInPlaceholder}
             date={checkInDate}
             setDate={setCheckInDate}
           />
@@ -26,8 +32,8 @@ const DatePick = () => {
         {/* Check-out section */}
         <div className="mb-4 flex-1">
           <DatePicker
-            label="Check Out:"
-            placeholder="Check-out Date"
+            label={checkOutTitle}
+            placeholder={checkOutPlaceholder}
             date={checkOutDate}
             setDate={setCheckOutDate}
           />
@@ -35,7 +41,7 @@ const DatePick = () => {
       </div>
       <Button className="w-full bg-primary-gradient text-base py-3 px-4 gap-2.5 flex items-center justify-center font-bold">
         <BookNowIcon className="w-4 h-4" />
-        Book Now
+        {bookNow}
       </Button>
     </div>
   );
