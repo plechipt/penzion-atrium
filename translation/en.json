@@ -1,11 +1,19 @@
 {
   "General": {
+    "contactInfo": "Contact info",
+    "emails": "Emails",
     "bookNow": "Book Now"
   },
-  "Navbar": {},
-  "Footer": {},
+  "Navbar": {
+    "accommodation": "Accommodation",
+    "services": "Services",
+    "surroundings": "Surroundings",
+    "contact": "Contact"
+  },
   "Home": {
-    "discover": "Discover",
+    "heroTitle1": "Discover",
+    "heroTitle2": "Trutnov",
+    "heroTitle3": "'s Hidden Gem",
     "subtext": "Our prime and affordable location near the historical center of Trutnov ensures convenience and easy access to all the attractions the city has to offer.",
     "checkIn": "Check In",
     "checkInDate": "Check-in Date",
@@ -22,6 +30,11 @@
     "tv": "Kitchen and meeting room with TV"
   },
   "Accommodation": {
+    "title": "Our Accommodation",
+    "roomTypeTitle": "Room Type",
+    "mealTitle": "Meal",
+    "mealDescription": "Only for group consisting of 20 people or more – need to order in advance",
+    "otherServicesTitle": "Other services",
     "shared": "Shared",
     "private": "Private",
     "breakfast": "Breakfast",
@@ -32,9 +45,25 @@
     "laundryTitle": "Laundry",
     "laundryDescription": "Max. 7kg",
     "tvTitle": "Borrowing TV",
-    "tvDescription": "Only for Tourist Rooms"
+    "tvDescription": "Only for Tourist Rooms",
+
+    "chooseRoomTitle": "Choose a room",
+    "chooseRoomDescription": "first floor - 30 beds, meeting room and kitchen - wheelchair accessible",
+    "bedRoom": "Bed Room",
+
+    "informationNoticeTitle": "Information Notice",
+    "informationNoticeDescription1": "According to the Sales Registration Act, the seller is obliged to issue a receipt to the buyer. At the same time, he is obliged to register the received sales with the tax administrator online, within 48 hours in the event of a technical failure",
+    "informationNoticeDescription2": "Prices do not include city tax 20CZK per person per day). This tax does not apply to guests under 18 or over 65 years of age. Valid from 1.1. 2022."
   },
   "Services": {
+    "title": "Our Services",
+    "mealsTitle": "Meals",
+    "mealsDescription1": "Snacks and drinks at the reception desk (18:00–21:00)",
+    "mealsDescription2": "Self cooking (induction cooker, microwave oven, dishes available)",
+    "mealsDescription3": "Dining room for 35 people)",
+
+    "schoolTitle": "Sports Centre of Komensky School",
+    "schoolDescription": "In the sports centre of Komenský School, which is located in the very neighbourhood of our pension (map), we offer to our guests:",
     "sportsHall": "Sports Hall",
     "athleticStadium": "Athletic Stadium",
     "multipurposeGym": "Multipurpose Gym",
@@ -45,11 +74,38 @@
     "asphaltCircuit": "Asphalt Circuit",
     "climbingWall": "Climbing Wall",
     "ski": "Cross-country Ski trails",
+
+    "skiTitle": "Ski Resorts close to Trutnov",
+    "skiDescription": "For group consisting of 20 people or more we offer free ski bus to these resorts (map):",
     "mladeBuky": "Ski park Mladé Buky (8 km)",
     "cernaHora": "Ski resort Černá Hora (14 km)",
     "petrikovice": "Ski area Petříkovice (9 km)",
     "zacler": "Ski area Žacléř (15 km)"
   },
-  "Surroundings": {},
-  "Contact": {}
+  "Surroundings": {
+    "title": "Surroundings",
+    "trutnovTitle": "Trutnov city Center",
+    "trutnovDescription": "Trutnov, surrounded by the Krkonoše Mountains, is a city filled with history and nature. Discover its historic sites, enjoy local festivals, and use it as a base for outdoor adventures. Easy transportation options make exploring the surrounding area a breeze.",
+    "krkonoseTitle": "The Krkonoše Mountains National Park",
+    "krkonoseDescription": "Krkonoše Mountains National Park, located near Trutnov, is a natural wonderland. Explore its pristine landscapes, hike through lush forests, and marvel at its unique wildlife. With Trutnov as your starting point, access to this national park is easy, offering endless opportunities for outdoor enthusiasts.",
+    "adrspachTitle": "Adršpach-Teplice rocks",
+    "adrspachDescription": "These unique sandstone rock formations are located just a short drive from Trutnov. They offer a fantastic hiking experience with dramatic landscapes. Include information on the best hiking routes and entrance fees.",
+    "kuksTitle": "Kuks",
+    "kuksDescription": "Kuks is famous for its historic Baroque hospital founded by Count František Antonín Špork. Explain the hospital's history, its stunning sculptures by Matyáš Braun, and any guided tours available.",
+    "zooTitle": "ZOO Dvůr Králové",
+    "zooDescription": "ZOO Dvůr Králové is a renowned zoological garden located near Trutnov, Czech Republic. It is one of the largest and most respected zoos in Europe, known for its conservation efforts and breeding programs for endangered species. Visitors can explore diverse habitats and see a wide range of animals, including elephants, rhinoceroses, giraffes, and big cats. The zoo's mission is to promote wildlife conservation and educate visitors about the importance of protecting endangered species.",
+    "dolceTitle": "Dolce Pond",
+    "dolceDescription": "Dolce Pond is a peaceful and scenic spot near Trutnov, Czech Republic. It's a great place for nature lovers to enjoy activities like fishing, boating, and picnicking. Surrounded by beautiful forests, it's the perfect location to relax and connect with nature.. Is this how you imagined it? I can simplify the text so it can be more human"
+  },
+  "Contact": {
+    "title": "Contact Us",
+    "formTitle": "Leave Us a Message",
+    "nameLabel": "Name",
+    "namePlaceholder": "Your name...",
+    "emailLabel": "Email",
+    "emailPlaceholder": "Your email...",
+    "messageLabel": "Message",
+    "messagePlaceholder": "Your message...",
+    "send": "Send"
+  }
 }
