@@ -45,7 +45,7 @@ const HomeData = () => {
     },
   ];
 
-  return amenities;
+  return { amenities };
 };
 
 export default HomeData;

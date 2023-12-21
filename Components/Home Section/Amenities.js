@@ -1,7 +1,7 @@
 import AmenitiesData from "@/data/HomeData";
 
 const Amenities = () => {
-  const amenities = AmenitiesData();
+  const { amenities } = AmenitiesData();
 
   return (
     <div className="container max-w-fit mx-auto mb-16 mt-10 lg:my-16 text-center">
