@@ -1,13 +1,17 @@
+import { useTranslations } from "next-intl";
+
 import Form from "./Form";
 import Details from "./Details";
 import LeftSide from "./LeftSide";
 import RightSide from "./RightSide";
 
 const ContactUs = () => {
+  const t = useTranslations("Contact");
+
   return (
     <div className="py-8 lg:py-10">
       <h1 className="md:text-5xl text-4xl font-bold mb-8 lg:mb-8 text-center">
-        Contact Us
+        {t("title")}
       </h1>
 
       <div className="flex flex-col-reverse lg:flex-row justify-center mb-20 items-stretch">

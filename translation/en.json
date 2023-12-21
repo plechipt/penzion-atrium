@@ -105,6 +105,8 @@
   },
   "Contact": {
     "title": "Contact Us",
+    "contactInfo": "Contact info",
+    "emails": "Emails",
     "formTitle": "Leave Us a Message",
     "nameLabel": "Name",
     "namePlaceholder": "Your name...",
@@ -112,6 +114,10 @@
     "emailPlaceholder": "Your email...",
     "messageLabel": "Message",
     "messagePlaceholder": "Your message...",
-    "send": "Send"
+    "send": "Send",
+
+    "location": "541 01 - Trutnov, Žižkova 504",
+    "telephone": "tel.: (+420) 731 415 455",
+    "primaryEmail": "ubytovani@penzionatrium.cz"
   }
 }
