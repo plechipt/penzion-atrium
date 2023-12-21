@@ -1,4 +1,3 @@
-// ServicesData.js
 import {
   AsphaltCircuitIcon,
   AthleticStadiumIcon,

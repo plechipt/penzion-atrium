@@ -1,15 +1,17 @@
 import text from "@/public/text.json";
+import { useTranslations } from "next-intl";
 import AccommodationData from "@/data/AccommodationData";
 
 const MealsText = () => {
   const { meals } = AccommodationData();
+  const t = useTranslations("Services");
 
   return (
     <div className=" w-full space-y-6 max-w-[720px]">
       <h2 className="text-2xl font-bold mb-2 text-center md:text-start">
-        Meals
+        {t("mealsTitle")}
       </h2>
-      <p className="text-gray-600">{text.meal_1}</p>
+      <p className="text-gray-600">{t("mealsDescription0")}</p>
 
       <div className="mt-6 space-y-3 w-full max-w-[200px]">
         {meals.map((meal, i) => (
@@ -28,9 +30,9 @@ const MealsText = () => {
       </div>
 
       <div className="mt-2">
-        <p className="text-gray-600 mb-2">{text.meal_2}</p>
-        <p className="text-gray-600 mb-2">{text.meal_3}</p>
-        <p className="text-gray-600 mb-2">{text.meal_4}</p>
+        <p className="text-gray-600 mb-2">{t("mealsDescription1")}</p>
+        <p className="text-gray-600 mb-2">{t("mealsDescription2")}</p>
+        <p className="text-gray-600 mb-2">{t("mealsDescription3")}</p>
       </div>
     </div>
   );
