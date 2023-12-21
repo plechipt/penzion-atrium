@@ -1,83 +1,64 @@
-"use client";
-import React, { useEffect, useState } from "react";
-import SurroundingElement from "./SurroundingElement";
+import { useTranslations } from "next-intl";
 
 import text from "@/public/text.json";
 import imgAPI from "@/public/images/ImageApi";
+import SurroundingElement from "./SurroundingElement";
 
 const Surroundings = () => {
-  const [isMobile, setIsMobile] = useState(false);
+  const t = useTranslations("Surroundings");
 
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth <= 1000); // Adjust the breakpoint as needed
-    };
-
-    // Initial check on mount
-    handleResize();
-
-    // Attach event listener for resizing
-    window.addEventListener("resize", handleResize);
-
-    // Remove event listener on component unmount
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
   return (
     <div className="container py-10 lg:py-10">
       <h1 className="md:text-5xl text-4xl font-bold mb-8 lg:mb-8 text-center">
-        Surroundings
+        {t("title")}
       </h1>
       <SurroundingElement
-        heading="Trutnov city Center"
-        text={text.surr_1}
+        heading={t("trutnovTitle")}
+        text={t("trutnovDescription")}
         large_img={imgAPI.surr_img[6]}
         small_img={imgAPI.surr_img[0]}
         reverse={false}
       />
 
       <SurroundingElement
-        heading="The Krkonoše Mountains National Park"
-        text={text.surr_2}
+        heading={t("krkonoseTitle")}
+        text={t("krkonoseDescription")}
         large_img={imgAPI.surr_img[7]}
         small_img={imgAPI.surr_img[1]}
         reverse={true}
       />
 
       <SurroundingElement
-        heading="Adršpach-Teplice rocks"
-        text={text.surr_3}
+        heading={t("adrspachTitle")}
+        text={t("adrspachDescription")}
         large_img={imgAPI.surr_img[8]}
         small_img={imgAPI.surr_img[2]}
         reverse={false}
       />
 
       <SurroundingElement
-        heading="Kuks"
-        text={text.surr_4}
+        heading={t("kuksTitle")}
+        text={t("kuksDescription")}
         large_img={imgAPI.surr_img[9]}
         small_img={imgAPI.surr_img[3]}
         reverse={true}
       />
 
       <SurroundingElement
-        heading="ZOO Dvůr Králové"
-        text={text.surr_5}
+        heading={t("zooTitle")}
+        text={t("zooDescription")}
         large_img={imgAPI.surr_img[10]}
         small_img={imgAPI.surr_img[4]}
         reverse={false}
       />
 
-      {!isMobile && (
-        <SurroundingElement
-          heading="Dolce Pond"
-          text={text.surr_6}
-          large_img={imgAPI.surr_img[10]}
-          small_img={imgAPI.surr_img[5]}
-          reverse={true}
-        />
-      )}
+      <SurroundingElement
+        heading={t("dolceTitle")}
+        text={t("dolceDescription")}
+        large_img={imgAPI.surr_img[10]}
+        small_img={imgAPI.surr_img[5]}
+        reverse={true}
+      />
     </div>
   );
 };
