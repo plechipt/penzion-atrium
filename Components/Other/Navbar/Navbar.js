@@ -1,3 +1,4 @@
+"use server";
 import { useTranslations } from "next-intl";
 
 import BookNow from "./BookNow";

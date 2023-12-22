@@ -1,5 +1,4 @@
 import "./globals.css";
-import { useTranslations } from "next-intl";
 import { redirect } from "next/navigation";
 import { Urbanist } from "next/font/google";
 
@@ -19,7 +18,6 @@ export const metadata = {
 };
 
 export default function RootLayout({ children, params: { locale } }) {
-  const t = useTranslations("Contact");
   if (!locales.includes(locale)) {
     redirect("/");
   }
@@ -29,7 +27,7 @@ export default function RootLayout({ children, params: { locale } }) {
       <body className={urbanist.className}>
         <Navbar />
         {children}
-        <Footer emails={t("emails")} />
+        <Footer />
       </body>
     </html>
   );

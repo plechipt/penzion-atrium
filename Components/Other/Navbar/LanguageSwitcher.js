@@ -15,7 +15,11 @@ const LanguageSwitcher = ({ closeMenu, triggerClassName }) => {
   const { languagesDesktop } = NavbarData();
 
   const handleLanguageChange = (value) => {
-    closeMenu();
+    try {
+      closeMenu();
+    } catch {
+      console.log("menu closed");
+    }
     router.push("/", { locale: value });
   };
 
