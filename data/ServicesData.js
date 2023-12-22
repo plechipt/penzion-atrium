@@ -49,21 +49,16 @@ const ServicesData = () => {
     },
     {
       id: 7,
-      icon: <FitnessGymIcon className="w-8 h-9" />,
-      text: t("fitnessGym"),
-    },
-    {
-      id: 8,
       icon: <AsphaltCircuitIcon className="w-8 h-9" />,
       text: t("asphaltCircuit"),
     },
     {
-      id: 9,
+      id: 8,
       icon: <ClimbingWallIcon className="w-8 h-9" />,
       text: t("climbingWall"),
     },
     {
-      id: 10,
+      id: 9,
       icon: <SkiTrailsIcon className="w-8 h-9" />,
       text: t("ski"),
     },

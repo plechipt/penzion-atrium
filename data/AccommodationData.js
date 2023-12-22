@@ -87,7 +87,7 @@ const AccommodationData = () => {
       icon: <TVRoundedIcon className="w-5 h-5" />,
       title: t("tvTitle"),
       description: t("tvDescription"),
-      price: "50 Kč/day",
+      price: t("tvPrice"),
     },
   ];
 

@@ -20,7 +20,7 @@
     "checkOutPlaceholder": "Check-out Date",
     "bookNow": "Book Now",
 
-    "amenitiesTitle": "Our Amenities",
+    "amenitiesTitle": "Amenities",
     "wifi": "Free Wi-Fi",
     "garden": "Garden with playground",
     "beds": "Beds from 200 Kč (8 €) per night",
@@ -31,7 +31,7 @@
     "tv": "Kitchen and meeting room with TV"
   },
   "Accommodation": {
-    "title": "Our Accommodation",
+    "title": "Accommodation",
     "roomTypeTitle": "Room Type",
     "mealTitle": "Meal",
     "mealDescription": "Only for group consisting of 20 people or more – need to order in advance",
@@ -47,20 +47,23 @@
     "laundryDescription": "Max. 7kg",
     "tvTitle": "Borrowing TV",
     "tvDescription": "Only for Tourist Rooms",
+    "tvPrice": "50 Kč/day",
 
     "chooseRoomTitle": "Choose a room",
     "chooseRoomDescription": "first floor - 30 beds, meeting room and kitchen - wheelchair accessible",
-    "bedRoom": "Bed Room",
+    "bedRoom": "Bedroom",
+    "moreBedRoom": "Bedroom",
     "shortTermStay": "Short-term stay (1-6 days)",
     "mediumTermStay": "Medium-term stay (1 or more weeks; price per day)",
     "longTermStay": "Long-term stay (1 or more months; price per month)",
+    "bookNow": "Book Now",
 
     "informationNoticeTitle": "Information Notice",
     "informationNoticeDescription1": "According to the Sales Registration Act, the seller is obliged to issue a receipt to the buyer. At the same time, he is obliged to register the received sales with the tax administrator online, within 48 hours in the event of a technical failure",
-    "informationNoticeDescription2": "Prices do not include city tax 20CZK per person per day). This tax does not apply to guests under 18 or over 65 years of age. Valid from 1.1. 2022."
+    "informationNoticeDescription2": "Prices do not include (city tax 20Kč per person per day). This tax does not apply to guests under 18 or over 65 years of age. Valid from 1.1. 2022."
   },
   "Services": {
-    "title": "Our Services",
+    "title": "Services",
     "mealsTitle": "Meals",
     "mealsDescription0": "Only for group consisting of 20 people or more – need to order in advance",
     "mealsDescription1": "Snacks and drinks at the reception desk (18:00–21:00)",
@@ -68,7 +71,7 @@
     "mealsDescription3": "Dining room for 35 people",
 
     "schoolTitle": "Sports Centre of Komensky School",
-    "schoolDescription": "In the sports centre of Komenský School, which is located in the very neighbourhood of our pension (map), we offer to our guests:",
+    "schoolDescription": "In the sports centre of Komenský School, which is located in the very neighbourhood of our pension, we offer to our guests:",
     "sportsHall": "Sports Hall",
     "athleticStadium": "Athletic Stadium",
     "multipurposeGym": "Multipurpose Gym",

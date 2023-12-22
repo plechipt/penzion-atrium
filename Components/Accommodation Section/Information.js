@@ -16,7 +16,7 @@ const Information = () => {
         {text2.map((word, index) => (
           <span
             key={index}
-            className={word === "20CZK" ? "text-indigo-900 font-bold" : ""}
+            className={word === "20Kč" ? "text-indigo-900 font-bold" : ""}
           >
             {word}{" "}
           </span>
