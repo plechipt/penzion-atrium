@@ -1,6 +1,6 @@
 {
   "General": {
-    "contactInfo": "Contact info",
+    "contactInfo": "Contact",
     "emails": "Emails",
     "bookNow": "Book Now"
   },
@@ -12,9 +12,7 @@
     "bookNow": "Book Now"
   },
   "Home": {
-    "heroTitle1": "Discover",
-    "heroTitle2": "Trutnov",
-    "heroTitle3": "'s Hidden Gem",
+    "heroTitle": "Discover the hidden gem of Trutnov",
     "subtext": "Our prime and affordable location near the historical center of Trutnov ensures convenience and easy access to all the attractions the city has to offer.",
     "checkInTitle": "Check In:",
     "checkInPlaceholder": "Check-in Date",
@@ -106,7 +104,7 @@
   },
   "Contact": {
     "title": "Contact Us",
-    "contactInfo": "Contact info",
+    "contactInfo": "Contact",
     "emails": "Emails",
     "formTitle": "Leave Us a Message",
     "nameLabel": "Name",

@@ -1,20 +1,18 @@
 {
   "General": {
-    "contactInfo": "",
-    "emails": "",
-    "bookNow": ""
+    "contactInfo": "Kontakt",
+    "emails": "Emaily",
+    "bookNow": "Rezervovat"
   },
   "Navbar": {
-    "accommodation": "",
-    "services": "",
-    "surroundings": "",
-    "contact": "",
-    "bookNow": ""
+    "accommodation": "Ubytování",
+    "services": "Služby",
+    "surroundings": "Okolí",
+    "contact": "Kontakt",
+    "bookNow": "Rezervovat"
   },
   "Home": {
-    "heroTitle1": "",
-    "heroTitle2": "",
-    "heroTitle3": "",
+    "heroTitle": "Objevte skrytý klenot Trutnova",
     "subtext": "",
     "checkInTitle": "",
     "checkInPlaceholder": "",
