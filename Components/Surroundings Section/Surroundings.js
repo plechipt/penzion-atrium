@@ -1,6 +1,5 @@
 import { useTranslations } from "next-intl";
 
-import text from "@/public/text.json";
 import imgAPI from "@/public/images/ImageApi";
 import SurroundingElement from "./SurroundingElement";
 

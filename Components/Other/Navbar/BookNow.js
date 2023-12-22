@@ -1,8 +1,6 @@
 import { BookNowIcon } from "@/assets/icons";
 import { Button } from "@/Components/ui/button.jsx";
 
-import content from "@/public/text.json";
-
 const BookNow = ({ buttonClassName, bookNow }) => {
   return (
     <Button className={buttonClassName}>

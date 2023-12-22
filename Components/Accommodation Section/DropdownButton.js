@@ -4,9 +4,7 @@ import { useState, useEffect } from "react";
 import { Button } from "@/Components/ui/button";
 import Dropdown from "@/Components/Other/Dropdown";
 
-import text from "@/public/text.json";
 import { BookNowIcon } from "@/assets/icons";
-
 import { calculatePrice } from "@/utils/calculatePrice";
 
 const shortTermPeople = [1, 2, 3, 4, 5, 6, 7, 8];
@@ -27,6 +25,7 @@ const DropdownButton = ({
   shortTermStay,
   mediumTermStay,
   longTermStay,
+  bookNow,
 }) => {
   const [dropdownValue, setDropdownValue] = useState(shortTermStay);
   const options = [shortTermStay, mediumTermStay, longTermStay];
@@ -73,7 +72,7 @@ const DropdownButton = ({
       />
       <Button className={buttonClass}>
         <BookNowIcon className="w-4 h-4" />
-        {text.nav_btn}
+        {bookNow}
       </Button>
     </div>
   );

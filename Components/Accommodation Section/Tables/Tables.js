@@ -4,8 +4,6 @@ import Rooms from "./Rooms";
 import Meal from "./Meal";
 import Others from "./Others";
 
-import text from "@/public/text.json";
-
 const BorderedBox = ({ headerText, section }) => {
   return (
     <div

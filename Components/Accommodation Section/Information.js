@@ -1,5 +1,3 @@
-import React from "react";
-import text from "@/public/text.json";
 import { useTranslations } from "next-intl";
 
 const Information = () => {

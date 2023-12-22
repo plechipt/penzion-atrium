@@ -1,4 +1,3 @@
-import text from "@/public/text.json";
 import { useTranslations } from "next-intl";
 import AccommodationData from "@/data/AccommodationData";
 

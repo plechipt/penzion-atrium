@@ -1,5 +1,4 @@
 import Link from "next/link";
-import content from "@/public/text.json";
 
 const MobileLinks = ({
   setIsMenuOpen,

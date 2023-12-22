@@ -19,6 +19,7 @@ export default function Page() {
           shortTermStay={t("shortTermStay")}
           mediumTermStay={t("mediumTermStay")}
           longTermStay={t("longTermStay")}
+          bookNow={t("bookNow")}
         />
 
         <ResponsiveFloor
@@ -28,6 +29,7 @@ export default function Page() {
           shortTermStay={t("shortTermStay")}
           mediumTermStay={t("mediumTermStay")}
           longTermStay={t("longTermStay")}
+          bookNow={t("bookNow")}
         />
       </div>
       <Information />

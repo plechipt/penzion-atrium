@@ -15,6 +15,7 @@ const ResponsiveFloor = ({
   shortTermStay,
   mediumTermStay,
   longTermStay,
+  bookNow,
 }) => {
   const [touristPrice, setTouristPrice] = useState(500);
   const [standardPrice, setStandardPrice] = useState(600);
@@ -75,6 +76,7 @@ const ResponsiveFloor = ({
           shortTermStay={shortTermStay}
           mediumTermStay={mediumTermStay}
           longTermStay={longTermStay}
+          bookNow={bookNow}
         />
       </div>
     </div>
