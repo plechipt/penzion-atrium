@@ -8,6 +8,7 @@ export default createMiddleware({
 
   // Used when no locale matches
   defaultLocale: "cs",
+  localeDetection: false,
 });
 
 // Only applies this middleware to files in the app directory
