@@ -24,8 +24,6 @@ export default function RootLayout({ children, params: { locale } }) {
     redirect("/");
   }
 
-  console.log(t("emails"));
-
   return (
     <html lang={locale}>
       <body className={urbanist.className}>

@@ -17,6 +17,7 @@ const MobileSection = ({
   bookNow,
 }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
     <>
       {/* Hamburger menu icon for mobile */}
@@ -48,7 +49,10 @@ const MobileSection = ({
               />
               <div className="space-y-4">
                 {/* Language Dropdown */}
-                <LanguageSwitcher triggerClassName="w-full border-0 border-transparent bg-neutral-50 rounded-lg" />
+                <LanguageSwitcher
+                  closeMenu={() => setIsMenuOpen(false)}
+                  triggerClassName="w-full border-0 border-transparent bg-neutral-50 rounded-lg"
+                />
 
                 {/* Button */}
                 <BookNow

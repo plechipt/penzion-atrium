@@ -10,11 +10,12 @@ import NavbarData from "@/data/NavbarData";
 
 import { useRouter } from "@/navigation";
 
-const LanguageSwitcher = ({ triggerClassName }) => {
+const LanguageSwitcher = ({ closeMenu, triggerClassName }) => {
   const router = useRouter();
   const { languagesDesktop } = NavbarData();
 
   const handleLanguageChange = (value) => {
+    closeMenu();
     router.push("/", { locale: value });
   };
 
