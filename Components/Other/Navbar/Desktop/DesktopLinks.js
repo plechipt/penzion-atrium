@@ -1,20 +1,20 @@
 import Link from "next/link";
 import content from "@/public/text.json";
 
-const DesktopLinks = () => {
+const DesktopLinks = ({ accommodation, services, surroundings, contact }) => {
   return (
     <nav className="hidden lg:flex gap-6">
       <Link className="text-base font-bold " href="/accommodation">
-        {content.nav_accom}
+        {accommodation}
       </Link>
       <Link className="text-base font-bold " href="/services">
-        {content.nav_ser}
+        {services}
       </Link>
       <Link className="text-base font-bold " href="/surroundings">
-        {content.nav_surr}
+        {surroundings}
       </Link>
       <Link className="text-base font-bold " href="/contact">
-        {content.nav_contact}
+        {contact}
       </Link>
     </nav>
   );

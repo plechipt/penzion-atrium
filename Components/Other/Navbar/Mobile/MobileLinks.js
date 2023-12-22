@@ -1,7 +1,13 @@
 import Link from "next/link";
 import content from "@/public/text.json";
 
-const MobileLinks = ({ setIsMenuOpen }) => {
+const MobileLinks = ({
+  setIsMenuOpen,
+  accommodation,
+  services,
+  surroundings,
+  contact,
+}) => {
   return (
     <nav className="gap-6 flex flex-col">
       <Link
@@ -11,7 +17,7 @@ const MobileLinks = ({ setIsMenuOpen }) => {
           setIsMenuOpen(false);
         }}
       >
-        {content.nav_accom}
+        {accommodation}
       </Link>
       <Link
         className="text-xl font-bold"
@@ -20,7 +26,7 @@ const MobileLinks = ({ setIsMenuOpen }) => {
           setIsMenuOpen(false);
         }}
       >
-        {content.nav_ser}
+        {services}
       </Link>
       <Link
         className="text-xl font-bold"
@@ -29,7 +35,7 @@ const MobileLinks = ({ setIsMenuOpen }) => {
           setIsMenuOpen(false);
         }}
       >
-        {content.nav_surr}
+        {surroundings}
       </Link>
       <Link
         className="text-xl font-bold"
@@ -38,7 +44,7 @@ const MobileLinks = ({ setIsMenuOpen }) => {
           setIsMenuOpen(false);
         }}
       >
-        {content.nav_contact}
+        {contact}
       </Link>
     </nav>
   );
