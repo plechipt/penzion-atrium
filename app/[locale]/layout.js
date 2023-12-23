@@ -24,8 +24,6 @@ export default function RootLayout({ children, params: { locale } }) {
 
   return (
     <html lang={locale}>
-      {console.log(locale)}
-      {console.log("test")}
       <body className={urbanist.className}>
         <Navbar />
         {children}

@@ -1,7 +1,6 @@
 import { useTranslations } from "next-intl";
 
 import BookNow from "./BookNow";
-import MainIcon from "./MainIcon";
 import LanguageSwitcher from "./LanguageSwitcher";
 
 // Desktop

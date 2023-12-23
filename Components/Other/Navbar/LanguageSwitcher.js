@@ -9,10 +9,14 @@ import {
 import NavbarData from "@/data/NavbarData";
 
 import { useRouter } from "@/navigation";
+import { useLocale } from "next-intl";
 
 const LanguageSwitcher = ({ closeMenu, triggerClassName }) => {
+  const locale = useLocale();
   const router = useRouter();
   const { languagesDesktop } = NavbarData();
+
+  console.log(locale);
 
   const handleLanguageChange = (value) => {
     try {
