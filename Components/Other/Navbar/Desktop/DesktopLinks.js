@@ -1,8 +1,17 @@
 import Link from "next/link";
 
-const DesktopLinks = ({ accommodation, services, surroundings, contact }) => {
+const DesktopLinks = ({
+  home,
+  accommodation,
+  services,
+  surroundings,
+  contact,
+}) => {
   return (
     <nav className="hidden lg:flex gap-6">
+      <Link className="text-base font-bold " href="/">
+        {home}
+      </Link>
       <Link className="text-base font-bold " href="/accommodation">
         {accommodation}
       </Link>

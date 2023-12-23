@@ -10,6 +10,7 @@ import LanguageSwitcher from "../LanguageSwitcher";
 import { AnimatePresence, motion } from "framer-motion";
 
 const MobileSection = ({
+  home,
   accommodation,
   services,
   surroundings,
@@ -41,6 +42,7 @@ const MobileSection = ({
             <div className="mx-auto w-full max-w-[302px] flex flex-col gap-16">
               <MobileLinks
                 setIsMenuOpen={setIsMenuOpen}
+                home={home}
                 accommodation={accommodation}
                 services={services}
                 surroundings={surroundings}

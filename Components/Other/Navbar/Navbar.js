@@ -1,4 +1,3 @@
-"use server";
 import { useTranslations } from "next-intl";
 
 import BookNow from "./BookNow";
@@ -20,6 +19,7 @@ const Navbar = () => {
       <MainIcon />
 
       <MobileSection
+        home={t("home")}
         accommodation={t("accommodation")}
         services={t("services")}
         surroundings={t("surroundings")}
@@ -30,6 +30,7 @@ const Navbar = () => {
       <div className="hidden lg:flex items-center gap-8 ">
         {/*  Links */}
         <DesktopLinks
+          home={t("home")}
           accommodation={t("accommodation")}
           services={t("services")}
           surroundings={t("surroundings")}

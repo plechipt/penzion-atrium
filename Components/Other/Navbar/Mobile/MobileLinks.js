@@ -2,6 +2,7 @@ import Link from "next/link";
 
 const MobileLinks = ({
   setIsMenuOpen,
+  home,
   accommodation,
   services,
   surroundings,
@@ -9,6 +10,15 @@ const MobileLinks = ({
 }) => {
   return (
     <nav className="gap-6 flex flex-col">
+      <Link
+        className="text-xl font-bold"
+        href="/"
+        onClick={() => {
+          setIsMenuOpen(false);
+        }}
+      >
+        {home}
+      </Link>
       <Link
         className="text-xl font-bold"
         href="/accommodation"
