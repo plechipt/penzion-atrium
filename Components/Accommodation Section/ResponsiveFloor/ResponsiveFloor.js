@@ -12,7 +12,8 @@ const ResponsiveFloor = ({
   heading,
   groundFloor,
   firstFloor,
-  bedRoom,
+  bedroom,
+  moreBedroom,
   shortTermStay,
   mediumTermStay,
   longTermStay,
@@ -45,7 +46,8 @@ const ResponsiveFloor = ({
             numberOfPeople={numberOfPeople}
             setNumberOfPeople={setNumberOfPeople}
             peopleOptions={peopleOptions}
-            bedRoom={bedRoom}
+            bedroom={bedroom}
+            moreBedroom={moreBedroom}
           />
 
           {/* Element 2 */}

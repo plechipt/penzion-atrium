@@ -10,7 +10,8 @@ const CustomComponent = ({
   heading,
   groundFloor,
   firstFloor,
-  bedRoom,
+  bedroom,
+  moreBedroom,
   shortTermStay,
   mediumTermStay,
   longTermStay,
@@ -46,7 +47,8 @@ const CustomComponent = ({
             numberOfPeople={numberOfPeople}
             setNumberOfPeople={setNumberOfPeople}
             peopleOptions={peopleOptions}
-            bedRoom={bedRoom}
+            bedroom={bedroom}
+            moreBedroom={moreBedroom}
           />
 
           {/* Element 3: Vertical Line */}

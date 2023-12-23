@@ -16,7 +16,8 @@ export default function Page() {
           heading={t("chooseRoomTitle")}
           groundFloor={t("groundFloor")}
           firstFloor={t("firstFloor")}
-          bedRoom={t("bedRoom")}
+          bedroom={t("bedroom")}
+          moreBedroom={t("moreBedroom")}
           shortTermStay={t("shortTermStay")}
           mediumTermStay={t("mediumTermStay")}
           longTermStay={t("longTermStay")}
@@ -27,7 +28,8 @@ export default function Page() {
           heading={t("chooseRoomTitle")}
           groundFloor={t("groundFloor")}
           firstFloor={t("firstFloor")}
-          bedRoom={t("bedRoom")}
+          bedroom={t("bedroom")}
+          moreBedroom={t("moreBedroom")}
           shortTermStay={t("shortTermStay")}
           mediumTermStay={t("mediumTermStay")}
           longTermStay={t("longTermStay")}

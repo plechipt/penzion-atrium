@@ -8,15 +8,13 @@ import {
 } from "@/Components/ui/select.jsx";
 import NavbarData from "@/data/NavbarData";
 
-import { useRouter } from "@/navigation";
 import { useLocale } from "next-intl";
+import { useRouter } from "@/navigation";
 
 const LanguageSwitcher = ({ closeMenu, triggerClassName }) => {
   const locale = useLocale();
   const router = useRouter();
   const { languagesDesktop } = NavbarData();
-
-  console.log(locale);
 
   const handleLanguageChange = (value) => {
     try {

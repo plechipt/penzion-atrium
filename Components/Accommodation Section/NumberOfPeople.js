@@ -1,5 +1,6 @@
-import { UserIcon, UserIcon2 } from "@/assets/icons";
+import { useLocale } from "next-intl";
 import Dropdown from "@/Components/Other/Dropdown";
+import { UserIcon, UserIcon2 } from "@/assets/icons";
 
 const NumberOfPeople = ({
   type,
@@ -9,12 +10,17 @@ const NumberOfPeople = ({
   numberOfPeople,
   setNumberOfPeople,
   peopleOptions,
-  bedRoom,
+  bedroom,
+  moreBedroom,
 }) => {
+  const locale = useLocale();
+  const bedroomCondition =
+    locale === "en" && numberOfPeople > 1 ? moreBedroom : bedroom;
+
   return (
     <div className={containerClass}>
       <p className={pClass}>
-        {numberOfPeople} {bedRoom}
+        {numberOfPeople} {bedroomCondition}
       </p>
       <div className={divClass}>
         {/*<p className="text-2xl font-bold text-indigo-900">{dropdownValue}</p>*/}
