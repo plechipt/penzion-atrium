@@ -2,7 +2,6 @@ import {
   AsphaltCircuitIcon,
   AthleticStadiumIcon,
   ClimbingWallIcon,
-  FitnessGymIcon,
   GymnasticHallIcon,
   MultipurposeCourtIcon,
   MultipurposeGymIcon,
@@ -69,21 +68,25 @@ const ServicesData = () => {
       id: 1,
       icon: <SkiResortsIcon className="w-8 h-8" />,
       text: t("mladeBuky"),
+      link: "https://www.areal-mladebuky.cz",
     },
     {
       id: 2,
       icon: <SkiResortsIcon className="w-8 h-8" />,
       text: t("cernaHora"),
+      link: "https://www.skiresort.cz",
     },
     {
       id: 3,
       icon: <SkiResortsIcon className="w-8 h-8" />,
       text: t("petrikovice"),
+      link: "https://www.skipetrikovice.cz",
     },
     {
       id: 4,
       icon: <SkiResortsIcon className="w-8 h-8" />,
       text: t("zacler"),
+      link: "https://www.skizacler.com",
     },
   ];
 

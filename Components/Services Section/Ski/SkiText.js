@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { useTranslations } from "next-intl";
 import ServicesData from "@/data/ServicesData";
 
@@ -14,10 +15,15 @@ const SkiText = () => {
 
       <div className="space-y-5">
         {ski.map((item) => (
-          <div key={item.id} className="flex gap-4 items-center">
+          <Link
+            key={item.id}
+            href={item.link}
+            target="_blank"
+            className="flex gap-4 items-center"
+          >
             {item.icon}
             <p className=" text-neutral-700 text-lg font-normal">{item.text}</p>
-          </div>
+          </Link>
         ))}
       </div>
     </div>
