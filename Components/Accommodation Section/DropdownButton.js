@@ -1,5 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
+import { Link } from "@/navigation";
 
 import { Button } from "@/Components/ui/button";
 import Dropdown from "@/Components/Other/Dropdown";
@@ -70,10 +71,12 @@ const DropdownButton = ({
         value={dropdownValue}
         onChange={(value) => onInputClick(value)}
       />
-      <Button className={buttonClass}>
-        <BookNowIcon className="w-4 h-4" />
-        {bookNow}
-      </Button>
+      <Link className="w-full" href="/contact">
+        <Button className={buttonClass}>
+          <BookNowIcon className="w-4 h-4" />
+          {bookNow}
+        </Button>
+      </Link>
     </div>
   );
 };

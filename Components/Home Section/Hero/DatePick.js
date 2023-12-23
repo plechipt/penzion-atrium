@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import { Link } from "@/navigation";
 
 import { BookNowIcon } from "@/assets/icons";
 
@@ -39,10 +40,12 @@ const DatePick = ({
           />
         </div>
       </div>
-      <Button className="w-full bg-primary-gradient text-base py-3 px-4 gap-2.5 flex items-center justify-center font-bold">
-        <BookNowIcon className="w-4 h-4" />
-        {bookNow}
-      </Button>
+      <Link href="/contact">
+        <Button className="w-full bg-primary-gradient text-base py-3 px-4 gap-2.5 flex items-center justify-center font-bold">
+          <BookNowIcon className="w-4 h-4" />
+          {bookNow}
+        </Button>
+      </Link>
     </div>
   );
 };
