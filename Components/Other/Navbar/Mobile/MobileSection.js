@@ -3,6 +3,7 @@ import { useState } from "react";
 
 // Mobile
 import BookNow from "../BookNow";
+import MainIcon from "../MainIcon";
 import MobileLinks from "./MobileLinks";
 import HamburgerMenu from "./HamburgerMenu";
 import LanguageSwitcher from "../LanguageSwitcher";
@@ -21,6 +22,8 @@ const MobileSection = ({
 
   return (
     <>
+      <MainIcon setIsMenuOpen={setIsMenuOpen} />
+
       {/* Hamburger menu icon for mobile */}
       <HamburgerMenu isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
 

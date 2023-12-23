@@ -16,7 +16,6 @@ const Navbar = () => {
   return (
     <header className="container flex items-center justify-between pb-6 pt-8">
       {/* Left side with icon */}
-      <MainIcon />
 
       <MobileSection
         home={t("home")}

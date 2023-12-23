@@ -13,45 +13,35 @@ const MobileLinks = ({
       <Link
         className="text-xl font-bold"
         href="/"
-        onClick={() => {
-          setIsMenuOpen(false);
-        }}
+        onClick={() => setIsMenuOpen(false)}
       >
         {home}
       </Link>
       <Link
         className="text-xl font-bold"
         href="/accommodation"
-        onClick={() => {
-          setIsMenuOpen(false);
-        }}
+        onClick={() => setIsMenuOpen(false)}
       >
         {accommodation}
       </Link>
       <Link
         className="text-xl font-bold"
         href="/services"
-        onClick={() => {
-          setIsMenuOpen(false);
-        }}
+        onClick={() => setIsMenuOpen(false)}
       >
         {services}
       </Link>
       <Link
         className="text-xl font-bold"
         href="/surroundings"
-        onClick={() => {
-          setIsMenuOpen(false);
-        }}
+        onClick={() => setIsMenuOpen(false)}
       >
         {surroundings}
       </Link>
       <Link
         className="text-xl font-bold"
         href="/contact"
-        onClick={() => {
-          setIsMenuOpen(false);
-        }}
+        onClick={() => setIsMenuOpen(false)}
       >
         {contact}
       </Link>

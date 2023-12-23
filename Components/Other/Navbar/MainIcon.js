@@ -3,10 +3,10 @@ import Image from "next/image";
 
 import images from "@/public/images/ImageApi.js";
 
-const MainIcon = () => {
+const MainIcon = ({ setIsMenuOpen }) => {
   return (
     <div className="flex items-center">
-      <Link href="/">
+      <Link onClick={() => setIsMenuOpen(false)} href="/">
         <Image
           width={180}
           height={40}
