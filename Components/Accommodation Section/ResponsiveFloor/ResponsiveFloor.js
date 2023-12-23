@@ -10,7 +10,8 @@ import DropdownButton from "../DropdownButton";
 
 const ResponsiveFloor = ({
   heading,
-  desc,
+  groundFloor,
+  firstFloor,
   bedRoom,
   shortTermStay,
   mediumTermStay,
@@ -29,7 +30,8 @@ const ResponsiveFloor = ({
       {/* Heading and Subtext */}
       <div className="mb-4">
         <h2 className="text-2xl text-center font-bold mb-6 mt-4">{heading}</h2>
-        <p className="text-gray-500 text-center">{desc}</p>
+        <p className="text-gray-500 text-center">{groundFloor}</p>
+        <p className="mt-1 text-gray-500 text-center">{firstFloor}</p>
       </div>
 
       <div className="flex-col items-center bg-floor  rounded">

@@ -14,7 +14,8 @@ export default function Page() {
       <div className="w-full space-y-8 mt-20">
         <Floor
           heading={t("chooseRoomTitle")}
-          desc={t("chooseRoomDescription")}
+          groundFloor={t("groundFloor")}
+          firstFloor={t("firstFloor")}
           bedRoom={t("bedRoom")}
           shortTermStay={t("shortTermStay")}
           mediumTermStay={t("mediumTermStay")}
@@ -24,7 +25,8 @@ export default function Page() {
 
         <ResponsiveFloor
           heading={t("chooseRoomTitle")}
-          desc={t("chooseRoomDescription")}
+          groundFloor={t("groundFloor")}
+          firstFloor={t("firstFloor")}
           bedRoom={t("bedRoom")}
           shortTermStay={t("shortTermStay")}
           mediumTermStay={t("mediumTermStay")}

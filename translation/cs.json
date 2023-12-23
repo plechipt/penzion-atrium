@@ -51,7 +51,8 @@
     "tvPrice": "50 Kč/den",
 
     "chooseRoomTitle": "Vybrat pokoj",
-    "chooseRoomDescription": "přízemí - 30 lůžek, klubovna a kuchyňka - bezbariérový přístup.",
+    "groundFloor": "přízemí - 30 lůžek, klubovna a kuchyňka - bezbariérový přístup",
+    "firstFloor": "první patro - 27 lůžek",
     "bedRoom": "Ložnice",
     "moreBedRoom": "Ložnic",
     "shortTermStay": "Krátkodobý pobyt (1-6 dní)",

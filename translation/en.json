@@ -51,7 +51,8 @@
     "tvPrice": "50 Kč/day",
 
     "chooseRoomTitle": "Choose a room",
-    "chooseRoomDescription": "first floor - 30 beds, meeting room and kitchen - wheelchair accessible",
+    "groundFloor": "ground floor - 30 beds, meeting room and kitchen - wheelchair accessible",
+    "firstFloor": "first floor - 27 beds",
     "bedRoom": "Bedroom",
     "moreBedRoom": "Bedroom",
     "shortTermStay": "Short-term stay (1-6 days)",

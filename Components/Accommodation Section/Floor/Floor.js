@@ -8,7 +8,8 @@ import DropdownButton from "../DropdownButton";
 
 const CustomComponent = ({
   heading,
-  desc,
+  groundFloor,
+  firstFloor,
   bedRoom,
   shortTermStay,
   mediumTermStay,
@@ -28,7 +29,8 @@ const CustomComponent = ({
         {/* Heading and Subtext */}
         <div className="mb-4">
           <h2 className="text-2xl font-bold mb-6 mt-4">{heading}</h2>
-          <p className="text-gray-500">{desc}</p>
+          <p className="text-gray-500">{groundFloor}</p>
+          <p className="mt-1 text-gray-500">{firstFloor}</p>
         </div>
 
         <div className="flex items-center w-full justify-between bg-floor p-6 rounded">
