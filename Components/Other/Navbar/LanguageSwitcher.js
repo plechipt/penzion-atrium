@@ -9,11 +9,12 @@ import {
 import NavbarData from "@/data/NavbarData";
 
 import { useLocale } from "next-intl";
-import { useRouter } from "@/navigation";
+import { useRouter, usePathname } from "@/navigation";
 
 const LanguageSwitcher = ({ closeMenu, triggerClassName }) => {
   const locale = useLocale();
   const router = useRouter();
+  const pathName = usePathname();
   const { languagesDesktop } = NavbarData();
 
   const handleLanguageChange = (value) => {
@@ -22,11 +23,11 @@ const LanguageSwitcher = ({ closeMenu, triggerClassName }) => {
     } catch {
       console.log("menu closed");
     }
-    router.push("/", { locale: value });
+    router.push(pathName, { locale: value });
   };
 
   return (
-    <Select onValueChange={handleLanguageChange} defaultValue="cs">
+    <Select onValueChange={handleLanguageChange} defaultValue={locale}>
       <SelectTrigger className={triggerClassName}>
         <SelectValue
           className="w-full flex items-center gap-2 font-bold"
