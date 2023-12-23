@@ -8,7 +8,7 @@ const Information = () => {
 
   return (
     <div className="container py-8">
-      <div className="text-2xl font-bold mb-6">
+      <div className="text-center md:text-left text-2xl font-bold mb-6">
         {t("informationNoticeTitle")}
       </div>
       <div className="mb-4">{t("informationNoticeDescription1")}</div>
