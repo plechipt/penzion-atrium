@@ -17,7 +17,7 @@ const Amenities = () => {
             key={index}
             className="flex flex-col items-center gap-4 w-full max-w-[140px]"
           >
-            {item.icon}
+            <div className="w-20 h-14">{item.icon}</div>
             <p className="text-base  text-center font-bold">{item.text}</p>
           </div>
         ))}
