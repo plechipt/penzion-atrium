@@ -17,6 +17,7 @@ const Surroundings = () => {
         large_img={imgAPI.surr_img[6]}
         small_img={imgAPI.surr_img[0]}
         reverse={false}
+        link="https://www.ictrutnov.cz/je-na-draka"
       />
 
       <SurroundingElement
@@ -25,6 +26,7 @@ const Surroundings = () => {
         large_img={imgAPI.surr_img[7]}
         small_img={imgAPI.surr_img[1]}
         reverse={true}
+        link="https://www.krnap.cz"
       />
 
       <SurroundingElement
@@ -33,6 +35,7 @@ const Surroundings = () => {
         large_img={imgAPI.surr_img[8]}
         small_img={imgAPI.surr_img[2]}
         reverse={false}
+        link="https://www.adrspasskeskaly.cz"
       />
 
       <SurroundingElement
@@ -41,6 +44,7 @@ const Surroundings = () => {
         large_img={imgAPI.surr_img[9]}
         small_img={imgAPI.surr_img[3]}
         reverse={true}
+        link="https://www.hospital-kuks.cz"
       />
 
       <SurroundingElement
@@ -49,6 +53,7 @@ const Surroundings = () => {
         large_img={imgAPI.surr_img[10]}
         small_img={imgAPI.surr_img[4]}
         reverse={false}
+        link="https://safaripark.cz"
       />
 
       <SurroundingElement
@@ -57,6 +62,7 @@ const Surroundings = () => {
         large_img={imgAPI.surr_img[10]}
         small_img={imgAPI.surr_img[5]}
         reverse={true}
+        link="https://www.camp-dolce.cz"
       />
     </div>
   );

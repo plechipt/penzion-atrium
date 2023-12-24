@@ -1,7 +1,9 @@
 // components/SurroundingElement.js
 "use client";
 
+import Link from "next/link";
 import Image from "next/image";
+import { useRouter } from "@/navigation";
 
 const SurroundingElement = ({
   reverse,
@@ -9,7 +11,9 @@ const SurroundingElement = ({
   large_img,
   heading,
   text,
+  link,
 }) => {
+  const router = useRouter();
   const flexDirectionClass = reverse
     ? "flex-col lg:flex-row-reverse"
     : " lg:flex-row flex-col";
@@ -19,10 +23,12 @@ const SurroundingElement = ({
       className={` flex ${flexDirectionClass} gap-4 lg:gap-12 items-center justify-between py-6 lg:py-4`}
     >
       {/* Left Part with Image */}
+
       <Image
+        onClick={() => router.push(link)}
         width={573}
         height={310}
-        className="w-full lg:w-1/2 max-h-[310px] object-cover rounded-lg"
+        className="w-full lg:w-1/2 max-h-[310px] object-cover rounded-lg cursor-pointer"
         src={large_img}
         alt={heading}
       />
