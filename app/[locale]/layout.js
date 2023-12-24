@@ -1,6 +1,7 @@
 import "./globals.css";
 import { redirect } from "next/navigation";
 import { Urbanist } from "next/font/google";
+import { Analytics } from "@vercel/analytics/react";
 
 import { locales } from "@/navigation";
 
@@ -28,6 +29,7 @@ export default function RootLayout({ children, params: { locale } }) {
         <Navbar />
         {children}
         <Footer />
+        <Analytics />
       </body>
     </html>
   );
