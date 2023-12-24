@@ -9,7 +9,7 @@ import DatePick from "./DatePick";
 const Hero = () => {
   const t = useTranslations("Home");
   return (
-    <div className="flex flex-col items-center justify-between lg:flex-row container py-10">
+    <div className="flex flex-col items-center justify-between lg:flex-row container py-10 lg:py-3">
       {/* Left side */}
       <div className=" w-full max-w-[580px] space-y-6 lg:space-y-8">
         <Title />
