@@ -37,7 +37,7 @@ const LanguageSwitcher = ({ closeMenu, triggerClassName }) => {
       <SelectContent>
         {languagesDesktop.map((language, i) => (
           <SelectItem
-            className="flex items-center pl-2"
+            className="flex z-50 items-center pl-2"
             key={i}
             value={language.code}
           >

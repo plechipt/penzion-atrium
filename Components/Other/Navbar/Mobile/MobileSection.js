@@ -59,12 +59,13 @@ const MobileSection = ({
                   triggerClassName="mb-4 w-full border-0 border-transparent bg-neutral-50 rounded-lg"
                 />
 
-                {/* Button */}
+                {/* Button 
                 <BookNow
                   closeMenu={() => setIsMenuOpen(false)}
                   bookNow={bookNow}
                   buttonClassName="bg-primary-gradient w-full text-base py-3 px-4 gap-2.5 flex items-center justify-center font-bold"
                 />
+              */}
               </div>
             </div>
           </motion.div>
