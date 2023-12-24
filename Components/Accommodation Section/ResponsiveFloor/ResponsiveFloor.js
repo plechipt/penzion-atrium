@@ -59,7 +59,7 @@ const ResponsiveFloor = ({
 
         {/* Element 3 */}
         <ImageEffect
-          img1={imgAPI.accom_img[1]}
+          img1={imgAPI.accom_img[numberOfPeople]}
           img2={imgAPI.accom_vectors[9]}
         />
 

@@ -36,7 +36,7 @@ const CustomComponent = ({
 
         <div className="flex items-center w-full justify-between bg-floor p-6 rounded">
           {/* Element 1: Image */}
-          <RoomImage />
+          <RoomImage numberOfPeople={numberOfPeople} />
 
           {/* Element 2: Text with Icon */}
           <NumberOfPeople
