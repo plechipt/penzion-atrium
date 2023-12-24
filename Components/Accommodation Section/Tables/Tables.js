@@ -22,7 +22,7 @@ const Tables = () => {
 
   return (
     <div className="mt-10 container w-full">
-      <h1 className="md:text-5xl text-4xl font-bold mb-12 text-center">
+      <h1 className="md:text-5xl text-4xl font-bold mb-14 text-center">
         {t("title")}
       </h1>
 

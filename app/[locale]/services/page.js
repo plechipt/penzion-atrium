@@ -9,7 +9,7 @@ const Page = () => {
 
   return (
     <main className="container py-8 lg:py-10">
-      <h1 className="md:text-5xl text-4xl font-bold mb-8 lg:mb-12 text-center">
+      <h1 className="md:text-5xl text-4xl font-bold mb-8 lg:mb-14 text-center">
         {t("title")}
       </h1>
       <div className="space-y-14">

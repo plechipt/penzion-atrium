@@ -8,7 +8,7 @@ const Surroundings = () => {
 
   return (
     <div className="container py-10 lg:py-10">
-      <h1 className="md:text-5xl text-4xl font-bold mb-8 lg:mb-8 text-center">
+      <h1 className="md:text-5xl text-4xl font-bold mb-8 lg:mb-10 text-center">
         {t("title")}
       </h1>
       <SurroundingElement
