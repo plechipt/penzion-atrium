@@ -11,7 +11,6 @@ const Information = () => {
       <div className="text-center md:text-left text-2xl font-bold mb-6">
         {t("informationNoticeTitle")}
       </div>
-      <div className="mb-4">{t("informationNoticeDescription1")}</div>
       <div className="mb-4">
         {text2.map((word, index) => (
           <span
