@@ -9,7 +9,7 @@ const ContactForm = () => {
   return (
     <div className="lg:border lg:rounded-lg lg:shadow lg:px-9 lg:py-10">
       <div className="mb-4">
-        <h2 className="text-2xl font-bold mb-2 text-center md:text-start lg:text-center">
+        <h2 className="text-2xl font-bold mb-2 text-center hidden lg:block md:text-start lg:text-center">
           {t("formTitle")}
         </h2>
       </div>
