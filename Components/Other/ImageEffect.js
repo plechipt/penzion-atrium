@@ -1,7 +1,14 @@
 import Image from "next/image";
 import { default as imgAPI } from "@/public/images/ImageApi";
 
-const ImageEffect = ({ img, imgAlt, divClass, imgClass, iconClass }) => {
+const ImageEffect = ({
+  img,
+  imgAlt,
+  divClass,
+  imgClass,
+  iconClass,
+  iconCorner,
+}) => {
   return (
     <div className={divClass}>
       <Image
@@ -14,7 +21,7 @@ const ImageEffect = ({ img, imgAlt, divClass, imgClass, iconClass }) => {
       />
 
       {/* Icon at Bottom Left Corner */}
-      <div className="absolute bottom-2 right-2 ">
+      <div className={`absolute bottom-${iconCorner} right-${iconCorner} `}>
         <a href={img} target="_blank">
           <Image
             width="0"

@@ -40,6 +40,7 @@ const CustomComponent = () => {
             divClass={"relative w-60 h-3/4"}
             imgClass={"w-full max-w-[240px] h-[150px]"}
             iconClass={"w-9 h-9"}
+            iconCorner={"2"}
           />
 
           {/* Element 2: Text with Icon */}

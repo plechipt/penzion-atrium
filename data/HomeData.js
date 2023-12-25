@@ -45,7 +45,26 @@ const HomeData = () => {
     },
   ];
 
-  return { amenities };
+  const images = [
+    {
+      image: "/images/gallery/1-home.png",
+      alt: "4 Room Image",
+    },
+    {
+      image: "/images/gallery/2-home.png",
+      alt: "Terrace Image",
+    },
+    {
+      image: "/images/gallery/3-home.png",
+      alt: "Reception Image",
+    },
+    {
+      image: "/images/gallery/4-home.png",
+      alt: "2 Room Image",
+    },
+  ];
+
+  return { amenities, images };
 };
 
 export default HomeData;
