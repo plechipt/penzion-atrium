@@ -9,7 +9,7 @@ import {
   SportsHallIcon,
   VolleyBallHallIcon,
   SkiResortsIcon,
-} from "@/assets/icons";
+} from "@/public/vectors/getIcons";
 import { useTranslations } from "next-intl";
 
 const ServicesData = () => {

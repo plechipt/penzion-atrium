@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { ImageIcon } from "@/assets/icons";
+import { ImageIcon } from "@/public/vectors/getIcons";
 
 const ImageComponent = ({ image, alt }) => {
   return (

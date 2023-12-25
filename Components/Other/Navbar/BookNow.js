@@ -1,5 +1,5 @@
 import { Link } from "@/navigation";
-import { BookNowIcon } from "@/assets/icons";
+import { BookNowIcon } from "@/public/vectors/getIcons";
 import { Button } from "@/components/ui/button.jsx";
 
 const BookNow = ({ buttonClassName, bookNow, closeMenu }) => {

@@ -8,7 +8,7 @@ import {
   FridgeIcon,
   TVSquareIcon,
   ToiletIcon,
-} from "@/assets/icons";
+} from "@/public/vectors/getIcons";
 import { useTranslations } from "next-intl";
 
 const AccommodationData = () => {

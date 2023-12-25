@@ -1,8 +1,11 @@
 import Image from "next/image";
 
-import { CzechRIcon, USFlagIcon } from "@/assets/icons";
-import USFlag from "@/assets/png/united-states-flag-icon.png";
-import CzechFlag from "@/assets/png/czech-republic-flag-icon.png";
+import {
+  CzechRIcon,
+  USFlagIcon,
+  USFlag,
+  CzechFlag,
+} from "@/public/vectors/getIcons";
 
 const NavbarData = () => {
   const languagesMobile = [

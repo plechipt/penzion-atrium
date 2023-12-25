@@ -1,4 +1,4 @@
-import { SMSIcon } from "@/assets/icons";
+import { SMSIcon } from "@/public/vectors/getIcons";
 import { useTranslations } from "next-intl";
 
 const ContactRightSide = () => {

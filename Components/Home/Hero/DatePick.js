@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { Link } from "@/navigation";
 
-import { BookNowIcon } from "@/assets/icons";
+import { BookNowIcon } from "@/public/vectors/getIcons";
 
 import { Button } from "@/components/ui/button";
 import { DatePicker } from "@/components/Other/DatePicker";

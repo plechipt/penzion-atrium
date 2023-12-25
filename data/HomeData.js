@@ -7,7 +7,7 @@ import {
   GroupDiscountsIcon,
   TVIcon,
   WheelchairIcon,
-} from "@/assets/icons";
+} from "@/public/vectors/getIcons";
 import { useTranslations } from "next-intl";
 
 const HomeData = () => {

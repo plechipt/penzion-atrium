@@ -1,5 +1,5 @@
 import { useTranslations } from "next-intl";
-import { LocationIcon, PhoneIcon } from "@/assets/icons";
+import { LocationIcon, PhoneIcon } from "@/public/vectors/getIcons";
 
 const ContactLeftSide = () => {
   const t = useTranslations("Contact");

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { FooterLogoIcon } from "@/assets/icons";
+import { FooterLogoIcon } from "@/public/vectors/getIcons";
 import { FaFacebookF, FaInstagram } from "react-icons/fa6";
 
 const LogoWithSocials = () => {

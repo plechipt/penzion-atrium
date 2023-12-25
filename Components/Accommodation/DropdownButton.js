@@ -7,7 +7,7 @@ import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui/button";
 import Dropdown from "@/components/Other/Dropdown";
 
-import { BookNowIcon } from "@/assets/icons";
+import { BookNowIcon } from "@/public/vectors/getIcons";
 import { calculatePrice } from "@/utils/calculatePrice";
 
 const shortTermPeople = [1, 2, 3, 4, 5, 6, 7, 8];

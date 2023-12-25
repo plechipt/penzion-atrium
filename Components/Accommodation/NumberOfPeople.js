@@ -1,7 +1,7 @@
 import { useLocale } from "next-intl";
 import { useTranslations } from "next-intl";
 import Dropdown from "@/components/Other/Dropdown";
-import { UserIcon, UserIcon2 } from "@/assets/icons";
+import { UserIcon, UserIcon2 } from "@/public/vectors/getIcons";
 
 const NumberOfPeople = ({
   type,

@@ -3,7 +3,7 @@ const imgAPI = {
     "/images/vectors/logo.png",
     "/images/vectors/icon.png",
     "/images/vectors/Union.png",
-    "/images/vectors/Card.png",
+    "/images/gallery/card.png",
     "/images/vectors/wifi.png",
     "/images/vectors/play.png",
     "/images/vectors/room.png",
