@@ -1,5 +1,5 @@
 import HomeData from "@/data/HomeData";
-import ImageEffect from "@/Components/Other/ImageEffect";
+import ImageEffect from "@/components/Other/ImageEffect";
 
 const ImageGrid = () => {
   const { images } = HomeData();

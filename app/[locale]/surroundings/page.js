@@ -1,4 +1,4 @@
-import Surroundings from "@/components/Surroundings Section/Surroundings";
+import Surroundings from "@/components/Surroundings/Surroundings";
 
 const Page = () => {
   return (

@@ -1,6 +1,6 @@
-import Hero from "@/components/Home Section/Hero/Hero";
-import ImageGrid from "@/components/Home Section/ImageGrid";
-import Amenities from "@/components/Home Section/Amenities";
+import Hero from "@/components/Home/Hero/Hero";
+import ImageGrid from "@/components/Home/ImageGrid";
+import Amenities from "@/components/Home/Amenities";
 
 export default function Home() {
   return (

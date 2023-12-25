@@ -1,6 +1,6 @@
-import SkiComponent from "@/components/Services Section/Ski/Ski";
-import Sports from "@/components/Services Section/Sports/Sports";
-import MealsComponent from "@/components/Services Section/Meals/Meals";
+import SkiComponent from "@/components/Services/Ski/Ski";
+import Sports from "@/components/Services/Sports/Sports";
+import MealsComponent from "@/components/Services/Meals/Meals";
 
 import { useTranslations } from "next-intl";
 
