@@ -3,44 +3,19 @@ import Tables from "@/Components/Accommodation Section/Tables/Tables";
 import Information from "@/Components/Accommodation Section/Information";
 import ResponsiveFloor from "@/Components/Accommodation Section/ResponsiveFloor/ResponsiveFloor";
 
-import { useTranslations } from "next-intl";
+import { useMessages, NextIntlClientProvider } from "next-intl";
 
 export default function Page() {
-  const t = useTranslations("Accommodation");
+  const messages = useMessages();
 
   return (
     <main>
       <Tables />
       <div className="w-full space-y-8 mt-20">
-        <Floor
-          heading={t("chooseRoomTitle")}
-          groundFloor={t("groundFloor")}
-          firstFloor={t("firstFloor")}
-          bedroom={t("bedroom")}
-          moreBedroom={t("moreBedroom")}
-          pricePerDayShortTerm={t("pricePerDayShortTerm")}
-          pricePerDayMediumTerm={t("pricePerDayMediumTerm")}
-          pricePerMonthLongTerm={t("pricePerMonthLongTerm")}
-          shortTermStay={t("shortTermStay")}
-          mediumTermStay={t("mediumTermStay")}
-          longTermStay={t("longTermStay")}
-          bookNow={t("bookNow")}
-        />
-
-        <ResponsiveFloor
-          heading={t("chooseRoomTitle")}
-          groundFloor={t("groundFloor")}
-          firstFloor={t("firstFloor")}
-          bedroom={t("bedroom")}
-          moreBedroom={t("moreBedroom")}
-          pricePerDayShortTerm={t("pricePerDayShortTerm")}
-          pricePerDayMediumTerm={t("pricePerDayMediumTerm")}
-          pricePerMonthLongTerm={t("pricePerMonthLongTerm")}
-          shortTermStay={t("shortTermStay")}
-          mediumTermStay={t("mediumTermStay")}
-          longTermStay={t("longTermStay")}
-          bookNow={t("bookNow")}
-        />
+        <NextIntlClientProvider messages={messages}>
+          <Floor />
+          <ResponsiveFloor />
+        </NextIntlClientProvider>
       </div>
       <Information />
     </main>

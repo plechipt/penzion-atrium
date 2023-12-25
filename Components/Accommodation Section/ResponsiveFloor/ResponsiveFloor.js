@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import { useTranslations } from "next-intl";
 
 import imgAPI from "@/public/images/ImageApi";
 import ImageEffect from "@/Components/Other/ImageEffect";
@@ -8,25 +9,14 @@ import PriceOfRooms from "./PriceOfRooms";
 import NumberOfPeople from "../NumberOfPeople";
 import DropdownButton from "../DropdownButton";
 
-const ResponsiveFloor = ({
-  heading,
-  groundFloor,
-  firstFloor,
-  bedroom,
-  moreBedroom,
-  pricePerDayShortTerm,
-  pricePerDayMediumTerm,
-  pricePerMonthLongTerm,
-  shortTermStay,
-  mediumTermStay,
-  longTermStay,
-  bookNow,
-}) => {
+const ResponsiveFloor = () => {
+  const t = useTranslations("Accommodation");
+
   const [touristPrice, setTouristPrice] = useState(500);
   const [standardPrice, setStandardPrice] = useState(600);
 
-  const [pricePer, setPricePer] = useState(pricePerDayShortTerm);
   const [stayType, setStayType] = useState("short");
+  const [pricePer, setPricePer] = useState(t("pricePerDayShortTerm"));
   const [numberOfPeople, setNumberOfPeople] = useState(1);
   const [peopleOptions, setPeopleOptions] = useState([1, 2, 3, 4, 5, 6, 7, 8]);
 
@@ -34,9 +24,11 @@ const ResponsiveFloor = ({
     <div className="block lg:hidden mb-4 mx-4">
       {/* Heading and Subtext */}
       <div className="mb-4">
-        <h2 className="text-2xl text-center font-bold mb-6 mt-4">{heading}</h2>
-        <p className="text-gray-500 text-center">{groundFloor}</p>
-        <p className="mt-1 text-gray-500 text-center">{firstFloor}</p>
+        <h2 className="text-2xl text-center font-bold mb-6 mt-4">
+          {t("chooseRoomTitle")}
+        </h2>
+        <p className="text-gray-500 text-center">{t("groundFloor")}</p>
+        <p className="mt-1 text-gray-500 text-center">{t("firstFloor")}</p>
       </div>
 
       <div className="flex-col items-center bg-floor  rounded">
@@ -50,8 +42,6 @@ const ResponsiveFloor = ({
             numberOfPeople={numberOfPeople}
             setNumberOfPeople={setNumberOfPeople}
             peopleOptions={peopleOptions}
-            bedroom={bedroom}
-            moreBedroom={moreBedroom}
           />
 
           {/* Element 2 */}
@@ -82,14 +72,7 @@ const ResponsiveFloor = ({
           setStayType={setStayType}
           setTouristPrice={setTouristPrice}
           setStandardPrice={setStandardPrice}
-          pricePerDayShortTerm={pricePerDayShortTerm}
-          pricePerDayMediumTerm={pricePerDayMediumTerm}
-          pricePerMonthLongTerm={pricePerMonthLongTerm}
           setPricePer={setPricePer}
-          shortTermStay={shortTermStay}
-          mediumTermStay={mediumTermStay}
-          longTermStay={longTermStay}
-          bookNow={bookNow}
         />
       </div>
     </div>

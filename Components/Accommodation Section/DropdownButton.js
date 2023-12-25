@@ -2,6 +2,8 @@
 import { useState, useEffect } from "react";
 import { Link } from "@/navigation";
 
+import { useTranslations } from "next-intl";
+
 import { Button } from "@/Components/ui/button";
 import Dropdown from "@/Components/Other/Dropdown";
 
@@ -23,17 +25,11 @@ const DropdownButton = ({
   setStayType,
   setTouristPrice,
   setStandardPrice,
-  pricePerDayShortTerm,
-  pricePerDayMediumTerm,
-  pricePerMonthLongTerm,
   setPricePer,
-  shortTermStay,
-  mediumTermStay,
-  longTermStay,
-  bookNow,
 }) => {
-  const [dropdownValue, setDropdownValue] = useState(shortTermStay);
-  const options = [shortTermStay, mediumTermStay, longTermStay];
+  const t = useTranslations("Accommodation");
+  const [dropdownValue, setDropdownValue] = useState(t("shortTermStay"));
+  const options = [t("shortTermStay"), t("mediumTermStay"), t("longTermStay")];
 
   useEffect(() => {
     // Calculate the final price
@@ -56,17 +52,17 @@ const DropdownButton = ({
 
     if (value == options[0]) {
       setStayType("short");
-      setPricePer(pricePerDayShortTerm);
+      setPricePer(t("pricePerDayShortTerm"));
       setPeopleOptions(shortTermPeople);
     }
     if (value == options[1]) {
       setStayType("medium");
-      setPricePer(pricePerDayMediumTerm);
+      setPricePer(t("pricePerDayMediumTerm"));
       setPeopleOptions(mediumTermPeople);
     }
     if (value == options[2]) {
       setStayType("long");
-      setPricePer(pricePerMonthLongTerm);
+      setPricePer(t("pricePerMonthLongTerm"));
       setPeopleOptions(longTermPeople);
     }
   };
@@ -81,7 +77,7 @@ const DropdownButton = ({
       <Link className="w-full" href="/contact">
         <Button className={buttonClass}>
           <BookNowIcon className="w-4 h-4" />
-          {bookNow}
+          {t("bookNow")}
         </Button>
       </Link>
     </div>

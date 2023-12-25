@@ -1,31 +1,21 @@
 "use client";
 import { useState } from "react";
+import { useTranslations } from "next-intl";
 
 import RoomImage from "./RoomImage";
 import PriceOfRooms from "./PriceOfRooms";
 import NumberOfPeople from "../NumberOfPeople";
 import DropdownButton from "../DropdownButton";
 
-const CustomComponent = ({
-  heading,
-  groundFloor,
-  firstFloor,
-  bedroom,
-  moreBedroom,
-  pricePerDayShortTerm,
-  pricePerDayMediumTerm,
-  pricePerMonthLongTerm,
-  shortTermStay,
-  mediumTermStay,
-  longTermStay,
-  bookNow,
-}) => {
+const CustomComponent = () => {
+  const t = useTranslations("Accommodation");
+
   const [touristPrice, setTouristPrice] = useState(500);
   const [standardPrice, setStandardPrice] = useState(600);
 
   const [stayType, setStayType] = useState("short");
-  const [pricePer, setPricePer] = useState(pricePerDayShortTerm);
   const [numberOfPeople, setNumberOfPeople] = useState(1);
+  const [pricePer, setPricePer] = useState(t("pricePerDayShortTerm"));
   const [peopleOptions, setPeopleOptions] = useState([1, 2, 3, 4, 5, 6, 7, 8]);
 
   return (
@@ -33,9 +23,11 @@ const CustomComponent = ({
       <div className="w-full hidden lg:block">
         {/* Heading and Subtext */}
         <div className="mb-4">
-          <h2 className="text-2xl font-bold mb-6 mt-4">{heading}</h2>
-          <p className="text-gray-500">{groundFloor}</p>
-          <p className="mt-1 text-gray-500">{firstFloor}</p>
+          <h2 className="text-2xl font-bold mb-6 mt-4">
+            {t("chooseRoomTitle")}
+          </h2>
+          <p className="text-gray-500">{t("groundFloor")}</p>
+          <p className="mt-1 text-gray-500">{t("firstFloor")}</p>
         </div>
 
         <div className="flex items-center w-full justify-between bg-floor p-6 rounded">
@@ -51,8 +43,6 @@ const CustomComponent = ({
             numberOfPeople={numberOfPeople}
             setNumberOfPeople={setNumberOfPeople}
             peopleOptions={peopleOptions}
-            bedroom={bedroom}
-            moreBedroom={moreBedroom}
           />
 
           {/* Element 3: Vertical Line */}
@@ -71,22 +61,15 @@ const CustomComponent = ({
               "bg-primary-gradient text-base py-3 px-4 gap-2.5 hidden lg:flex items-center justify-center font-bold w-full"
             }
             divClass={"flex flex-col gap-y-4 items-center"}
-            setNumberOfPeople={setNumberOfPeople}
             numberOfPeople={numberOfPeople}
+            setNumberOfPeople={setNumberOfPeople}
             peopleOptions={peopleOptions}
             setPeopleOptions={setPeopleOptions}
             stayType={stayType}
             setStayType={setStayType}
             setTouristPrice={setTouristPrice}
             setStandardPrice={setStandardPrice}
-            pricePerDayShortTerm={pricePerDayShortTerm}
-            pricePerDayMediumTerm={pricePerDayMediumTerm}
-            pricePerMonthLongTerm={pricePerMonthLongTerm}
             setPricePer={setPricePer}
-            shortTermStay={shortTermStay}
-            mediumTermStay={mediumTermStay}
-            longTermStay={longTermStay}
-            bookNow={bookNow}
           />
         </div>
       </div>

@@ -1,4 +1,5 @@
 import { useLocale } from "next-intl";
+import { useTranslations } from "next-intl";
 import Dropdown from "@/Components/Other/Dropdown";
 import { UserIcon, UserIcon2 } from "@/assets/icons";
 
@@ -10,12 +11,12 @@ const NumberOfPeople = ({
   numberOfPeople,
   setNumberOfPeople,
   peopleOptions,
-  bedroom,
-  moreBedroom,
 }) => {
   const locale = useLocale();
+  const t = useTranslations("Accommodation");
+
   const bedroomCondition =
-    locale === "en" && numberOfPeople > 1 ? moreBedroom : bedroom;
+    locale === "en" && numberOfPeople > 1 ? t("moreBedroom") : t("bedroom");
 
   return (
     <div className={containerClass}>

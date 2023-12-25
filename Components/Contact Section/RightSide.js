@@ -1,5 +1,5 @@
-import { useTranslations } from "next-intl";
 import { SMSIcon } from "@/assets/icons";
+import { useTranslations } from "next-intl";
 
 const ContactRightSide = () => {
   const t = useTranslations("Contact");
