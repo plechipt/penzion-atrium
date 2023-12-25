@@ -36,7 +36,7 @@ const CustomComponent = () => {
           {/* Element 1: Image */}
           <ImageEffect
             img={imgAPI.accom_img[numberOfPeople]}
-            icon={imgAPI.accom_vectors[9]}
+            imgAlt={`${numberOfPeople} Room Image`}
             divClass={"relative w-60 h-3/4"}
             imgClass={"w-full max-w-[240px] h-[150px]"}
             iconClass={"w-9 h-9"}

@@ -1,6 +1,7 @@
 import Image from "next/image";
+import { default as imgAPI } from "@/public/images/ImageApi";
 
-const ImageEffect = ({ img, icon, divClass, imgClass, iconClass }) => {
+const ImageEffect = ({ img, imgAlt, divClass, imgClass, iconClass }) => {
   return (
     <div className={divClass}>
       <Image
@@ -8,7 +9,7 @@ const ImageEffect = ({ img, icon, divClass, imgClass, iconClass }) => {
         height="0"
         sizes="100vw"
         src={img}
-        alt="Background"
+        alt={imgAlt}
         className={imgClass}
       />
 
@@ -19,7 +20,7 @@ const ImageEffect = ({ img, icon, divClass, imgClass, iconClass }) => {
             width="0"
             height="0"
             sizes="100vw"
-            src={icon}
+            src={imgAPI.accom_vectors[9]}
             alt="Icon"
             className={iconClass}
           />

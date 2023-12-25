@@ -55,6 +55,7 @@ const ResponsiveFloor = () => {
         {/* Element 3 */}
         <ImageEffect
           img={imgAPI.accom_img[numberOfPeople]}
+          imgAlt={`${numberOfPeople} Room Image`}
           icon={imgAPI.accom_vectors[9]}
           divClass={"relative w-full h-full"}
           imgClass={"w-full  h-auto"}
