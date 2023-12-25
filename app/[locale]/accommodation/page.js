@@ -1,7 +1,7 @@
-import Floor from "@/Components/Accommodation Section/Floor/Floor";
-import Tables from "@/Components/Accommodation Section/Tables/Tables";
-import Information from "@/Components/Accommodation Section/Information";
-import ResponsiveFloor from "@/Components/Accommodation Section/ResponsiveFloor/ResponsiveFloor";
+import Floor from "@/components/Accommodation Section/Floor/Floor";
+import Tables from "@/components/Accommodation Section/Tables/Tables";
+import Information from "@/components/Accommodation Section/Information";
+import ResponsiveFloor from "@/components/Accommodation Section/ResponsiveFloor/ResponsiveFloor";
 
 import { useMessages, NextIntlClientProvider } from "next-intl";
 

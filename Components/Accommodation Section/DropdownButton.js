@@ -4,8 +4,8 @@ import { Link } from "@/navigation";
 
 import { useTranslations } from "next-intl";
 
-import { Button } from "@/Components/ui/button";
-import Dropdown from "@/Components/Other/Dropdown";
+import { Button } from "@/components/ui/button";
+import Dropdown from "@/components/Other/Dropdown";
 
 import { BookNowIcon } from "@/assets/icons";
 import { calculatePrice } from "@/utils/calculatePrice";

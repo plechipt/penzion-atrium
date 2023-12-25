@@ -7,7 +7,7 @@ import { default as imgAPI } from "@/public/images/ImageApi";
 import PriceOfRooms from "./PriceOfRooms";
 import NumberOfPeople from "../NumberOfPeople";
 import DropdownButton from "../DropdownButton";
-import ImageEffect from "@/Components/Other/ImageEffect";
+import ImageEffect from "@/components/Other/ImageEffect";
 
 const CustomComponent = () => {
   const t = useTranslations("Accommodation");

@@ -5,8 +5,8 @@ import { Analytics } from "@vercel/analytics/react";
 
 import { locales } from "@/navigation";
 
-import Navbar from "@/Components/Other/Navbar/Navbar";
-import Footer from "@/Components/Other/Footer/Footer";
+import Navbar from "@/components/Other/Navbar/Navbar";
+import Footer from "@/components/Other/Footer/Footer";
 
 const urbanist = Urbanist({
   subsets: ["latin"],

@@ -1,7 +1,7 @@
 "use client";
 
 import { useRouter } from "@/navigation";
-import ImageEffect from "@/Components/Other/ImageEffect";
+import ImageEffect from "@/components/Other/ImageEffect";
 
 const SurroundingElement = ({
   reverse,

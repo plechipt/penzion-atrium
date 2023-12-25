@@ -1,5 +1,5 @@
 import SkiText from "./SkiText";
-import ImageEffect from "@/Components/Other/ImageEffect";
+import ImageEffect from "@/components/Other/ImageEffect";
 
 import imgAPI from "@/public/images/ImageApi";
 

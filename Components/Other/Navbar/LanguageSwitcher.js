@@ -5,7 +5,7 @@ import {
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@/Components/ui/select.jsx";
+} from "@/components/ui/select.jsx";
 import NavbarData from "@/data/NavbarData";
 
 import { useLocale } from "next-intl";

@@ -4,8 +4,8 @@ import { Link } from "@/navigation";
 
 import { BookNowIcon } from "@/assets/icons";
 
-import { Button } from "@/Components/ui/button";
-import { DatePicker } from "@/Components/Other/DatePicker";
+import { Button } from "@/components/ui/button";
+import { DatePicker } from "@/components/Other/DatePicker";
 
 const DatePick = ({
   checkInTitle,
