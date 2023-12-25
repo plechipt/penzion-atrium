@@ -14,6 +14,9 @@ const ResponsiveFloor = ({
   firstFloor,
   bedroom,
   moreBedroom,
+  pricePerDayShortTerm,
+  pricePerDayMediumTerm,
+  pricePerMonthLongTerm,
   shortTermStay,
   mediumTermStay,
   longTermStay,
@@ -22,6 +25,7 @@ const ResponsiveFloor = ({
   const [touristPrice, setTouristPrice] = useState(500);
   const [standardPrice, setStandardPrice] = useState(600);
 
+  const [pricePer, setPricePer] = useState(pricePerDayShortTerm);
   const [stayType, setStayType] = useState("short");
   const [numberOfPeople, setNumberOfPeople] = useState(1);
   const [peopleOptions, setPeopleOptions] = useState([1, 2, 3, 4, 5, 6, 7, 8]);
@@ -54,6 +58,7 @@ const ResponsiveFloor = ({
           <PriceOfRooms
             touristPrice={touristPrice}
             standardPrice={standardPrice}
+            pricePer={pricePer}
           />
         </div>
 
@@ -77,6 +82,10 @@ const ResponsiveFloor = ({
           setStayType={setStayType}
           setTouristPrice={setTouristPrice}
           setStandardPrice={setStandardPrice}
+          pricePerDayShortTerm={pricePerDayShortTerm}
+          pricePerDayMediumTerm={pricePerDayMediumTerm}
+          pricePerMonthLongTerm={pricePerMonthLongTerm}
+          setPricePer={setPricePer}
           shortTermStay={shortTermStay}
           mediumTermStay={mediumTermStay}
           longTermStay={longTermStay}

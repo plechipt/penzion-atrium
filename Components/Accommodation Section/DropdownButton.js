@@ -23,6 +23,10 @@ const DropdownButton = ({
   setStayType,
   setTouristPrice,
   setStandardPrice,
+  pricePerDayShortTerm,
+  pricePerDayMediumTerm,
+  pricePerMonthLongTerm,
+  setPricePer,
   shortTermStay,
   mediumTermStay,
   longTermStay,
@@ -52,14 +56,17 @@ const DropdownButton = ({
 
     if (value == options[0]) {
       setStayType("short");
+      setPricePer(pricePerDayShortTerm);
       setPeopleOptions(shortTermPeople);
     }
     if (value == options[1]) {
       setStayType("medium");
+      setPricePer(pricePerDayMediumTerm);
       setPeopleOptions(mediumTermPeople);
     }
     if (value == options[2]) {
       setStayType("long");
+      setPricePer(pricePerMonthLongTerm);
       setPeopleOptions(longTermPeople);
     }
   };

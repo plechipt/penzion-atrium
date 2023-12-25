@@ -12,6 +12,9 @@ const CustomComponent = ({
   firstFloor,
   bedroom,
   moreBedroom,
+  pricePerDayShortTerm,
+  pricePerDayMediumTerm,
+  pricePerMonthLongTerm,
   shortTermStay,
   mediumTermStay,
   longTermStay,
@@ -21,6 +24,7 @@ const CustomComponent = ({
   const [standardPrice, setStandardPrice] = useState(600);
 
   const [stayType, setStayType] = useState("short");
+  const [pricePer, setPricePer] = useState(pricePerDayShortTerm);
   const [numberOfPeople, setNumberOfPeople] = useState(1);
   const [peopleOptions, setPeopleOptions] = useState([1, 2, 3, 4, 5, 6, 7, 8]);
 
@@ -58,6 +62,7 @@ const CustomComponent = ({
           <PriceOfRooms
             touristPrice={touristPrice}
             standardPrice={standardPrice}
+            pricePer={pricePer}
           />
 
           {/* Element 6: Dropdown */}
@@ -74,6 +79,10 @@ const CustomComponent = ({
             setStayType={setStayType}
             setTouristPrice={setTouristPrice}
             setStandardPrice={setStandardPrice}
+            pricePerDayShortTerm={pricePerDayShortTerm}
+            pricePerDayMediumTerm={pricePerDayMediumTerm}
+            pricePerMonthLongTerm={pricePerMonthLongTerm}
+            setPricePer={setPricePer}
             shortTermStay={shortTermStay}
             mediumTermStay={mediumTermStay}
             longTermStay={longTermStay}

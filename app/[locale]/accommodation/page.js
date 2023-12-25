@@ -18,6 +18,9 @@ export default function Page() {
           firstFloor={t("firstFloor")}
           bedroom={t("bedroom")}
           moreBedroom={t("moreBedroom")}
+          pricePerDayShortTerm={t("pricePerDayShortTerm")}
+          pricePerDayMediumTerm={t("pricePerDayMediumTerm")}
+          pricePerMonthLongTerm={t("pricePerMonthLongTerm")}
           shortTermStay={t("shortTermStay")}
           mediumTermStay={t("mediumTermStay")}
           longTermStay={t("longTermStay")}
@@ -30,6 +33,9 @@ export default function Page() {
           firstFloor={t("firstFloor")}
           bedroom={t("bedroom")}
           moreBedroom={t("moreBedroom")}
+          pricePerDayShortTerm={t("pricePerDayShortTerm")}
+          pricePerDayMediumTerm={t("pricePerDayMediumTerm")}
+          pricePerMonthLongTerm={t("pricePerMonthLongTerm")}
           shortTermStay={t("shortTermStay")}
           mediumTermStay={t("mediumTermStay")}
           longTermStay={t("longTermStay")}
