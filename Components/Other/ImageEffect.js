@@ -1,28 +1,27 @@
 import Image from "next/image";
-import React from "react";
 
-const ImageEffect = ({ img1, img2 }) => {
+const ImageEffect = ({ img, icon, divClass, imgClass, iconClass }) => {
   return (
-    <div className="relative w-full h-full">
+    <div className={divClass}>
       <Image
         width="0"
         height="0"
         sizes="100vw"
-        src={img1}
+        src={img}
         alt="Background"
-        className=" w-full  h-auto"
+        className={imgClass}
       />
 
       {/* Icon at Bottom Left Corner */}
       <div className="absolute bottom-2 right-2 ">
-        <a href={img1} target="_blank">
+        <a href={img} target="_blank">
           <Image
             width="0"
             height="0"
             sizes="100vw"
-            src={img2}
+            src={icon}
             alt="Icon"
-            className="w-12 h-110"
+            className={iconClass}
           />
         </a>
       </div>

@@ -3,11 +3,11 @@ import { useState } from "react";
 import { useTranslations } from "next-intl";
 
 import imgAPI from "@/public/images/ImageApi";
-import ImageEffect from "@/Components/Other/ImageEffect";
 
 import PriceOfRooms from "./PriceOfRooms";
 import NumberOfPeople from "../NumberOfPeople";
 import DropdownButton from "../DropdownButton";
+import ImageEffect from "@/Components/Other/ImageEffect";
 
 const ResponsiveFloor = () => {
   const t = useTranslations("Accommodation");
@@ -36,12 +36,12 @@ const ResponsiveFloor = () => {
           {/* Element 1 */}
           <NumberOfPeople
             type="mobile"
-            containerClass={"flex flex-col"}
-            pClass={"md:text-2xl text-base font-bold text-indigo-900"}
-            divClass={"flex items-center mt-1"}
             numberOfPeople={numberOfPeople}
             setNumberOfPeople={setNumberOfPeople}
             peopleOptions={peopleOptions}
+            containerClass={"flex flex-col"}
+            pClass={"md:text-2xl text-base font-bold text-indigo-900"}
+            divClass={"flex items-center mt-1"}
           />
 
           {/* Element 2 */}
@@ -54,16 +54,15 @@ const ResponsiveFloor = () => {
 
         {/* Element 3 */}
         <ImageEffect
-          img1={imgAPI.accom_img[numberOfPeople]}
-          img2={imgAPI.accom_vectors[9]}
+          img={imgAPI.accom_img[numberOfPeople]}
+          icon={imgAPI.accom_vectors[9]}
+          divClass={"relative w-full h-full"}
+          imgClass={"w-full  h-auto"}
+          iconClass={"w-12 h-110"}
         />
 
         {/* Element 5 */}
         <DropdownButton
-          buttonClass={
-            "bg-primary-gradient text-base py-3 px-4 gap-2.5 flex items-center justify-center font-bold w-full"
-          }
-          divClass={"flex flex-col gap-2 mt-4 w-full"}
           setNumberOfPeople={setNumberOfPeople}
           numberOfPeople={numberOfPeople}
           peopleOptions={peopleOptions}
@@ -73,6 +72,10 @@ const ResponsiveFloor = () => {
           setTouristPrice={setTouristPrice}
           setStandardPrice={setStandardPrice}
           setPricePer={setPricePer}
+          divClass={"flex flex-col gap-2 mt-4 w-full"}
+          buttonClass={
+            "bg-primary-gradient text-base py-3 px-4 gap-2.5 flex items-center justify-center font-bold w-full"
+          }
         />
       </div>
     </div>
