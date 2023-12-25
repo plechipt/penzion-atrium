@@ -1,9 +1,7 @@
-// components/SurroundingElement.js
 "use client";
 
-import Link from "next/link";
-import Image from "next/image";
 import { useRouter } from "@/navigation";
+import ImageEffect from "@/Components/Other/ImageEffect";
 
 const SurroundingElement = ({
   reverse,
@@ -22,18 +20,14 @@ const SurroundingElement = ({
     <div
       className={` flex ${flexDirectionClass} gap-4 lg:gap-12 items-center justify-between py-6 lg:py-4`}
     >
-      {/* Left Part with Image */}
-
-      <Image
-        onClick={() => router.push(link)}
-        width={573}
-        height={310}
-        className="w-full lg:w-1/2 max-h-[310px] object-cover rounded-lg cursor-pointer"
-        src={large_img}
-        alt={heading}
+      <ImageEffect
+        img={large_img}
+        imgAlt={heading}
+        divClass={"relative w-full lg:max-w-[660px] lg:h-[310px]"}
+        imgClass={"w-full h-full object-cover rounded-[10px]"}
+        iconClass={"w-12 h-12"}
       />
 
-      {/* Right Part with Heading and Text */}
       <div className="w-full lg:w-1/2">
         <h2 className="text-2xl font-bold mb-2 text-center md:text-start">
           {heading}
