@@ -3,7 +3,6 @@ import { useTranslations } from "next-intl";
 
 const SurrondingsData = () => {
   const t = useTranslations("Surroundings");
-
   const title = t("title");
 
   const surrondings = [

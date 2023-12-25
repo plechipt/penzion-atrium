@@ -31,7 +31,7 @@ const ResponsiveFloor = () => {
         <p className="mt-1 text-gray-500 text-center">{t("firstFloor")}</p>
       </div>
 
-      <div className="flex-col items-center bg-floor  rounded">
+      <div className="mt-10 flex-col items-center bg-floor rounded">
         <div className="flex justify-between mb-4">
           {/* Element 1 */}
           <NumberOfPeople

@@ -2,6 +2,8 @@
 import { useState } from "react";
 import { useTranslations } from "next-intl";
 
+import { default as imgAPI } from "@/public/images/ImageApi";
+
 import RoomImage from "./RoomImage";
 import PriceOfRooms from "./PriceOfRooms";
 import NumberOfPeople from "../NumberOfPeople";
@@ -32,7 +34,10 @@ const CustomComponent = () => {
 
         <div className="flex items-center w-full justify-between bg-floor p-6 rounded">
           {/* Element 1: Image */}
-          <RoomImage numberOfPeople={numberOfPeople} />
+          <RoomImage
+            roomImage={imgAPI.accom_img[numberOfPeople]}
+            roomIcon={imgAPI.accom_vectors[9]}
+          />
 
           {/* Element 2: Text with Icon */}
           <NumberOfPeople
