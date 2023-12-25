@@ -13,7 +13,7 @@ const Meals = () => {
         divClass={"relative w-full lg:max-w-[440px] h-72 lg:h-[437px]"}
         imgClass={"w-full h-full object-cover rounded-[10px]"}
         iconClass={"w-12 h-12"}
-        iconCorner={"2"}
+        iconDivClass={"absolute bottom-2 right-2"}
       />
 
       {/* Right Part with Meal Details */}

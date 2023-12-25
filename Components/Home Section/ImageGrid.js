@@ -14,7 +14,7 @@ const ImageGrid = () => {
           divClass={"relative w-full h-full"}
           imgClass={"w-full h-50 rounded"}
           iconClass={"w-10 h-10"}
-          iconCorner={"7"}
+          iconDivClass={"absolute bottom-7 right-7"}
         />
       ))}
     </div>

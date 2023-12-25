@@ -59,7 +59,7 @@ const ResponsiveFloor = () => {
           divClass={"relative w-full h-full"}
           imgClass={"w-full  h-auto"}
           iconClass={"w-12 h-110"}
-          iconCorner={"2"}
+          iconDivClass={"absolute bottom-2 right-2"}
         />
 
         {/* Element 5 */}

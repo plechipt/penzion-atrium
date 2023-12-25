@@ -7,7 +7,7 @@ const ImageEffect = ({
   divClass,
   imgClass,
   iconClass,
-  iconCorner,
+  iconDivClass,
 }) => {
   return (
     <div className={divClass}>
@@ -21,7 +21,7 @@ const ImageEffect = ({
       />
 
       {/* Icon at Bottom Left Corner */}
-      <div className={`absolute bottom-${iconCorner} right-${iconCorner} `}>
+      <div className={iconDivClass}>
         <a href={img} target="_blank">
           <Image
             width="0"
