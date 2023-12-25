@@ -9,7 +9,7 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from "@/Components/ui/popover";
-import { cn } from "@/lib/utils";
+import { cn } from "@/utils/cn";
 import { Label } from "@/Components/ui/label";
 import { Button } from "@/Components/ui/button";
 import { Calendar } from "@/Components/ui/calendar";
