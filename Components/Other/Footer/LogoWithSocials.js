@@ -7,7 +7,7 @@ const LogoWithSocials = () => {
   return (
     <div className="lg:space-y-6">
       <div className="flex flex-col items-center gap-2">
-        <FooterIcon className="w-80 h-24 lg:w-40 lg:h-20 mb-10" />
+        <FooterIcon className="w-80 h-24 lg:w-40 lg:h-20 mb-10 lg:mb-0" />
       </div>
 
       <div className="lg:flex hidden items-center gap-3">
