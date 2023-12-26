@@ -13,8 +13,10 @@ const ImageGrid = () => {
           imgAlt={item.alt}
           divClass={"relative w-full h-full"}
           imgClass={"w-full h-50 rounded"}
-          iconClass={"w-10 h-10"}
-          iconDivClass={"absolute bottom-7 right-7"}
+          iconClass={"w-7 h-7 sm:w-10 sm:h-10"}
+          iconDivClass={
+            "absolute bottom-4 right-4 sm:bottom-9 sm:right-9 md:bottom-8 md:right-8 lg:bottom-7 lg:right-7"
+          }
         />
       ))}
     </div>

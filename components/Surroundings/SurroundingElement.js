@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useRouter } from "@/navigation";
 import ImageEffect from "@/components/Other/ImageEffect";
 
@@ -15,6 +16,8 @@ const SurroundingElement = ({
   const flexDirectionClass = reverse
     ? "flex-col lg:flex-row-reverse"
     : " lg:flex-row flex-col";
+
+  console.log(link);
 
   return (
     <div
