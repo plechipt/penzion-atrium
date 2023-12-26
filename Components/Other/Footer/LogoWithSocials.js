@@ -1,12 +1,13 @@
 import Link from "next/link";
 import { FooterLogoIcon } from "@/public/vectors/getIcons";
 import { FaFacebookF, FaInstagram } from "react-icons/fa6";
+import { FooterIcon } from "@/public/vectors/getIcons";
 
 const LogoWithSocials = () => {
   return (
     <div className="lg:space-y-6">
       <div className="flex flex-col items-center gap-2">
-        <FooterLogoIcon className="w-[214px] h-[168px] lg:w-[168px] lg:h-[76px]" />
+        <FooterIcon className="w-80 h-24 lg:w-40 lg:h-20 mb-10" />
       </div>
 
       <div className="lg:flex hidden items-center gap-3">

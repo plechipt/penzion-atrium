@@ -1,6 +1,10 @@
 export { default as BookNowIcon } from "@/public/vectors/svg/book_now.svg";
 export { default as MainLogoIcon } from "@/public/vectors/svg/main_logo.svg";
 
+// General
+export { default as MainIcon } from "@/public/vectors/svg/navbar_logo.svg";
+export { default as FooterIcon } from "@/public/vectors/svg/footer_logo2.svg";
+
 // Our Amenities
 export { default as FreeWifiIcon } from "@/public/vectors/svg/free_wifi.svg";
 export { default as GardenWithPlaygroundIcon } from "@/public/vectors/svg/garden_with_playground.svg";
