@@ -1,6 +1,6 @@
 import { Link } from "@/navigation";
 import { BookNowIcon } from "@/public/vectors/getIcons";
-import { Button } from "@/components/ui/button.jsx";
+import { Button } from "@/components/UI/button.jsx";
 
 const BookNow = ({ buttonClassName, bookNow, closeMenu }) => {
   return (

@@ -4,7 +4,7 @@ import { Link } from "@/navigation";
 
 import { useTranslations } from "next-intl";
 
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/UI/button";
 import Dropdown from "@/components/Other/Dropdown";
 
 import { BookNowIcon } from "@/public/vectors/getIcons";

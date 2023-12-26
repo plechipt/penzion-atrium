@@ -8,11 +8,11 @@ import {
   Popover,
   PopoverContent,
   PopoverTrigger,
-} from "@/components/ui/popover";
+} from "@/components/UI/popover";
 import { cn } from "@/utils/cn";
-import { Label } from "@/components/ui/label";
-import { Button } from "@/components/ui/button";
-import { Calendar } from "@/components/ui/calendar";
+import { Label } from "@/components/UI/label";
+import { Button } from "@/components/UI/button";
+import { Calendar } from "@/components/UI/calendar";
 
 export function DatePicker({ date, setDate, label, placeholder }) {
   return (

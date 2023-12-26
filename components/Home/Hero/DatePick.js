@@ -4,7 +4,7 @@ import { Link } from "@/navigation";
 
 import { BookNowIcon } from "@/public/vectors/getIcons";
 
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/UI/button";
 import { DatePicker } from "@/components/Other/DatePicker";
 
 const DatePick = ({

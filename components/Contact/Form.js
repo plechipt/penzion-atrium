@@ -1,7 +1,7 @@
 import { useTranslations } from "next-intl";
 
-import { Label } from "@/components/ui/label";
-import { Button } from "@/components/ui/button";
+import { Label } from "@/components/UI/label";
+import { Button } from "@/components/UI/button";
 
 const ContactForm = () => {
   const t = useTranslations("Contact");
