@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { default as imgAPI } from "@/public/images/ImageApi";
+import { ImageIcon } from "@/public/images/getImages";
 
 const ImageEffect = ({
   img,
@@ -27,7 +27,7 @@ const ImageEffect = ({
             width="0"
             height="0"
             sizes="100vw"
-            src={imgAPI.accom_vectors[9]}
+            src={ImageIcon}
             alt="Icon"
             className={iconClass}
           />

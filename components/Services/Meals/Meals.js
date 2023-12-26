@@ -1,7 +1,7 @@
 import MealsText from "./MealsText";
 import ImageEffect from "@/components/Other/ImageEffect";
 
-import imgAPI from "@/public/images/ImageApi";
+import { MeetingRoomImage } from "@/public/images/getImages";
 
 const Meals = () => {
   return (

@@ -1,17 +1,14 @@
 import Image from "next/image";
 
-import {
-  CzechRIcon,
-  USFlagIcon,
-  USFlag,
-  CzechFlag,
-} from "@/public/vectors/getIcons";
+import { USFlag, CzechFlag } from "@/public/vectors/getIcons";
 
 const NavbarData = () => {
+  /*
   const languagesMobile = [
     { code: "cs", name: "CZ", flag: <CzechRIcon className="w-6" /> },
     { code: "en", name: "EN", flag: <USFlagIcon className="w-6" /> },
   ];
+  */
 
   const languagesDesktop = [
     {
@@ -34,7 +31,7 @@ const NavbarData = () => {
     },
   ];
 
-  return { languagesDesktop, languagesMobile };
+  return { languagesDesktop };
 };
 
 export default NavbarData;

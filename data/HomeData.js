@@ -8,6 +8,12 @@ import {
   TVIcon,
   WheelchairIcon,
 } from "@/public/vectors/getIcons";
+import {
+  HomeImage1,
+  HomeImage2,
+  HomeImage3,
+  HomeImage4,
+} from "@/public/images/getImages";
 import { useTranslations } from "next-intl";
 
 const HomeData = () => {
@@ -47,19 +53,19 @@ const HomeData = () => {
 
   const images = [
     {
-      image: "/images/gallery/1-home.png",
+      image: HomeImage1,
       alt: "4 Room Image",
     },
     {
-      image: "/images/gallery/2-home.png",
+      image: HomeImage2,
       alt: "Terrace Image",
     },
     {
-      image: "/images/gallery/3-home.png",
+      image: HomeImage3,
       alt: "Reception Image",
     },
     {
-      image: "/images/gallery/4-home.png",
+      image: HomeImage4,
       alt: "2 Room Image",
     },
   ];

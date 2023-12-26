@@ -58,7 +58,7 @@ export { default as UserIcon } from "@/public/vectors/svg/user.svg";
 export { default as UserIcon2 } from "@/public/vectors/svg/user2.svg";
 
 // Flags
-export { default as USFlagIcon } from "@/public/vectors/svg/united-states-flag-icon.svg";
-export { default as CzechRIcon } from "@/public/vectors/svg/czech-republic-flag-icon.svg";
-export { default as USFlag } from "@/public/images/vectors/united-states-flag-icon.png";
-export { default as CzechFlag } from "@/public/images/vectors/czech-republic-flag-icon.png";
+//export { default as USFlagIcon } from "@/public/vectors/svg/usa_flag.svg";
+//export { default as CzechRIcon } from "@/public/vectors/svg/czech_flag.svg";
+export { default as USFlag } from "@/public/images/vectors/usa_flag.png";
+export { default as CzechFlag } from "@/public/images/vectors/czech_flag.png";

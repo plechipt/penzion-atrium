@@ -6,6 +6,8 @@ import Img from "@/public/images/ImageApi";
 import Title from "./Title";
 import DatePick from "./DatePick";
 
+import { CardImage } from "@/public/images/getImages";
+
 const Hero = () => {
   const t = useTranslations("Home");
   return (
@@ -28,7 +30,7 @@ const Hero = () => {
           alt="City Image"
           width={570}
           height={564}
-          src={Img.home_vectors[3]}
+          src={CardImage}
           className="rounded h-full w-full "
         />
       </div>
