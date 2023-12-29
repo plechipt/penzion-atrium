@@ -2,6 +2,7 @@ import { useTranslations } from "next-intl";
 
 import { Label } from "@/components/UI/label";
 import { Button } from "@/components/UI/button";
+import FormInput from "./FormInput";
 
 const ContactForm = () => {
   const t = useTranslations("Contact");
@@ -15,31 +16,18 @@ const ContactForm = () => {
       </div>
 
       <form className="h-full flex flex-col justify-between" id="form">
-        <div className="mb-4">
-          <Label className="text-base font-medium pb-2" htmlFor="name">
-            {t("nameLabel")}
-          </Label>
-          <input
-            className="shadow appearance-none border bg-neutral-50 border-slate-200 rounded-lg w-full py-2.5 px-3.5  focus:outline-none focus:shadow-outline"
-            id="name"
-            required
-            type="text"
-            placeholder={t("namePlaceholder")}
-          />
-        </div>
-
-        <div className="mb-4">
-          <Label className="text-base font-medium pb-2" htmlFor="email">
-            {t("emailLabel")}
-          </Label>
-          <input
-            className="shadow appearance-none border bg-neutral-50 border-slate-200 rounded-lg w-full py-2.5 px-3.5  focus:outline-none focus:shadow-outline"
-            id="email"
-            type="email"
-            required
-            placeholder={t("emailPlaceholder")}
-          />
-        </div>
+        <FormInput
+          label={t("nameLabel")}
+          inputType={"name"}
+          type={"text"}
+          placeholder={t("namePlaceholder")}
+        />
+        <FormInput
+          label={t("emailLabel")}
+          inputType={"email"}
+          type={"email"}
+          placeholder={t("emailPlaceholder")}
+        />
 
         <div className="mb-6">
           <Label
