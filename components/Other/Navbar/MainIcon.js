@@ -1,7 +1,5 @@
-import Image from "next/image";
 import { Link } from "@/navigation";
 
-import images from "@/public/images/ImageApi.js";
 import { MainIcon as MainIconIC } from "@/public/vectors/getIcons";
 
 const MainIcon = ({ setIsMenuOpen }) => {
