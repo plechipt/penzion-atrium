@@ -12,7 +12,10 @@ const DesktopLinks = ({
       <Link className="text-base font-bold " href="/">
         {home}
       </Link>
-      <Link className="text-base font-bold " href="/accommodation">
+      <Link
+        className="text-base font-bold text-indigo-900"
+        href="/accommodation"
+      >
         {accommodation}
       </Link>
       <Link className="text-base font-bold " href="/services">

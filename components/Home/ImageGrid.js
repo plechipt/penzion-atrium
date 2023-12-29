@@ -9,7 +9,7 @@ const ImageGrid = () => {
       {images.map((item, index) => (
         <ImageEffect
           key={index}
-          img={item.image}
+          img={item.image.src}
           imgAlt={item.alt}
           divClass={"relative w-full h-full"}
           imgClass={"w-full h-50 rounded"}
