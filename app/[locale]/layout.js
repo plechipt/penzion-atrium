@@ -5,6 +5,7 @@ import { Analytics } from "@vercel/analytics/react";
 
 import { locales } from "@/navigation";
 
+import { Providers } from "./providers";
 import Navbar from "@/components/Other/Navbar/Navbar";
 import Footer from "@/components/Other/Footer/Footer";
 
@@ -26,10 +27,12 @@ export default function RootLayout({ children, params: { locale } }) {
   return (
     <html lang={locale}>
       <body className={urbanist.className}>
-        <Navbar />
-        {children}
-        <Footer />
-        <Analytics />
+        <Providers>
+          <Navbar />
+          {children}
+          <Footer />
+          <Analytics />
+        </Providers>
       </body>
     </html>
   );

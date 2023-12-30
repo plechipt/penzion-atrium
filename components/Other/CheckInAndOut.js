@@ -1,0 +1,41 @@
+"use client";
+import { useContext } from "react";
+import { DatePicker } from "@/components/Other/DatePicker";
+
+import { AppContext } from "@/app/[locale]/providers";
+
+const CheckInAndOut = ({
+  checkInTitle,
+  checkInPlaceholder,
+  checkOutTitle,
+  checkOutPlaceholder,
+}) => {
+  let { checkInDate, setCheckInDate, checkOutDate, setCheckOutDate } =
+    useContext(AppContext);
+
+  return (
+    <>
+      {/* Check-in section */}
+      <div className="mb-4 flex-1">
+        <DatePicker
+          label={checkInTitle}
+          placeholder={checkInPlaceholder}
+          date={checkInDate}
+          setDate={setCheckInDate}
+        />
+      </div>
+
+      {/* Check-out section */}
+      <div className="mb-4 flex-1">
+        <DatePicker
+          label={checkOutTitle}
+          placeholder={checkOutPlaceholder}
+          date={checkOutDate}
+          setDate={setCheckOutDate}
+        />
+      </div>
+    </>
+  );
+};
+
+export default CheckInAndOut;
