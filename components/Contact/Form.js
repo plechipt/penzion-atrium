@@ -1,10 +1,12 @@
 import { useTranslations } from "next-intl";
 
+import FormInput from "./FormInput";
 import { Label } from "@/components/UI/label";
 import { Button } from "@/components/UI/button";
-import FormInput from "./FormInput";
+import CheckInAndOut from "@/components/Other/CheckInAndOut";
 
 const ContactForm = () => {
+  const t2 = useTranslations("Home");
   const t = useTranslations("Contact");
 
   return (
@@ -29,7 +31,7 @@ const ContactForm = () => {
           placeholder={t("emailPlaceholder")}
         />
 
-        <div className="mb-6">
+        <div className="mb-4">
           <Label
             className="text-gray-700 text-base font-medium pb-2"
             htmlFor="message"
@@ -43,6 +45,15 @@ const ContactForm = () => {
             required
             placeholder={t("messagePlaceholder")}
           ></textarea>
+        </div>
+
+        <div className="mb-6">
+          <CheckInAndOut
+            checkInTitle={t2("checkInTitle")}
+            checkInPlaceholder={t2("checkInPlaceholder")}
+            checkOutTitle={t2("checkOutTitle")}
+            checkOutPlaceholder={t2("checkOutPlaceholder")}
+          />
         </div>
 
         <Button className="bg-primary-gradient text-base py-3 px-4 gap-2.5 flex items-center justify-center font-bold w-full">

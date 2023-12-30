@@ -25,6 +25,7 @@ export function DatePicker({ date, setDate, label, placeholder }) {
             </Label>
           )}
           <Button
+            type="button"
             variant={"outline"}
             className={cn(
               "w-full justify-between text-left font-normal border border-neutral-200 bg-neutral-100"
