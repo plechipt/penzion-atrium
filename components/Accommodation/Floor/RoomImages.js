@@ -4,62 +4,43 @@ import { useState } from "react";
 import AccommodationData from "@/data/AccommodationData";
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 
-const slides = [
-  {
-    url: "https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2620&q=80",
-  },
-  {
-    url: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80",
-  },
-  {
-    url: "https://images.unsplash.com/photo-1661961112951-f2bfd1f253ce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2672&q=80",
-  },
-
-  {
-    url: "https://images.unsplash.com/photo-1512756290469-ec264b7fbf87?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2253&q=80",
-  },
-  {
-    url: "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2671&q=80",
-  },
-];
-
 const RoomImages = ({ numberOfPeople }) => {
   const { rooms } = AccommodationData();
   const [currentIndex, setCurrentIndex] = useState(0);
 
+  const currentImages = rooms[numberOfPeople - 1];
+  const roomsImages = [
+    { src: currentImages["tourist"].src, label: "Tourist" },
+    { src: currentImages["standard"].src, label: "Standard" },
+  ];
+
   const prevSlide = () => {
     const isFirstSlide = currentIndex === 0;
-    const newIndex = isFirstSlide ? slides.length - 1 : currentIndex - 1;
+    const newIndex = isFirstSlide ? roomsImages.length - 1 : currentIndex - 1;
     setCurrentIndex(newIndex);
   };
 
   const nextSlide = () => {
-    const isLastSlide = currentIndex === slides.length - 1;
+    const isLastSlide = currentIndex === roomsImages.length - 1;
     const newIndex = isLastSlide ? 0 : currentIndex + 1;
     setCurrentIndex(newIndex);
   };
-
-  const currentImages = rooms[numberOfPeople - 1];
-  const roomsImages = [
-    { src: currentImages["tourist"].src },
-    { src: currentImages["standard"].src },
-    { src: currentImages["tourist"].src },
-    { src: currentImages["standard"].src },
-    { src: currentImages["tourist"].src },
-  ];
 
   return (
     <div className="max-w-[240px] h-[150px] w-full relative group">
       <div
         style={{ backgroundImage: `url(${roomsImages[currentIndex].src})` }}
-        className="w-full h-full rounded-2xl bg-center bg-cover duration-500"
+        className="w-full h-full rounded bg-center bg-cover duration-500"
       ></div>
+      <div className="absolute top-0 left-0 right-0 p-0 text-white text-center font-bold bg-black bg-opacity-50">
+        {roomsImages[currentIndex].label}
+      </div>
       {/* Left Arrow */}
-      <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-0 text-2xl rounded-full p-0 text-white cursor-pointer">
+      <div className="group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-0 text-2xl rounded-full p-0 text-white cursor-pointer">
         <BsChevronCompactLeft onClick={prevSlide} size={30} />
       </div>
       {/* Right Arrow */}
-      <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-0 text-2xl rounded-full p-0 text-white cursor-pointer">
+      <div className="group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-0 text-2xl rounded-full p-0 text-white cursor-pointer">
         <BsChevronCompactRight onClick={nextSlide} size={30} />
       </div>
     </div>
