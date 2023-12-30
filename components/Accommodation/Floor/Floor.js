@@ -5,7 +5,7 @@ import { useTranslations } from "next-intl";
 import PriceOfRooms from "./PriceOfRooms";
 import NumberOfPeople from "../NumberOfPeople";
 import DropdownButton from "../DropdownButton";
-import RoomImages from "./RoomImages";
+import RoomImages from "../RoomImages";
 
 const CustomComponent = () => {
   const t = useTranslations("Accommodation");
@@ -32,7 +32,10 @@ const CustomComponent = () => {
 
         <div className="flex items-center w-full justify-between bg-floor p-6 rounded">
           {/* Element 1: Image */}
-          <RoomImages numberOfPeople={numberOfPeople} />
+          <RoomImages
+            numberOfPeople={numberOfPeople}
+            divClass={"max-w-[240px] h-[150px] w-full relative group"}
+          />
 
           {/* Element 2: Text with Icon */}
           <NumberOfPeople

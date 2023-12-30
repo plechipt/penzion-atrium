@@ -1,10 +1,11 @@
 "use client";
 import { useState } from "react";
+import Image from "next/image";
 
 import AccommodationData from "@/data/AccommodationData";
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 
-const RoomImages = ({ numberOfPeople }) => {
+const RoomImages = ({ numberOfPeople, divClass }) => {
   const { rooms } = AccommodationData();
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -27,7 +28,15 @@ const RoomImages = ({ numberOfPeople }) => {
   };
 
   return (
-    <div className="max-w-[240px] h-[150px] w-full relative group">
+    <div className={divClass}>
+      <Image
+        src={roomsImages[currentIndex].src}
+        alt="ImageDescription"
+        width={"0"}
+        height={"0"}
+        sizes="100vw"
+      />
+
       <div
         style={{ backgroundImage: `url(${roomsImages[currentIndex].src})` }}
         className="w-full h-full rounded bg-center bg-cover duration-500"

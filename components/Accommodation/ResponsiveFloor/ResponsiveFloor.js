@@ -8,6 +8,7 @@ import PriceOfRooms from "./PriceOfRooms";
 import NumberOfPeople from "../NumberOfPeople";
 import DropdownButton from "../DropdownButton";
 import ImageEffect from "@/components/Other/ImageEffect";
+import RoomImages from "../RoomImages";
 
 const ResponsiveFloor = () => {
   const t = useTranslations("Accommodation");
@@ -53,13 +54,11 @@ const ResponsiveFloor = () => {
         </div>
 
         {/* Element 3 */}
-        <ImageEffect
-          img={imgAPI.accom_img[numberOfPeople]}
-          imgAlt={`${numberOfPeople} Room Image`}
-          divClass={"relative w-full h-full"}
-          imgClass={"w-full  h-auto"}
-          iconClass={"w-12 h-110"}
-          iconDivClass={"absolute bottom-2 right-2"}
+        <RoomImages
+          numberOfPeople={numberOfPeople}
+          divClass={
+            "w-[w-full] h-[300px] min-[500px]:h-[400px] sm:h-[500px] md:h-[600px] w-full h-full relative group"
+          }
         />
 
         {/* Element 5 */}
