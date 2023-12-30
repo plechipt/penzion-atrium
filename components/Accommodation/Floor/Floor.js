@@ -2,12 +2,10 @@
 import { useState } from "react";
 import { useTranslations } from "next-intl";
 
-import { default as imgAPI } from "@/public/images/ImageApi";
-
 import PriceOfRooms from "./PriceOfRooms";
 import NumberOfPeople from "../NumberOfPeople";
 import DropdownButton from "../DropdownButton";
-import ImageEffect from "@/components/Other/ImageEffect";
+import RoomImages from "./RoomImages";
 
 const CustomComponent = () => {
   const t = useTranslations("Accommodation");
@@ -34,14 +32,7 @@ const CustomComponent = () => {
 
         <div className="flex items-center w-full justify-between bg-floor p-6 rounded">
           {/* Element 1: Image */}
-          <ImageEffect
-            img={imgAPI.accom_img[numberOfPeople]}
-            imgAlt={`${numberOfPeople} Room Image`}
-            divClass={"relative w-60 h-3/4"}
-            imgClass={"w-full max-w-[240px] h-[150px]"}
-            iconClass={"w-9 h-9"}
-            iconDivClass={"absolute bottom-2 right-2"}
-          />
+          <RoomImages numberOfPeople={numberOfPeople} />
 
           {/* Element 2: Text with Icon */}
           <NumberOfPeople
