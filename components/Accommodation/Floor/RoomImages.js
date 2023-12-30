@@ -1,9 +1,7 @@
 "use client";
 import { useState } from "react";
 
-import ImageEffect from "@/components/Other/ImageEffect";
-import { default as imgAPI } from "@/public/images/ImageApi";
-
+import AccommodationData from "@/data/AccommodationData";
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 
 const slides = [
@@ -26,6 +24,7 @@ const slides = [
 ];
 
 const RoomImages = ({ numberOfPeople }) => {
+  const { rooms } = AccommodationData();
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const prevSlide = () => {
@@ -40,10 +39,19 @@ const RoomImages = ({ numberOfPeople }) => {
     setCurrentIndex(newIndex);
   };
 
+  const currentImages = rooms[numberOfPeople - 1];
+  const roomsImages = [
+    { src: currentImages["tourist"].src },
+    { src: currentImages["standard"].src },
+    { src: currentImages["tourist"].src },
+    { src: currentImages["standard"].src },
+    { src: currentImages["tourist"].src },
+  ];
+
   return (
     <div className="max-w-[240px] h-[150px] w-full relative group">
       <div
-        style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
+        style={{ backgroundImage: `url(${roomsImages[currentIndex].src})` }}
         className="w-full h-full rounded-2xl bg-center bg-cover duration-500"
       ></div>
       {/* Left Arrow */}
