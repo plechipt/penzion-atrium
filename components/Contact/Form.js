@@ -31,7 +31,7 @@ const ContactForm = () => {
           placeholder={t("emailPlaceholder")}
         />
 
-        <div className="mb-4">
+        <div className="mb-2">
           <Label
             className="text-gray-700 text-base font-medium pb-2"
             htmlFor="message"

@@ -14,7 +14,7 @@ const CheckInAndOut = ({
     useContext(AppContext);
 
   return (
-    <div className="flex flex-col sm:flex-row gap-4">
+    <div className="flex flex-col sm:flex-row gap-0 sm:gap-4">
       {/* Check-in section */}
       <div className="mb-4 flex-1">
         <DatePicker

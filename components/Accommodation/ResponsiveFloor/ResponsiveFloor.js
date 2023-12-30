@@ -57,7 +57,7 @@ const ResponsiveFloor = () => {
         <RoomImages
           numberOfPeople={numberOfPeople}
           divClass={
-            "w-[w-full] h-[300px] min-[500px]:h-[400px] sm:h-[500px] md:h-[600px] w-full h-full relative group"
+            "h-[300px] min-[500px]:h-[400px] sm:h-[500px] md:h-[600px] relative group"
           }
         />
 

@@ -27,7 +27,7 @@ const ContactUs = () => {
         <div className="flex-1 w-full lg:w-1/2 lg:p-4 px-4">
           <Form />
 
-          <div className="mt-20 lg:grid grid-cols-2 w-full hidden">
+          <div className="mt-8 lg:grid grid-cols-2 w-full hidden">
             <LeftSide />
             <RightSide />
           </div>
