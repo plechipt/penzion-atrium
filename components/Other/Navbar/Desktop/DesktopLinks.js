@@ -1,4 +1,6 @@
+"use client";
 import { Link } from "@/navigation";
+import { usePathname } from "@/navigation";
 
 const DesktopLinks = ({
   home,
@@ -7,24 +9,57 @@ const DesktopLinks = ({
   surroundings,
   contact,
 }) => {
+  const pathname = usePathname();
+
+  const notActiveLinkClass = "text-base font-bold";
+  const activeLinkClass = "text-base font-bold text-indigo-900";
+
   return (
     <nav className="hidden lg:flex gap-6">
-      <Link className="text-base font-bold " href="/">
+      <Link
+        className={pathname === "/" ? activeLinkClass : notActiveLinkClass}
+        href="/"
+      >
         {home}
       </Link>
       <Link
-        className="text-base font-bold text-indigo-900"
+        className={
+          pathname === "/accommodation" || pathname === "/ubytovani"
+            ? activeLinkClass
+            : notActiveLinkClass
+        }
         href="/accommodation"
       >
         {accommodation}
       </Link>
-      <Link className="text-base font-bold " href="/services">
+      <Link
+        className={
+          pathname === "/services" || pathname === "/sluzby"
+            ? activeLinkClass
+            : notActiveLinkClass
+        }
+        href="/services"
+      >
         {services}
       </Link>
-      <Link className="text-base font-bold " href="/surroundings">
+      <Link
+        className={
+          pathname === "/surroundings" || pathname === "/okoli"
+            ? activeLinkClass
+            : notActiveLinkClass
+        }
+        href="/surroundings"
+      >
         {surroundings}
       </Link>
-      <Link className="text-base font-bold " href="/contact">
+      <Link
+        className={
+          pathname === "/contact" || pathname === "/kontakt"
+            ? activeLinkClass
+            : notActiveLinkClass
+        }
+        href="/contact"
+      >
         {contact}
       </Link>
     </nav>
