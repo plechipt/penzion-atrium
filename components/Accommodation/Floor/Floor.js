@@ -6,6 +6,7 @@ import PriceOfRooms from "./PriceOfRooms";
 import NumberOfPeople from "../NumberOfPeople";
 import DropdownButton from "../DropdownButton";
 import RoomImages from "../RoomImages";
+import AmountOfDays from "../AmountOfDays";
 
 const CustomComponent = () => {
   const t = useTranslations("Accommodation");
@@ -14,8 +15,11 @@ const CustomComponent = () => {
   const [standardPrice, setStandardPrice] = useState(600);
 
   const [stayType, setStayType] = useState("short");
-  const [numberOfPeople, setNumberOfPeople] = useState(1);
+  const [numberOfDays, setNumberOfDays] = useState("1-2");
+  const [daysOptions, setDaysOptions] = useState(["1-2", "3"]); // 3 and more days
   const [pricePer, setPricePer] = useState(t("pricePerDayShortTerm"));
+
+  const [numberOfPeople, setNumberOfPeople] = useState(1);
   const [peopleOptions, setPeopleOptions] = useState([1, 2, 3, 4, 5, 6, 7, 8]);
 
   return (
@@ -32,9 +36,22 @@ const CustomComponent = () => {
 
         <div className="flex items-center w-full justify-between bg-floor p-6 rounded">
           {/* Element 1: Image */}
-          <RoomImages
-            numberOfPeople={numberOfPeople}
-            divClass={"max-w-[240px] h-[150px] w-full relative group"}
+          {false === true ? (
+            <RoomImages
+              style={{ display: "none" }}
+              numberOfPeople={numberOfPeople}
+              divClass={"hidden max-w-[240px] h-[150px] w-full relative group"}
+            />
+          ) : null}
+
+          <AmountOfDays
+            type="desktop"
+            numberOfDays={numberOfDays}
+            setNumberOfDays={setNumberOfDays}
+            daysOptions={daysOptions}
+            containerClass={"flex flex-col gap-4"}
+            pClass={"text-2xl font-bold text-indigo-900"}
+            divClass={"flex items-center gap-1"}
           />
 
           {/* Element 2: Text with Icon */}
@@ -53,6 +70,7 @@ const CustomComponent = () => {
 
           {/* Element 4 and 5: Text and Subtext */}
           <PriceOfRooms
+            stayType={stayType}
             touristPrice={touristPrice}
             standardPrice={standardPrice}
             pricePer={pricePer}
@@ -69,6 +87,8 @@ const CustomComponent = () => {
             setTouristPrice={setTouristPrice}
             setStandardPrice={setStandardPrice}
             setPricePer={setPricePer}
+            numberOfDays={numberOfDays}
+            setNumberOfDays={setNumberOfDays}
             divClass={"flex flex-col gap-y-4 items-center"}
             buttonClass={
               "bg-primary-gradient text-base py-3 px-4 gap-2.5 hidden lg:flex items-center justify-center font-bold w-full"

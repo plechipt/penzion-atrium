@@ -60,9 +60,11 @@
     "pricePerMonthLongTerm": "Price per month (1 or more months)",
     "pricePerDay": "Price per day",
     "pricePerMonth": "Price per month",
+    "pricePerPerson": "Price per person/day",
     "shortTermStay": "Short-term stay",
     "mediumTermStay": "Medium-term stay",
-    "longTermStay": "Long-term stay",
+    "longTermStay": "Group stay",
+    "groupStay": "Skupinový pobyt",
     "bookNow": "Book Now",
 
     "informationNoticeTitle": "Information Notice",

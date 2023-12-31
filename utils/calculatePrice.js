@@ -1,9 +1,34 @@
 import { prices } from "./prices";
 
-export const calculatePrice = (stayType, numberOfPeople, roomCategory) => {
+export const calculatePrice = (
+  stayType,
+  numberOfPeople,
+  roomCategory,
+  numberOfDays
+) => {
   // Validate input parameters
   if (!(stayType in prices) || !(roomCategory in prices[stayType])) {
     console.log("Invalid stay type or room category");
+  }
+
+  const daysIndex = numberOfDays === "1-2" ? 0 : 1;
+
+  if (stayType === "group") {
+    let groupPrice;
+
+    if (numberOfPeople === "10-19") {
+      groupPrice = prices.group.TOURIST[numberOfPeople][daysIndex];
+    } else if (numberOfPeople === "20-29") {
+      groupPrice = prices.group.TOURIST[numberOfPeople][daysIndex];
+    } else if (numberOfPeople === "30+") {
+      groupPrice = prices.group.TOURIST[numberOfPeople][daysIndex];
+    } else {
+      throw new Error("Invalid number of people for group stay");
+    }
+
+    console.log(groupPrice);
+
+    return groupPrice;
   }
 
   const priceMatrix = prices[stayType][roomCategory];

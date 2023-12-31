@@ -13,6 +13,7 @@ import { calculatePrice } from "@/utils/calculatePrice";
 const shortTermPeople = [1, 2, 3, 4, 5, 6, 7, 8];
 const mediumTermPeople = [1, 2, 3, 4];
 const longTermPeople = [1, 2, 3];
+const groupPeople = ["10-19", "20-29", "30+"];
 
 const DropdownButton = ({
   divClass,
@@ -21,6 +22,8 @@ const DropdownButton = ({
   setNumberOfPeople,
   peopleOptions,
   setPeopleOptions,
+  numberOfDays,
+  setNumberOfDays,
   stayType,
   setStayType,
   setTouristPrice,
@@ -29,13 +32,22 @@ const DropdownButton = ({
 }) => {
   const t = useTranslations("Accommodation");
   const [dropdownValue, setDropdownValue] = useState(t("shortTermStay"));
-  const options = [t("shortTermStay"), t("mediumTermStay"), t("longTermStay")];
+  const options = [
+    t("shortTermStay"),
+    t("mediumTermStay"),
+    t("longTermStay"),
+    t("groupStay"),
+  ];
 
   useEffect(() => {
     // Calculate the final price
     if (stayType !== undefined && numberOfPeople !== undefined) {
-      setTouristPrice(calculatePrice(stayType, numberOfPeople, "TOURIST"));
-      setStandardPrice(calculatePrice(stayType, numberOfPeople, "STANDARD"));
+      setTouristPrice(
+        calculatePrice(stayType, numberOfPeople, "TOURIST", numberOfDays)
+      );
+      setStandardPrice(
+        calculatePrice(stayType, numberOfPeople, "STANDARD", numberOfDays)
+      );
     }
   }, [
     peopleOptions,
@@ -44,26 +56,36 @@ const DropdownButton = ({
     setStayType,
     setTouristPrice,
     setStandardPrice,
+    numberOfDays,
   ]);
 
   const onInputClick = (value) => {
     setDropdownValue(value);
-    setNumberOfPeople(1);
 
     if (value == options[0]) {
+      setNumberOfPeople(1);
       setStayType("short");
       setPricePer(t("pricePerDayShortTerm"));
       setPeopleOptions(shortTermPeople);
     }
     if (value == options[1]) {
+      setNumberOfPeople(1);
       setStayType("medium");
       setPricePer(t("pricePerDayMediumTerm"));
       setPeopleOptions(mediumTermPeople);
     }
     if (value == options[2]) {
+      setNumberOfPeople(1);
       setStayType("long");
       setPricePer(t("pricePerMonthLongTerm"));
       setPeopleOptions(longTermPeople);
+    }
+    if (value == options[3]) {
+      setNumberOfDays("1-2");
+      setNumberOfPeople("10-19");
+      setStayType("group");
+      setPricePer(t("pricePerPerson"));
+      setPeopleOptions(groupPeople);
     }
   };
 

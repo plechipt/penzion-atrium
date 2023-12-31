@@ -60,9 +60,11 @@
     "pricePerMonthLongTerm": "Cena za měsíc (1 a více měsíců)",
     "pricePerDay": "Cena za den",
     "pricePerMonth": "Cena za měsíc",
+    "pricePerPerson": "Cena za osobu/den",
     "shortTermStay": "Krátkodobý pobyt",
     "mediumTermStay": "Střednědobý pobyt",
     "longTermStay": "Dlouhodobý pobyt",
+    "groupStay": "Skupinový pobyt",
     "bookNow": "Rezervovat",
 
     "informationNoticeTitle": "Oznámení",
