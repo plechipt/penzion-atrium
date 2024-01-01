@@ -5,7 +5,6 @@ import { UserIcon, UserIcon2 } from "@/public/vectors/getIcons";
 import { Calendar as CalendarIcon } from "lucide-react";
 
 const AmountOfDays = ({
-  type,
   containerClass,
   pClass,
   divClass,

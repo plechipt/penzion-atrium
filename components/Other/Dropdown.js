@@ -27,7 +27,7 @@ const Dropdown = ({ value, onChange, options }) => {
             <div
               key={index}
               onClick={() => handleSelect(option)}
-              className="cursor-pointer z-10 px-2 py-2 hover:bg-gray-200"
+              className="cursor-pointer text-sm z-10 px-2 py-2 hover:bg-gray-200"
             >
               {option}
             </div>

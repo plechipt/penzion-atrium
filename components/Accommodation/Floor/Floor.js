@@ -38,7 +38,6 @@ const CustomComponent = () => {
           {/* If stay type is group disable the image and show amount of days input */}
           {stayType === "group" ? (
             <AmountOfDays
-              type="desktop"
               numberOfDays={numberOfDays}
               setNumberOfDays={setNumberOfDays}
               daysOptions={daysOptions}
