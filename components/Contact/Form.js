@@ -32,10 +32,7 @@ const ContactForm = () => {
         />
 
         <div className="mb-2">
-          <Label
-            className="text-gray-700 text-base font-medium pb-2"
-            htmlFor="message"
-          >
+          <Label className="text-base font-bold pb-2" htmlFor="message">
             {t("messageLabel")}
           </Label>
           <textarea
@@ -47,7 +44,7 @@ const ContactForm = () => {
           ></textarea>
         </div>
 
-        <div className="mb-6">
+        <div className="mb-2">
           <CheckInAndOut
             checkInTitle={t2("checkInTitle")}
             checkInPlaceholder={t2("checkInPlaceholder")}

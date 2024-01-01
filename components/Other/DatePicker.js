@@ -19,11 +19,7 @@ export function DatePicker({ date, setDate, label, placeholder }) {
     <Popover>
       <PopoverTrigger asChild>
         <div>
-          {label && (
-            <Label className="text-neutral-700 text-sm font-bold">
-              {label}
-            </Label>
-          )}
+          {label && <Label className="text-sm font-bold">{label}</Label>}
           <Button
             type="button"
             variant={"outline"}
