@@ -12,6 +12,7 @@ const NumberOfPeople = ({
   numberOfPeople,
   setNumberOfPeople,
   peopleOptions,
+  setNumberOfDays,
 }) => {
   const locale = useLocale();
   const t = useTranslations("Accommodation");
@@ -24,6 +25,11 @@ const NumberOfPeople = ({
       locale === "en" && numberOfPeople > 1 ? t("moreBedroom") : t("bedroom");
   }
 
+  const handleOnChange = (value) => {
+    setNumberOfDays("1-2");
+    setNumberOfPeople(value);
+  };
+
   return (
     <div className={containerClass}>
       <p className={pClass}>
@@ -34,7 +40,7 @@ const NumberOfPeople = ({
         <Dropdown
           options={peopleOptions}
           value={numberOfPeople}
-          onChange={(value) => setNumberOfPeople(value)}
+          onChange={(value) => handleOnChange(value)}
         />
         {type === "desktop" ? (
           <UserIcon className="w-5 h-5" />

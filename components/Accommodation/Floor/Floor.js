@@ -35,24 +35,23 @@ const CustomComponent = () => {
         </div>
 
         <div className="flex items-center w-full justify-between bg-floor p-6 rounded">
-          {/* Element 1: Image */}
-          {false === true ? (
-            <RoomImages
-              style={{ display: "none" }}
-              numberOfPeople={numberOfPeople}
-              divClass={"hidden max-w-[240px] h-[150px] w-full relative group"}
+          {/* If stay type is group disable the image and show amount of days input */}
+          {stayType === "group" ? (
+            <AmountOfDays
+              type="desktop"
+              numberOfDays={numberOfDays}
+              setNumberOfDays={setNumberOfDays}
+              daysOptions={daysOptions}
+              containerClass={"flex flex-col gap-4"}
+              pClass={"text-2xl font-bold text-indigo-900"}
+              divClass={"flex items-center gap-1"}
             />
-          ) : null}
-
-          <AmountOfDays
-            type="desktop"
-            numberOfDays={numberOfDays}
-            setNumberOfDays={setNumberOfDays}
-            daysOptions={daysOptions}
-            containerClass={"flex flex-col gap-4"}
-            pClass={"text-2xl font-bold text-indigo-900"}
-            divClass={"flex items-center gap-1"}
-          />
+          ) : (
+            <RoomImages
+              numberOfPeople={numberOfPeople}
+              divClass={"max-w-[240px] h-[150px] w-full relative group"}
+            />
+          )}
 
           {/* Element 2: Text with Icon */}
           <NumberOfPeople
@@ -61,6 +60,7 @@ const CustomComponent = () => {
             numberOfPeople={numberOfPeople}
             setNumberOfPeople={setNumberOfPeople}
             peopleOptions={peopleOptions}
+            setNumberOfDays={setNumberOfDays}
             containerClass={"flex flex-col gap-4"}
             pClass={"text-2xl font-bold text-indigo-900"}
             divClass={"flex items-center gap-1"}

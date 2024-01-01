@@ -11,7 +11,7 @@ export const calculatePrice = (
     console.log("Invalid stay type or room category");
   }
 
-  const daysIndex = numberOfDays === "1-2" ? 0 : 1;
+  const daysIndex = numberOfDays === "1-2" ? 1 : 0;
 
   if (stayType === "group") {
     let groupPrice;
