@@ -2,6 +2,7 @@ import { useLocale } from "next-intl";
 import { useTranslations } from "next-intl";
 import Dropdown from "@/components/Other/Dropdown";
 import { UserIcon, UserIcon2 } from "@/public/vectors/getIcons";
+import { Calendar as CalendarIcon } from "lucide-react";
 
 const AmountOfDays = ({
   type,
@@ -27,11 +28,7 @@ const AmountOfDays = ({
           value={numberOfDays}
           onChange={(value) => setNumberOfDays(value)}
         />
-        {type === "desktop" ? (
-          <UserIcon className="w-5 h-5" />
-        ) : (
-          <UserIcon2 className="w-5 h-5 ml-1" />
-        )}
+        <CalendarIcon className="w-5 h-5 text-indigo-900" />
       </div>
     </div>
   );

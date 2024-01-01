@@ -36,7 +36,7 @@ export function DatePicker({ date, setDate, label, placeholder }) {
             ) : (
               <span className="text-neutral-700 text-base">{placeholder}</span>
             )}
-            <CalendarIcon className="h-4 w-4 text-neutral-700" />
+            <CalendarIcon className="h-4 w-4 text-indigo-800" />
           </Button>
         </div>
       </PopoverTrigger>

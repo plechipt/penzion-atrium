@@ -18,47 +18,47 @@ const ServicesData = () => {
   const sports = [
     {
       id: 1,
-      icon: <SportsHallIcon className="w-8 h-9" />,
+      icon: <SportsHallIcon className="w-8 h-8 text-indigo-800" />,
       text: t("sportsHall"),
     },
     {
       id: 2,
-      icon: <AthleticStadiumIcon className="w-8 h-9" />,
+      icon: <AthleticStadiumIcon className="w-8 h-8 text-indigo-900" />,
       text: t("athleticStadium"),
     },
     {
       id: 3,
-      icon: <MultipurposeGymIcon className="w-8 h-9" />,
+      icon: <MultipurposeGymIcon className="w-8 h-8" />,
       text: t("multipurposeGym"),
     },
     {
       id: 4,
-      icon: <MultipurposeCourtIcon className="w-8 h-9" />,
+      icon: <MultipurposeCourtIcon className="w-8 h-8" />,
       text: t("multipurposeCourt"),
     },
     {
       id: 5,
-      icon: <GymnasticHallIcon className="w-8 h-9" />,
+      icon: <GymnasticHallIcon className="w-8 h-8" />,
       text: t("gymnasticHall"),
     },
     {
       id: 6,
-      icon: <VolleyBallHallIcon className="w-8 h-9" />,
+      icon: <VolleyBallHallIcon className="w-8 h-8" />,
       text: t("beach"),
     },
     {
       id: 7,
-      icon: <AsphaltCircuitIcon className="w-8 h-9" />,
+      icon: <AsphaltCircuitIcon className="w-8 h-8" />,
       text: t("asphaltCircuit"),
     },
     {
       id: 8,
-      icon: <ClimbingWallIcon className="w-8 h-9" />,
+      icon: <ClimbingWallIcon className="w-8 h-8" />,
       text: t("climbingWall"),
     },
     {
       id: 9,
-      icon: <SkiTrailsIcon className="w-8 h-9" />,
+      icon: <SkiTrailsIcon className="w-8 h-8" />,
       text: t("ski"),
     },
   ];

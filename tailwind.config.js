@@ -21,6 +21,7 @@ module.exports = {
     extend: {
       colors: {
         indigo: {
+          800: "#253871",
           900: "#234480",
         },
         text: "#253871",
