@@ -8,6 +8,7 @@ const NumberOfPeople = ({
   containerClass,
   pClass,
   divClass,
+  stayType,
   numberOfPeople,
   setNumberOfPeople,
   peopleOptions,
@@ -15,13 +16,18 @@ const NumberOfPeople = ({
   const locale = useLocale();
   const t = useTranslations("Accommodation");
 
-  const bedroomCondition =
-    locale === "en" && numberOfPeople > 1 ? t("moreBedroom") : t("bedroom");
+  let numberText;
+  if (stayType === "group") {
+    numberText = t("people");
+  } else {
+    numberText =
+      locale === "en" && numberOfPeople > 1 ? t("moreBedroom") : t("bedroom");
+  }
 
   return (
     <div className={containerClass}>
       <p className={pClass}>
-        {numberOfPeople} {bedroomCondition}
+        {numberOfPeople} {numberText}
       </p>
       <div className={divClass}>
         {/*<p className="text-2xl font-bold text-indigo-900">{dropdownValue}</p>*/}

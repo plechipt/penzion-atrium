@@ -12,9 +12,14 @@ const AmountOfDays = ({
   setNumberOfDays,
   daysOptions,
 }) => {
+  const t = useTranslations("Accommodation");
+  const daysText = numberOfDays === "1-2" ? t("daysText") : t("moreDaysText");
+
   return (
     <div className={containerClass}>
-      <p className={pClass}>{numberOfDays}</p>
+      <p className={pClass}>
+        {numberOfDays} {daysText}
+      </p>
       <div className={divClass}>
         {/*<p className="text-2xl font-bold text-indigo-900">{dropdownValue}</p>*/}
         <Dropdown

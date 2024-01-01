@@ -57,6 +57,7 @@ const CustomComponent = () => {
           {/* Element 2: Text with Icon */}
           <NumberOfPeople
             type="desktop"
+            stayType={stayType}
             numberOfPeople={numberOfPeople}
             setNumberOfPeople={setNumberOfPeople}
             peopleOptions={peopleOptions}
