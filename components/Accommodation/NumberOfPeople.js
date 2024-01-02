@@ -40,6 +40,7 @@ const NumberOfPeople = ({
           options={peopleOptions}
           value={numberOfPeople}
           onChange={(value) => handleOnChange(value)}
+          divClass={"relative"}
         />
         {type === "desktop" ? (
           <UserIcon className="w-5 h-5" />

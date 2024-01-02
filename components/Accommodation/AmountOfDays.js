@@ -25,6 +25,7 @@ const AmountOfDays = ({
           options={daysOptions}
           value={numberOfDays}
           onChange={(value) => setNumberOfDays(value)}
+          divClass={"relative flex-1"}
         />
         <CalendarIcon className="w-5 h-5 text-indigo-900" />
       </div>

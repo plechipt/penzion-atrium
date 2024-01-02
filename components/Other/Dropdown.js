@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 
-const Dropdown = ({ value, onChange, options }) => {
+const Dropdown = ({ value, onChange, options, divClass }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleSelect = (option) => {
@@ -10,7 +10,7 @@ const Dropdown = ({ value, onChange, options }) => {
   };
 
   return (
-    <div className="relative">
+    <div className={divClass}>
       {/* Dropdown Button */}
       <button
         type="button"

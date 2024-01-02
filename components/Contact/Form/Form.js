@@ -8,16 +8,9 @@ import FormInput from "./FormInput";
 import RoomInputs from "./RoomInputs";
 
 const ContactForm = () => {
-  const tAcc = useTranslations("Accommodation");
   const tHome = useTranslations("Home");
   const tContact = useTranslations("Contact");
-
-  const translation = {
-    shortStay: tAcc("shortTermStay"),
-    mediumStay: tAcc("mediumTermStay"),
-    longStay: tAcc("longTermStay"),
-    groupStay: tAcc("groupStay"),
-  };
+  const tAcc = useTranslations("Accommodation");
 
   return (
     <div className="lg:border lg:rounded-lg lg:shadow lg:px-9 lg:py-10">

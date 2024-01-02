@@ -93,6 +93,7 @@ const DropdownButton = ({
         options={options}
         value={dropdownValue}
         onChange={(value) => onInputClick(value)}
+        divClass={"relative"}
       />
       <Link className="w-full" href="/contact">
         <Button className={buttonClass}>
