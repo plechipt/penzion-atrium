@@ -1,3 +1,4 @@
+import Link from "next/link";
 import ImageEffect from "@/components/Other/ImageEffect";
 
 const SurroundingElement = ({
@@ -27,7 +28,9 @@ const SurroundingElement = ({
 
       <div className="w-full lg:w-1/2">
         <h2 className="text-2xl font-bold mb-2 text-center md:text-start">
-          {heading}
+          <Link href={link} target="_blank">
+            {heading}
+          </Link>
         </h2>
         <p className="text-gray-600 text-base">{text}</p>
       </div>
