@@ -2,8 +2,6 @@
 
 import * as React from "react";
 import { useLocale } from "next-intl";
-import { format } from "date-fns";
-import { en, cs } from "date-fns/locale";
 import { Calendar as CalendarIcon } from "lucide-react";
 import {
   Popover,
@@ -15,8 +13,13 @@ import { Label } from "@/components/UI/label";
 import { Button } from "@/components/UI/button";
 import { Calendar } from "@/components/UI/calendar";
 
+import { format } from "date-fns";
+import { en, cs } from "date-fns/locale";
+
 export function DatePicker({ date, setDate, label, placeholder }) {
   const locale = useLocale();
+
+  const currentLocale = locale === "cs" ? cs : en;
 
   return (
     <Popover>
@@ -31,7 +34,7 @@ export function DatePicker({ date, setDate, label, placeholder }) {
             )}
           >
             {date ? (
-              format(date, "PPP", { locale: locale === "cs" ? cs : en })
+              format(date, "PPP", { currentLocale })
             ) : (
               <span className="text-neutral-700 text-base">{placeholder}</span>
             )}
@@ -44,6 +47,7 @@ export function DatePicker({ date, setDate, label, placeholder }) {
           mode="single"
           selected={date}
           onSelect={setDate}
+          locale={currentLocale}
           initialFocus
         />
       </PopoverContent>
