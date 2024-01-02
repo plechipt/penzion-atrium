@@ -1,9 +1,10 @@
 "use client";
 
 import * as React from "react";
+import { useLocale } from "next-intl";
 import { format } from "date-fns";
+import { en, cs } from "date-fns/locale";
 import { Calendar as CalendarIcon } from "lucide-react";
-
 import {
   Popover,
   PopoverContent,
@@ -15,6 +16,8 @@ import { Button } from "@/components/UI/button";
 import { Calendar } from "@/components/UI/calendar";
 
 export function DatePicker({ date, setDate, label, placeholder }) {
+  const locale = useLocale();
+
   return (
     <Popover>
       <PopoverTrigger asChild>
@@ -28,7 +31,7 @@ export function DatePicker({ date, setDate, label, placeholder }) {
             )}
           >
             {date ? (
-              format(date, "PPP")
+              format(date, "PPP", { locale: locale === "cs" ? cs : en })
             ) : (
               <span className="text-neutral-700 text-base">{placeholder}</span>
             )}
