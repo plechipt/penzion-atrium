@@ -20,7 +20,8 @@ const RoomInputs = ({ stays, groups }) => {
   const [people, setPeople] = useState(1);
   const [peopleOptions, setPeopleOptions] = useState(shortTermPeople);
 
-  const { oneOrTwoDays, threeOrMoreDays } = groups;
+  const { oneOrTwoDays, threeOrMoreDays, bedroom, moreBedroom, peoplet } =
+    groups;
   const groupOptions = [oneOrTwoDays, threeOrMoreDays];
   const [group, setGroup] = useState(oneOrTwoDays);
 
@@ -45,6 +46,13 @@ const RoomInputs = ({ stays, groups }) => {
     }
   };
 
+  let peopleCondition;
+  if (currentStay === "group") {
+    peopleCondition = peoplet;
+  } else {
+    peopleCondition = people === 1 ? bedroom : moreBedroom;
+  }
+
   return (
     <div className="mb-4 flex flex-col sm:flex-row gap-0 sm:gap-4">
       <div className="flex flex-1 items-center gap-2 mb-2 sm:mb-0">
@@ -56,17 +64,15 @@ const RoomInputs = ({ stays, groups }) => {
               onChange={(value) => setGroup(value)}
               divClass={"relative flex-1"}
             />
-            <CalendarIcon className="w-5 h-5 text-indigo-900" />
           </>
         ) : null}
         <Dropdown
           className="flex flex-1"
-          value={people}
+          value={people + " " + peopleCondition}
           options={peopleOptions}
           onChange={(value) => setPeople(value)}
           divClass={"relative flex-1"}
         />
-        <UserIcon className="w-5 h-5" />
       </div>
 
       <div className="flex flex-1 items-center gap-y-4">

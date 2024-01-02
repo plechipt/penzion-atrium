@@ -66,6 +66,9 @@ const ContactForm = () => {
           groups={{
             oneOrTwoDays: tAcc("oneOrTwoDays"),
             threeOrMoreDays: tAcc("threeOrMoreDays"),
+            bedroom: tAcc("bedroom"),
+            moreBedroom: tAcc("moreBedroom"),
+            peoplet: tAcc("people"),
           }}
         />
 
