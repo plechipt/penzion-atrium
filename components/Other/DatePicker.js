@@ -14,11 +14,10 @@ import { Button } from "@/components/UI/button";
 import { Calendar } from "@/components/UI/calendar";
 
 import { format } from "date-fns";
-import { en, cs } from "date-fns/locale";
+import { cs, en } from "date-fns/locale";
 
 export function DatePicker({ date, setDate, label, placeholder }) {
   const locale = useLocale();
-
   const currentLocale = locale === "cs" ? cs : en;
 
   return (
@@ -34,7 +33,7 @@ export function DatePicker({ date, setDate, label, placeholder }) {
             )}
           >
             {date ? (
-              format(date, "PPP", { currentLocale })
+              format(date, "PPP", { locale: currentLocale })
             ) : (
               <span className="text-neutral-700 text-base">{placeholder}</span>
             )}
