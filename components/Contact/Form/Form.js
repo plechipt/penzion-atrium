@@ -58,10 +58,14 @@ const ContactForm = () => {
 
         <RoomInputs
           stays={{
-            shortStay: tAcc("shortTermStay"),
-            mediumStay: tAcc("mediumTermStay"),
-            longStay: tAcc("longTermStay"),
-            groupStay: tAcc("groupStay"),
+            shortStay: tAcc("shortTermStayWithDays"),
+            mediumStay: tAcc("mediumTermStayWithDays"),
+            longStay: tAcc("longTermStayWithDays"),
+            groupStay: tAcc("groupStayWithDays"),
+          }}
+          groups={{
+            oneOrTwoDays: tAcc("oneOrTwoDays"),
+            threeOrMoreDays: tAcc("threeOrMoreDays"),
           }}
         />
 
