@@ -61,21 +61,19 @@ const DropdownButton = ({
 
   const onInputClick = (value) => {
     setDropdownValue(value);
+    setNumberOfPeople(1);
 
     if (value == options[0]) {
-      setNumberOfPeople(1);
       setStayType("short");
       setPricePer(t("pricePerDayShortTerm"));
       setPeopleOptions(shortTermPeople);
     }
     if (value == options[1]) {
-      setNumberOfPeople(1);
       setStayType("medium");
       setPricePer(t("pricePerDayMediumTerm"));
       setPeopleOptions(mediumTermPeople);
     }
     if (value == options[2]) {
-      setNumberOfPeople(1);
       setStayType("long");
       setPricePer(t("pricePerMonthLongTerm"));
       setPeopleOptions(longTermPeople);

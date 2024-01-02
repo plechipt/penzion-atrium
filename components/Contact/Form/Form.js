@@ -30,7 +30,7 @@ const ContactForm = () => {
       <form className="h-full flex flex-col justify-between" id="form">
         <FormInput
           label={tContact("nameLabel")}
-          inputType={"name"}
+          inputType={"text"}
           type={"text"}
           placeholder={tContact("namePlaceholder")}
         />
