@@ -12,10 +12,12 @@ const DatePick = () => {
     <div>
       {/* Check-in section */}
       <CheckInAndOut
-        checkInTitle={t("checkInTitle")}
-        checkInPlaceholder={t("checkInPlaceholder")}
-        checkOutTitle={t("checkOutTitle")}
-        checkOutPlaceholder={t("checkOutPlaceholder")}
+        translation={{
+          checkInTitle: t("checkInTitle"),
+          checkInPlaceholder: t("checkInPlaceholder"),
+          checkOutTitle: t("checkOutTitle"),
+          checkOutPlaceholder: t("checkOutPlaceholder"),
+        }}
       />
       <Link href="/contact">
         <Button className="w-full bg-primary-gradient text-base py-3 px-4 gap-2.5 flex items-center justify-center font-bold">

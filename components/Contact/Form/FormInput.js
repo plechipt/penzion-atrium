@@ -1,11 +1,6 @@
-"use client";
-import { useContext } from "react";
 import { Label } from "@/components/UI/label";
-import { AppContext } from "@/app/[locale]/providers";
 
 const FormInput = ({ label, inputType, type, placeholder }) => {
-  let { checkInDate } = useContext(AppContext);
-
   return (
     <div className="mb-4">
       <Label className="text-base font-bold pb-2" htmlFor={inputType}>

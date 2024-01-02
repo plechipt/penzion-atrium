@@ -4,12 +4,13 @@ import { DatePicker } from "@/components/Other/DatePicker";
 
 import { AppContext } from "@/app/[locale]/providers";
 
-const CheckInAndOut = ({
-  checkInTitle,
-  checkInPlaceholder,
-  checkOutTitle,
-  checkOutPlaceholder,
-}) => {
+const CheckInAndOut = ({ translation }) => {
+  const {
+    checkInTitle,
+    checkInPlaceholder,
+    checkOutTitle,
+    checkOutPlaceholder,
+  } = translation;
   let { checkInDate, setCheckInDate, checkOutDate, setCheckOutDate } =
     useContext(AppContext);
 

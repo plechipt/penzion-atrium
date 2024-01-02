@@ -20,18 +20,23 @@ const ContactForm = () => {
         </h2>
       </div>
 
-      <form className="h-full flex flex-col justify-between" id="form">
+      <form
+        action="https://formsubmit.co/plechac.k@gmail.com"
+        method="POST"
+        className="h-full flex flex-col justify-between"
+        id="form"
+      >
         <FormInput
           label={tContact("nameLabel")}
+          placeholder={tContact("namePlaceholder")}
           inputType={"text"}
           type={"text"}
-          placeholder={tContact("namePlaceholder")}
         />
         <FormInput
           label={tContact("emailLabel")}
+          placeholder={tContact("emailPlaceholder")}
           inputType={"email"}
           type={"email"}
-          placeholder={tContact("emailPlaceholder")}
         />
 
         <div className="mb-2">
@@ -49,10 +54,12 @@ const ContactForm = () => {
 
         <div className="">
           <CheckInAndOut
-            checkInTitle={tHome("checkInTitle")}
-            checkInPlaceholder={tHome("checkInPlaceholder")}
-            checkOutTitle={tHome("checkOutTitle")}
-            checkOutPlaceholder={tHome("checkOutPlaceholder")}
+            translation={{
+              checkInTitle: tHome("checkInTitle"),
+              checkInPlaceholder: tHome("checkInPlaceholder"),
+              checkOutTitle: tHome("checkOutTitle"),
+              checkOutPlaceholder: tHome("checkOutPlaceholder"),
+            }}
           />
         </div>
 
