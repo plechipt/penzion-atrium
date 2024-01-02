@@ -14,8 +14,8 @@ const Surroundings = () => {
           key={index}
           heading={item.heading}
           text={item.text}
-          large_img={item.large_img}
-          small_img={item.small_img}
+          large_img={item.large_img.src}
+          small_img={item.small_img.src}
           reverse={item.reverse}
           link={item.link}
         />
