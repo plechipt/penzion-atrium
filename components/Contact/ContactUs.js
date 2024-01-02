@@ -1,6 +1,6 @@
 import { useTranslations } from "next-intl";
 
-import Form from "./Form";
+import Form from "./Form/Form";
 import Details from "./Details";
 import LeftSide from "./LeftSide";
 import RightSide from "./RightSide";

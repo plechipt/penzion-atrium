@@ -13,6 +13,7 @@ const Dropdown = ({ value, onChange, options }) => {
     <div className="relative">
       {/* Dropdown Button */}
       <button
+        type="button"
         onClick={() => setIsOpen(!isOpen)}
         className="bg-white border border-gray-300 rounded px-2 py-3 w-full justify-between text-sm flex items-center"
       >
