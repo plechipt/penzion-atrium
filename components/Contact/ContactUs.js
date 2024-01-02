@@ -1,4 +1,8 @@
-import { useTranslations } from "next-intl";
+import {
+  useTranslations,
+  useMessages,
+  NextIntlClientProvider,
+} from "next-intl";
 
 import Form from "./Form/Form";
 import Details from "./Details";
@@ -7,6 +11,7 @@ import RightSide from "./RightSide";
 import GoogleMaps from "./GoogleMaps";
 
 const ContactUs = () => {
+  const messages = useMessages();
   const t = useTranslations("Contact");
 
   return (
@@ -25,7 +30,9 @@ const ContactUs = () => {
 
         {/* Right side with contact form */}
         <div className="flex-1 w-full lg:w-1/2 lg:p-4 px-4">
-          <Form />
+          <NextIntlClientProvider messages={messages}>
+            <Form />
+          </NextIntlClientProvider>
 
           <div className="mt-8 lg:grid grid-cols-2 w-full hidden">
             <LeftSide />

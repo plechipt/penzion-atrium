@@ -10,20 +10,26 @@ const mediumTermPeople = [1, 2, 3, 4];
 const longTermPeople = [1, 2, 3];
 const groupPeople = ["10-19", "20-29", "30+"];
 
-const RoomInputs = ({ stays, groups }) => {
+const RoomInputs = ({
+  stays,
+  groups,
+  stay,
+  group,
+  people,
+  setStay,
+  setGroup,
+  setPeople,
+}) => {
   const [currentStay, setCurrentStay] = useState("short");
 
   const { shortStay, mediumStay, longStay, groupStay } = stays;
   const stayOptions = [shortStay, mediumStay, longStay, groupStay];
-  const [stay, setStay] = useState(shortStay);
 
-  const [people, setPeople] = useState(1);
   const [peopleOptions, setPeopleOptions] = useState(shortTermPeople);
 
   const { oneOrTwoDays, threeOrMoreDays, bedroom, moreBedroom, peoplet } =
     groups;
   const groupOptions = [oneOrTwoDays, threeOrMoreDays];
-  const [group, setGroup] = useState(oneOrTwoDays);
 
   const handleStayOnChange = (value) => {
     setStay(value);

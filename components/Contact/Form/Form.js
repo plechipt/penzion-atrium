@@ -1,8 +1,11 @@
+"use client";
+import { useState, useContext } from "react";
 import { useTranslations } from "next-intl";
 
 import { Label } from "@/components/UI/label";
 import { Button } from "@/components/UI/button";
 import CheckInAndOut from "@/components/Other/CheckInAndOut";
+import { AppContext } from "@/app/[locale]/providers";
 
 import FormInput from "./FormInput";
 import RoomInputs from "./RoomInputs";
@@ -11,6 +14,20 @@ const ContactForm = () => {
   const tHome = useTranslations("Home");
   const tContact = useTranslations("Contact");
   const tAcc = useTranslations("Accommodation");
+
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  let { checkInDate, checkOutDate } = useContext(AppContext);
+
+  const [people, setPeople] = useState(1);
+  const [group, setGroup] = useState(tAcc("oneOrTwoDays"));
+  const [stay, setStay] = useState(tAcc("shortTermStayWithDays"));
+
+  const handleOnSubmit = (e) => {
+    e.preventDefault();
+    console.log("test");
+  };
 
   return (
     <div className="lg:border lg:rounded-lg lg:shadow lg:px-9 lg:py-10">
@@ -21,18 +38,21 @@ const ContactForm = () => {
       </div>
 
       <form
-        action="https://formsubmit.co/plechac.k@gmail.com"
-        method="POST"
+        onSubmit={handleOnSubmit}
         className="h-full flex flex-col justify-between"
         id="form"
       >
         <FormInput
+          stateValue={name}
+          setStateValue={setName}
           label={tContact("nameLabel")}
           placeholder={tContact("namePlaceholder")}
           inputType={"text"}
           type={"text"}
         />
         <FormInput
+          stateValue={email}
+          setStateValue={setEmail}
           label={tContact("emailLabel")}
           placeholder={tContact("emailPlaceholder")}
           inputType={"email"}
@@ -44,6 +64,8 @@ const ContactForm = () => {
             {tContact("messageLabel")}
           </Label>
           <textarea
+            value={message}
+            onChange={(value) => setMessage(value.target.value)}
             className="shadow appearance-none border bg-neutral-50 border-slate-200 rounded-lg w-full py-2.5 px-3.5  focus:outline-none focus:shadow-outline resize-none"
             rows={4}
             id="message"
@@ -64,6 +86,12 @@ const ContactForm = () => {
         </div>
 
         <RoomInputs
+          stay={stay}
+          group={group}
+          people={people}
+          setStay={setStay}
+          setGroup={setGroup}
+          setPeople={setPeople}
           stays={{
             shortStay: tAcc("shortTermStayWithDays"),
             mediumStay: tAcc("mediumTermStayWithDays"),
