@@ -1,6 +1,7 @@
 "use client";
-import { useState, useContext } from "react";
+import axios from "axios";
 import { useTranslations } from "next-intl";
+import { useState, useContext } from "react";
 
 import { Label } from "@/components/UI/label";
 import { Button } from "@/components/UI/button";
@@ -9,6 +10,8 @@ import { AppContext } from "@/app/[locale]/providers";
 
 import FormInput from "./FormInput";
 import RoomInputs from "./RoomInputs";
+
+const EMAIL = "plechac.k@gmail.com";
 
 const ContactForm = () => {
   const tHome = useTranslations("Home");
@@ -20,13 +23,43 @@ const ContactForm = () => {
   const [message, setMessage] = useState("");
   let { checkInDate, checkOutDate } = useContext(AppContext);
 
+  const [group, setGroup] = useState();
   const [people, setPeople] = useState(1);
-  const [group, setGroup] = useState(tAcc("oneOrTwoDays"));
   const [stay, setStay] = useState(tAcc("shortTermStayWithDays"));
+
+  const clearInputs = () => {
+    setName("");
+    setEmail("");
+    setMessage("");
+    setGroup(tAcc("oneOrTwoDays"));
+    setPeople(1);
+    setStay(tAcc("shortTermStayWithDays"));
+  };
 
   const handleOnSubmit = (e) => {
     e.preventDefault();
-    console.log("test");
+
+    axios.post(
+      `https://formsubmit.co/ajax/${EMAIL}`,
+      {
+        "Jméno a Přijmení": name,
+        Email: email,
+        Zpráva: message,
+        "Datum příjezdu": checkInDate,
+        "Datum odjezdu": checkOutDate,
+        Pobyt: stay,
+        "Počet lidí": people,
+        "Počet dní (když je skupinový pobyt)": group,
+      },
+      {
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+      }
+    );
+
+    clearInputs();
   };
 
   return (
