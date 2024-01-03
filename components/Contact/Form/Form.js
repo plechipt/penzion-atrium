@@ -1,6 +1,8 @@
 "use client";
 import axios from "axios";
+import dotenv from "dotenv";
 import { useTranslations } from "next-intl";
+import { useRouter } from "@/navigation";
 import { useState, useContext } from "react";
 
 import { Label } from "@/components/UI/label";
@@ -11,9 +13,16 @@ import { AppContext } from "@/app/[locale]/providers";
 import FormInput from "./FormInput";
 import RoomInputs from "./RoomInputs";
 
-const EMAIL = "plechac.k@gmail.com";
+const EMAIL = "loxtox74@gmail.com";
+axios.defaults.headers.post["Content-Type"] = "application/json";
+
+dotenv.config();
+
+const SUCCESS_URL = "https://web3forms.com/success";
 
 const ContactForm = () => {
+  const router = useRouter();
+
   const tHome = useTranslations("Home");
   const tContact = useTranslations("Contact");
   const tAcc = useTranslations("Accommodation");
@@ -39,9 +48,8 @@ const ContactForm = () => {
   const handleOnSubmit = (e) => {
     e.preventDefault();
 
-    axios.post(
-      `https://formsubmit.co/ajax/${EMAIL}`,
-      {
+    axios
+      .post(`https://api.web3forms.com/submit`, {
         "Jméno a Přijmení": name,
         Email: email,
         Zpráva: message,
@@ -50,14 +58,15 @@ const ContactForm = () => {
         Pobyt: stay,
         "Počet lidí": people,
         "Počet dní (když je skupinový pobyt)": group,
-      },
-      {
-        headers: {
-          "Content-Type": "application/json",
-          Accept: "application/json",
-        },
-      }
-    );
+        access_key: process.env.NEXT_PUBLIC_FORM_API_KEY,
+      })
+      .then((res) => {
+        router.push(SUCCESS_URL);
+      })
+      .catch((error) => {
+        console.log(error);
+        console.log(error.message);
+      });
 
     clearInputs();
   };
