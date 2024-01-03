@@ -13,7 +13,9 @@ import { AppContext } from "@/app/[locale]/providers";
 import FormInput from "./FormInput";
 import RoomInputs from "./RoomInputs";
 
-const EMAIL = "loxtox74@gmail.com";
+import { format } from "date-fns";
+import { cs } from "date-fns/locale";
+
 axios.defaults.headers.post["Content-Type"] = "application/json";
 
 dotenv.config();
@@ -48,8 +50,16 @@ const ContactForm = () => {
   const handleOnSubmit = (e) => {
     e.preventDefault();
 
+    if (checkInDate !== null) {
+      checkInDate = format(checkInDate, "PPP", { locale: cs });
+    }
+    if (checkOutDate !== null) {
+      checkOutDate = format(checkInDate, "PPP", { locale: cs });
+    }
+
     axios
       .post(`https://api.web3forms.com/submit`, {
+        access_key: process.env.NEXT_PUBLIC_FORM_API_KEY,
         "Jméno a Přijmení": name,
         Email: email,
         Zpráva: message,
@@ -58,7 +68,6 @@ const ContactForm = () => {
         Pobyt: stay,
         "Počet lidí": people,
         "Počet dní (když je skupinový pobyt)": group,
-        access_key: process.env.NEXT_PUBLIC_FORM_API_KEY,
       })
       .then((res) => {
         router.push(SUCCESS_URL);
