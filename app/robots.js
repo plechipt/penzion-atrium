@@ -5,6 +5,6 @@ export default function robots() {
       allow: "/",
       disallow: "/private/",
     },
-    sitemap: "https://penziontrutnov.cz/sitemap.xml",
+    sitemap: "https://penziontrutnov.cz/cs/sitemap.xml",
   };
 }
