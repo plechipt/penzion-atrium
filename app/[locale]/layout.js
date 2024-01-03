@@ -2,6 +2,7 @@ import "./globals.css";
 import { redirect } from "next/navigation";
 import { Urbanist } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 import { locales } from "@/navigation";
 
@@ -32,8 +33,9 @@ export default function RootLayout({ children, params: { locale } }) {
           <Navbar />
           {children}
           <Footer />
-          <Analytics />
         </Providers>
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
