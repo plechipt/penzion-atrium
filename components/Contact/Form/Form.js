@@ -60,7 +60,7 @@ const ContactForm = () => {
     axios
       .post(`https://api.web3forms.com/submit`, {
         access_key: process.env.NEXT_PUBLIC_FORM_API_KEY,
-        "Jméno a Přijmení": name,
+        "Jméno a přijmení": name,
         Email: email,
         Zpráva: message,
         "Datum příjezdu": checkInDate,
