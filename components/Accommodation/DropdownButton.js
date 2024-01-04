@@ -1,11 +1,12 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import { Link } from "@/navigation";
 
 import { useTranslations } from "next-intl";
 
 import { Button } from "@/components/UI/button";
 import Dropdown from "@/components/Other/Dropdown";
+import { AppContext } from "@/app/[locale]/providers";
 
 import { BookNowIcon } from "@/public/vectors/getIcons";
 import { calculatePrice } from "@/utils/calculatePrice";
@@ -30,8 +31,10 @@ const DropdownButton = ({
   setStandardPrice,
   setPricePer,
 }) => {
+  let { stay: dropdownValue, setStay: setDropdownValue } =
+    useContext(AppContext);
+
   const t = useTranslations("Accommodation");
-  const [dropdownValue, setDropdownValue] = useState(t("shortTermStay"));
   const options = [
     t("shortTermStay"),
     t("mediumTermStay"),
@@ -91,7 +94,7 @@ const DropdownButton = ({
     <div className={divClass}>
       <Dropdown
         options={options}
-        value={dropdownValue}
+        value={dropdownValue === undefined ? t("shortTermStay") : dropdownValue}
         onChange={(value) => onInputClick(value)}
         divClass={"relative"}
       />

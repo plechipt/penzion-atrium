@@ -7,8 +7,8 @@ import { useState, useContext } from "react";
 
 import { Label } from "@/components/UI/label";
 import { Button } from "@/components/UI/button";
-import CheckInAndOut from "@/components/Other/CheckInAndOut";
 import { AppContext } from "@/app/[locale]/providers";
+import CheckInAndOut from "@/components/Other/CheckInAndOut";
 
 import FormInput from "./FormInput";
 import RoomInputs from "./RoomInputs";
@@ -32,11 +32,16 @@ const ContactForm = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-  let { checkInDate, checkOutDate } = useContext(AppContext);
-
-  const [group, setGroup] = useState();
-  const [people, setPeople] = useState(1);
-  const [stay, setStay] = useState(tAcc("shortTermStayWithDays"));
+  let {
+    checkInDate,
+    checkOutDate,
+    group,
+    setGroup,
+    people,
+    setPeople,
+    stay,
+    setStay,
+  } = useContext(AppContext);
 
   const clearInputs = () => {
     setName("");

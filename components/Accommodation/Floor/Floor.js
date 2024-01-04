@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useContext } from "react";
 import { useTranslations } from "next-intl";
 
 import PriceOfRooms from "./PriceOfRooms";
@@ -8,19 +8,26 @@ import DropdownButton from "../DropdownButton";
 import RoomImages from "../RoomImages";
 import AmountOfDays from "../AmountOfDays";
 
+import { AppContext } from "@/app/[locale]/providers";
+
 const CustomComponent = () => {
   const t = useTranslations("Accommodation");
+
+  let {
+    people: numberOfPeople,
+    setPeople: setNumberOfPeople,
+    stayType,
+    setStayType,
+    peopleOptions,
+    setPeopleOptions,
+  } = useContext(AppContext);
 
   const [touristPrice, setTouristPrice] = useState(500);
   const [standardPrice, setStandardPrice] = useState(600);
 
-  const [stayType, setStayType] = useState("short");
   const [numberOfDays, setNumberOfDays] = useState("1-2");
   const [daysOptions, setDaysOptions] = useState(["1-2", "3"]); // 3 and more days
   const [pricePer, setPricePer] = useState(t("pricePerDayShortTerm"));
-
-  const [numberOfPeople, setNumberOfPeople] = useState(1);
-  const [peopleOptions, setPeopleOptions] = useState([1, 2, 3, 4, 5, 6, 7, 8]);
 
   return (
     <div className="container">

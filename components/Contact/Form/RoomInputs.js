@@ -1,6 +1,8 @@
 "use client";
-import { useState } from "react";
+import { useState, useContext } from "react";
 import Dropdown from "@/components/Other/Dropdown";
+
+import { AppContext } from "@/app/[locale]/providers";
 
 const shortTermPeople = [1, 2, 3, 4, 5, 6, 7, 8];
 const mediumTermPeople = [1, 2, 3, 4];
@@ -17,12 +19,11 @@ const RoomInputs = ({
   setGroup,
   setPeople,
 }) => {
-  const [currentStay, setCurrentStay] = useState("short");
+  let { stayType, setStayType, peopleOptions, setPeopleOptions, set } =
+    useContext(AppContext);
 
   const { shortStay, mediumStay, longStay, groupStay } = stays;
   const stayOptions = [shortStay, mediumStay, longStay, groupStay];
-
-  const [peopleOptions, setPeopleOptions] = useState(shortTermPeople);
 
   const { oneOrTwoDays, threeOrMoreDays, bedroom, moreBedroom, peoplet } =
     groups;
@@ -33,16 +34,16 @@ const RoomInputs = ({
     setPeople(1);
 
     if (value === shortStay) {
-      setCurrentStay("short");
+      setStayType("short");
       setPeopleOptions(shortTermPeople);
     } else if (value === mediumStay) {
-      setCurrentStay("medium");
+      setStayType("medium");
       setPeopleOptions(mediumTermPeople);
     } else if (value === longStay) {
       setPeopleOptions(longTermPeople);
-      setCurrentStay("long");
+      setStayType("long");
     } else if (value === groupStay) {
-      setCurrentStay("group");
+      setStayType("group");
       setGroup(oneOrTwoDays);
       setPeople("10-19");
       setPeopleOptions(groupPeople);
@@ -50,7 +51,7 @@ const RoomInputs = ({
   };
 
   let peopleCondition;
-  if (currentStay === "group") {
+  if (stayType === "group") {
     peopleCondition = peoplet;
   } else {
     peopleCondition = people === 1 ? bedroom : moreBedroom;
@@ -59,7 +60,7 @@ const RoomInputs = ({
   return (
     <div className="mb-4 flex flex-col sm:flex-row gap-0 sm:gap-4">
       <div className="flex flex-1 items-center gap-2 mb-2 sm:mb-0">
-        {currentStay === "group" ? (
+        {stayType === "group" ? (
           <>
             <Dropdown
               value={group}
@@ -80,7 +81,7 @@ const RoomInputs = ({
 
       <div className="flex flex-1 items-center gap-y-4">
         <Dropdown
-          value={stay}
+          value={stay === undefined ? shortStay : stay}
           options={stayOptions}
           onChange={(value) => handleStayOnChange(value)}
           divClass={"relative flex-1"}
