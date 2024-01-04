@@ -3,7 +3,8 @@ import { useState, createContext } from "react";
 
 export const AppContext = createContext();
 
-export function Providers({ children }) {
+export function Providers({ children, test }) {
+  console.log(test);
   const [checkInDate, setCheckInDate] = useState(null);
   const [checkOutDate, setCheckOutDate] = useState(null);
 

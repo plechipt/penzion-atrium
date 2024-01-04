@@ -9,7 +9,7 @@ const Title = () => {
 
   return (
     <>
-      <h2 className="lg:text-5xl text-center text-4xl lg:text-start font-bold">
+      <h2 className="lg:text-5xl text-center text-4xl lg:text-start font-bold mt-5 lg:mt-0">
         {title.map((word, index) => (
           <span
             key={index}

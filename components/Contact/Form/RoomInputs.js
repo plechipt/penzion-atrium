@@ -2,9 +2,6 @@
 import { useState } from "react";
 import Dropdown from "@/components/Other/Dropdown";
 
-import { UserIcon } from "@/public/vectors/getIcons";
-import { Calendar as CalendarIcon } from "lucide-react";
-
 const shortTermPeople = [1, 2, 3, 4, 5, 6, 7, 8];
 const mediumTermPeople = [1, 2, 3, 4];
 const longTermPeople = [1, 2, 3];
