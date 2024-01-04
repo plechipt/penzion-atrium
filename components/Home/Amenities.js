@@ -6,7 +6,7 @@ const Amenities = () => {
   const { amenities } = AmenitiesData();
 
   return (
-    <div className="container max-w-fit mx-auto mb-16 mt-10 lg:my-16 text-center">
+    <div className="container max-w-fit mx-auto mb-16 mt-16 lg:my-16 text-center">
       <h1 className="text-center text-black text-4xl font-bold mb-16">
         {t("amenitiesTitle")}
       </h1>

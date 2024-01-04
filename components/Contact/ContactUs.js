@@ -15,7 +15,7 @@ const ContactUs = () => {
   const t = useTranslations("Contact");
 
   return (
-    <div className="py-8 lg:py-10">
+    <div className="mt-10">
       <h1 className="md:text-5xl text-4xl font-bold mb-8 lg:mb-10 text-center">
         {t("title")}
       </h1>

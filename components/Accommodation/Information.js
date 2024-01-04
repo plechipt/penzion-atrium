@@ -7,7 +7,7 @@ const Information = () => {
   const text2 = t("informationNoticeDescription2").split(" ");
 
   return (
-    <div className="container mt-10 py-8">
+    <div className="container mt-14 mb-16">
       <div className="text-center md:text-left text-2xl font-bold mb-6">
         {t("informationNoticeTitle")}
       </div>

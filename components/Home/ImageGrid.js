@@ -5,7 +5,7 @@ const ImageGrid = () => {
   const { images } = HomeData();
 
   return (
-    <div className="grid grid-cols-1 grid-cols-2 lg:grid-cols-4 container py-4 lg:py-7">
+    <div className="grid grid-cols-1 grid-cols-2 lg:grid-cols-4 container lg:py-7">
       {images.map((item, index) => (
         <ImageEffect
           key={index}
