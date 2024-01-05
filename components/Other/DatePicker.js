@@ -14,7 +14,7 @@ import { Button } from "@/components/UI/button";
 import { Calendar } from "@/components/UI/calendar";
 
 import { format } from "date-fns";
-import { enUS } from "date-fns/locale";
+import { enUS, cs } from "date-fns/locale";
 
 export function DatePicker({ date, setDate, label, placeholder }) {
   const locale = useLocale();
