@@ -14,6 +14,7 @@ const Meals = () => {
         imgClass={"w-full h-full object-cover rounded-[10px]"}
         iconClass={"w-12 h-12"}
         iconDivClass={"absolute bottom-2 right-2"}
+        priority={true}
       />
 
       {/* Right Part with Meal Details */}

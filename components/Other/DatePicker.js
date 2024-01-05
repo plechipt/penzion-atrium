@@ -14,11 +14,11 @@ import { Button } from "@/components/UI/button";
 import { Calendar } from "@/components/UI/calendar";
 
 import { format } from "date-fns";
-import { cs, en } from "date-fns/locale";
+import { enUS } from "date-fns/locale";
 
 export function DatePicker({ date, setDate, label, placeholder }) {
   const locale = useLocale();
-  const currentLocale = locale === "cs" ? cs : en;
+  const currentLocale = locale === "cs" ? cs : enUS;
 
   return (
     <Popover>

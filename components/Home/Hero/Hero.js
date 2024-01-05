@@ -17,11 +17,12 @@ const Hero = () => {
       {/* Right side */}
       <div className="w-full max-w-[609px] p-4">
         <Image
-          alt="City Image"
-          width={570}
-          height={564}
           src={CardImage}
           className="rounded h-full w-full "
+          width={570}
+          height={564}
+          alt="City Image"
+          priority={true}
         />
       </div>
     </div>
