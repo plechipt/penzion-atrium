@@ -5,8 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "postbuild": "next-sitemap --config next-sitemap.config.js --sitemap-xml",
-    "sitemap": "next-sitemap --config next-sitemap.config.js",
+    "postbuild": "next-sitemap",
     "start": "next start",
     "lint": "next lint"
   },
