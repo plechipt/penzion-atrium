@@ -1,6 +1,5 @@
 export default function sitemap() {
   return [
-    // Czech
     {
       url: "https://penziontrutnov.cz/cs",
       lastModified: new Date(),
@@ -19,28 +18,6 @@ export default function sitemap() {
     },
     {
       url: "https://www.penziontrutnov.cz/cs/kontakt",
-      lastModified: new Date(),
-    },
-
-    // English
-    {
-      url: "https://penziontrutnov.cz/en",
-      lastModified: new Date(),
-    },
-    {
-      url: "https://www.penziontrutnov.cz/en/accommodation",
-      lastModified: new Date(),
-    },
-    {
-      url: "https://www.penziontrutnov.cz/en/services",
-      lastModified: new Date(),
-    },
-    {
-      url: "https://www.penziontrutnov.cz/en/surroundings",
-      lastModified: new Date(),
-    },
-    {
-      url: "https://www.penziontrutnov.cz/en/contact",
       lastModified: new Date(),
     },
   ];
