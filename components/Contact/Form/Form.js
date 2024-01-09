@@ -16,6 +16,7 @@ import RoomInputs from "./RoomInputs";
 import { format } from "date-fns";
 import { cs } from "date-fns/locale";
 
+const MY_EMAIL = "mail@jakubplechac.cz";
 axios.defaults.headers.post["Content-Type"] = "application/json";
 
 dotenv.config();
@@ -59,22 +60,40 @@ const ContactForm = () => {
       checkInDate = format(checkInDate, "PPP", { locale: cs });
     }
     if (checkOutDate !== null) {
-      checkOutDate = format(checkInDate, "PPP", { locale: cs });
+      checkOutDate = format(checkOutDate, "PPP", { locale: cs });
+    }
+    if (stay === null || stay === undefined) {
+      stay = "Krátkodobý pobyt (1-6 dnů)";
     }
 
+    const data = {
+      access_key: process.env.NEXT_PUBLIC_FORM_API_KEY_MY,
+      "Jméno a přijmení": name,
+      Email: email,
+      Zpráva: message,
+      "Datum příjezdu": checkInDate,
+      "Datum odjezdu": checkOutDate,
+      Pobyt: stay,
+      "Počet lidí": people,
+      "Počet dní (když je skupinový pobyt)": group,
+    };
+
     axios
-      .post(`https://api.web3forms.com/submit`, {
-        access_key: process.env.NEXT_PUBLIC_FORM_API_KEY,
-        "Jméno a přijmení": name,
-        Email: email,
-        Zpráva: message,
-        "Datum příjezdu": checkInDate,
-        "Datum odjezdu": checkOutDate,
-        Pobyt: stay,
-        "Počet lidí": people,
-        "Počet dní (když je skupinový pobyt)": group,
-      })
+      .post(`https://api.web3forms.com/submit`, data)
       .then((res) => {
+        console.log(res);
+      })
+      .catch((error) => {
+        console.log(error);
+        console.log(error.message);
+      });
+
+    data["access_key"] = process.env.NEXT_PUBLIC_FORM_API_KEY_DAD;
+
+    axios
+      .post(`https://api.web3forms.com/submit`, data)
+      .then((res) => {
+        console.log(res);
         router.push(SUCCESS_URL);
       })
       .catch((error) => {
