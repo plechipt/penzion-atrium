@@ -1,0 +1,4 @@
+feature - 🔧
+style - 🖌️
+bug solved - 🐞✅
+edited - ✍
