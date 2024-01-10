@@ -1,6 +1,7 @@
 "use client";
 import axios from "axios";
 import dotenv from "dotenv";
+import Link from "next/link";
 import { useTranslations } from "next-intl";
 import { useRouter } from "@/navigation";
 import { useState, useContext } from "react";
@@ -133,8 +134,7 @@ const ContactForm = () => {
           inputType={"email"}
           type={"email"}
         />
-
-        <div className="mb-2">
+        <div className="mb-6">
           <Label className="text-base font-bold pb-2" htmlFor="message">
             {tContact("messageLabel")}
           </Label>
@@ -148,8 +148,13 @@ const ContactForm = () => {
             placeholder={tContact("messagePlaceholder")}
           ></textarea>
         </div>
-
         <div className="">
+          <Link
+            className="mb-4 text-indigo-900 underline flex justify-center"
+            href="/accommodation#choose-room"
+          >
+            {tContact("calculatePrice")}
+          </Link>
           <CheckInAndOut
             translation={{
               checkInTitle: tHome("checkInTitle"),
@@ -159,7 +164,6 @@ const ContactForm = () => {
             }}
           />
         </div>
-
         <RoomInputs
           stay={stay}
           group={group}
@@ -181,7 +185,6 @@ const ContactForm = () => {
             peoplet: tAcc("people"),
           }}
         />
-
         <Button className="bg-primary-gradient text-base py-3 px-4 gap-2.5 flex items-center justify-center font-bold w-full">
           {tContact("send")}
         </Button>

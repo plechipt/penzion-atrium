@@ -30,7 +30,7 @@ const CustomComponent = () => {
   const [pricePer, setPricePer] = useState(t("pricePerDayShortTerm"));
 
   return (
-    <div className="container">
+    <div id="choose-room" className="container">
       <div className="w-full hidden lg:block">
         {/* Heading and Subtext */}
         <div className="mb-4">

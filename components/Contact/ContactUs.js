@@ -27,13 +27,11 @@ const ContactUs = () => {
 
           <Details />
         </div>
-
         {/* Right side with contact form */}
         <div className="flex-1 w-full lg:w-1/2 lg:p-4 px-4">
           <NextIntlClientProvider messages={messages}>
             <Form />
           </NextIntlClientProvider>
-
           <div className="mt-8 lg:grid grid-cols-2 w-full hidden">
             <LeftSide />
             <RightSide />

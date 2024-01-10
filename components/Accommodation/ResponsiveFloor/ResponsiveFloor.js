@@ -30,7 +30,7 @@ const ResponsiveFloor = () => {
   const [pricePer, setPricePer] = useState(t("pricePerDayShortTerm"));
 
   return (
-    <div className="block lg:hidden mb-4 mx-4">
+    <div id="choose-room" className="block lg:hidden mb-4 mx-4">
       {/* Heading and Subtext */}
       <div className="mb-4">
         <h2 className="text-2xl text-center font-bold mb-6 mt-4">
