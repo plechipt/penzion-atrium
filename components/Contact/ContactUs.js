@@ -32,7 +32,7 @@ const ContactUs = () => {
           <NextIntlClientProvider messages={messages}>
             <Form />
           </NextIntlClientProvider>
-          <div className="mt-8 lg:grid grid-cols-2 w-full hidden">
+          <div className="mt-10 lg:grid grid-cols-2 w-full hidden">
             <LeftSide />
             <RightSide />
           </div>
