@@ -2,3 +2,4 @@ feature - 🔧
 style - 🖌️
 bug solved - 🐞✅
 edited - ✍
+package - 📦
