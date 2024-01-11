@@ -1,5 +1,5 @@
 feature - 🔧
-style - 🖌️
+style -  🎨️
 bug solved - 🐞✅
 edited - ✍
 package - 📦

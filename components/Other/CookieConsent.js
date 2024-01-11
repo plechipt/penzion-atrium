@@ -33,7 +33,11 @@ const CookieConsent = ({ translation }) => {
     return null;
   }
   return (
-    <div className="fixed max-w-md p-4 mx-auto bg-white border border-gray-200 dark:bg-gray-800 m-auto left-0 bottom-5 ml-[5%] w-[90%] md:ml-0 md:w-[100%] md:left-5 md:bottom-5 md:w-[100%] dark:border-gray-700 rounded-2xl">
+    <div
+      className={`${
+        consent ? "hidden" : ""
+      }fixed max-w-md p-4 mx-auto bg-white border border-gray-200 dark:bg-gray-800 m-auto left-0 bottom-5 ml-[5%] w-[90%] md:ml-0 md:w-[100%] md:left-5 md:bottom-5 md:w-[100%] dark:border-gray-700 rounded-2xl`}
+    >
       <div className="flex justify-between">
         <h2 className="font-semibold text-gray-800 dark:text-white">
           {cookieNotice}
@@ -45,10 +49,16 @@ const CookieConsent = ({ translation }) => {
       </p>
 
       <div className="flex items-center  mt-4 gap-x-4 shrink-0">
-        <button className=" text-xs bg-gray-900 font-medium rounded-lg hover:bg-gray-700 text-white px-4 py-2.5 duration-300 transition-colors focus:outline-none">
+        <button
+          onClick={acceptCookie}
+          className=" text-xs bg-gray-900 font-medium rounded-lg hover:bg-gray-700 text-white px-4 py-2.5 duration-300 transition-colors focus:outline-none"
+        >
           {accept}
         </button>
-        <button className=" text-xs bg-gray-900 font-medium rounded-lg hover:bg-gray-700 text-white px-4 py-2.5 duration-300 transition-colors focus:outline-none">
+        <button
+          onClick={denyCookie}
+          className="text-xs bg-gray-900 font-medium rounded-lg hover:bg-gray-700 text-white px-4 py-2.5 duration-300 transition-colors focus:outline-none"
+        >
           {deny}
         </button>
       </div>
