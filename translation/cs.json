@@ -2,7 +2,11 @@
   "General": {
     "contactInfo": "Kontakt",
     "emails": "Emaily",
-    "bookNow": "Rezervovat"
+    "bookNow": "Rezervovat",
+    "cookieNotice": "🍪 Oznámení o souborech cookie",
+    "cookieText": "Používáme soubory cookie, abychom zajistili, že vám poskytneme nejlepší zážitek na našem webu.",
+    "accept": "Přijmout",
+    "deny": "Odmítnout"
   },
   "Navbar": {
     "home": "Domů",

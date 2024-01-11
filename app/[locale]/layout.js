@@ -1,6 +1,8 @@
 import "./globals.css";
+
 import Script from "next/script";
 import { cookies } from "next/headers";
+import { useTranslations } from "next-intl";
 import { redirect } from "next/navigation";
 import { Cookie, Urbanist } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
@@ -26,6 +28,7 @@ export const metadata = {
 
 export default function RootLayout({ children, params: { locale } }) {
   const cookieStore = cookies();
+  const tGeneral = useTranslations("General");
   const consent = cookieStore.get("localConsent");
 
   if (!locales.includes(locale)) {
@@ -72,7 +75,14 @@ export default function RootLayout({ children, params: { locale } }) {
           <Navbar />
           {children}
           <Footer />
-          <CookieConsent />
+          <CookieConsent
+            translation={{
+              cookieNotice: tGeneral("cookieNotice"),
+              cookieText: tGeneral("cookieText"),
+              accept: tGeneral("accept"),
+              deny: tGeneral("deny"),
+            }}
+          />
         </Providers>
         <Analytics />
         <SpeedInsights />

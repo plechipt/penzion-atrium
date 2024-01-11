@@ -2,8 +2,10 @@
 import { useEffect, useState } from "react";
 import { setCookie, hasCookie } from "cookies-next";
 
-const CookieConsent = () => {
+const CookieConsent = ({ translation }) => {
   const [consent, setConsent] = useState(true);
+  const { cookieNotice, cookieText, accept, deny } = translation;
+
   useEffect(() => {
     setConsent(hasCookie("localConsent"));
   }, []);
@@ -31,33 +33,23 @@ const CookieConsent = () => {
     return null;
   }
   return (
-    <div
-      className={`absolute bottom-3 w-[25%] left-3 p-3 rounded-md bg-slate-200 text-black ${
-        consent ? "hidden" : ""
-      }`}
-    >
-      This Site use cookie, please accept them if you want
-      <div className="flex align-middle justify-between">
-        <button
-          onClick={(e) => {
-            closeP();
-          }}
-        >
-          Close
+    <div className="fixed max-w-md p-4 mx-auto bg-white border border-gray-200 dark:bg-gray-800 m-auto left-0 bottom-5 ml-[5%] w-[90%] md:ml-0 md:w-[100%] md:left-5 md:bottom-5 md:w-[100%] dark:border-gray-700 rounded-2xl">
+      <div className="flex justify-between">
+        <h2 className="font-semibold text-gray-800 dark:text-white">
+          {cookieNotice}
+        </h2>
+      </div>
+
+      <p className="mt-4 text-sm text-gray-600 dark:text-gray-300">
+        {cookieText}
+      </p>
+
+      <div className="flex items-center  mt-4 gap-x-4 shrink-0">
+        <button className=" text-xs bg-gray-900 font-medium rounded-lg hover:bg-gray-700 text-white px-4 py-2.5 duration-300 transition-colors focus:outline-none">
+          {accept}
         </button>
-        <button
-          onClick={(e) => denyCookie()}
-          className="p-2 bg-red-400 rounded-md"
-        >
-          Deny All
-        </button>
-        <button
-          onClick={() => {
-            acceptCookie();
-          }}
-          className="p-2 bg-green-400 rounded-md"
-        >
-          Accept All
+        <button className=" text-xs bg-gray-900 font-medium rounded-lg hover:bg-gray-700 text-white px-4 py-2.5 duration-300 transition-colors focus:outline-none">
+          {deny}
         </button>
       </div>
     </div>

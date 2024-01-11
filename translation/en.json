@@ -2,7 +2,11 @@
   "General": {
     "contactInfo": "Contact",
     "emails": "Emails",
-    "bookNow": "Book Now"
+    "bookNow": "Book Now",
+    "cookieNotice": "🍪 Cookie Notice",
+    "cookieText": "We use cookies to ensure that we give you the best experience on our website.",
+    "accept": "Accept",
+    "deny": "Deny"
   },
   "Navbar": {
     "home": "Home",
@@ -12,6 +16,7 @@
     "contact": "Contact",
     "bookNow": "Book Now"
   },
+
   "Home": {
     "heroTitle": "Discover the hidden gem of Trutnov",
     "subtext": "Our prime and affordable location near the historical center of Trutnov ensures convenience and easy access to all the attractions the city has to offer.",
