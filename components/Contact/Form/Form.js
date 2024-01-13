@@ -67,8 +67,11 @@ const ContactForm = () => {
       stay = "Krátkodobý pobyt (1-6 dnů)";
     }
 
+    const subject = `${name} ${checkInDate} - ${checkOutDate}`;
+
     const data = {
       access_key: process.env.NEXT_PUBLIC_FORM_API_KEY_MY,
+      subject,
       "Jméno a přijmení": name,
       Email: email,
       Zpráva: message,
