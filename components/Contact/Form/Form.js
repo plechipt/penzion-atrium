@@ -8,6 +8,7 @@ import { useState, useContext } from "react";
 
 import { Label } from "@/components/UI/label";
 import { Button } from "@/components/UI/button";
+import Dropdown from "@/components/Other/Dropdown";
 import { AppContext } from "@/app/[locale]/providers";
 import CheckInAndOut from "@/components/Other/CheckInAndOut";
 
@@ -24,6 +25,8 @@ dotenv.config();
 
 const SUCCESS_URL = "https://web3forms.com/success";
 
+const roomTypeOptions = ["Tourist", "Standard"];
+
 const ContactForm = () => {
   const router = useRouter();
 
@@ -34,6 +37,7 @@ const ContactForm = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [roomType, setRoomType] = useState("Tourist");
   let {
     checkInDate,
     checkOutDate,
@@ -52,6 +56,7 @@ const ContactForm = () => {
     setGroup(tAcc("oneOrTwoDays"));
     setPeople(1);
     setStay(tAcc("shortTermStayWithDays"));
+    setRoomType("Tourist");
   };
 
   const handleOnSubmit = (e) => {
@@ -78,6 +83,7 @@ const ContactForm = () => {
       "Datum příjezdu": checkInDate,
       "Datum odjezdu": checkOutDate,
       Pobyt: stay,
+      "Typ pobytu": roomType,
       "Počet lidí": people,
       "Počet dní (když je skupinový pobyt)": group,
     };
@@ -188,6 +194,14 @@ const ContactForm = () => {
             peoplet: tAcc("people"),
           }}
         />
+        <div className="flex flex-1 items-center gap-y-4">
+          <Dropdown
+            value={roomType}
+            options={roomTypeOptions}
+            onChange={(value) => setRoomType(value)}
+            divClass={"mb-4 relative flex-1"}
+          />
+        </div>
         <Button className="bg-primary-gradient text-base py-3 px-4 gap-2.5 flex items-center justify-center font-bold w-full">
           {tContact("send")}
         </Button>

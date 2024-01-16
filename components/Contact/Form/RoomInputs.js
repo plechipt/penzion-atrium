@@ -1,5 +1,5 @@
 "use client";
-import { useState, useContext } from "react";
+import { useContext } from "react";
 import Dropdown from "@/components/Other/Dropdown";
 
 import { AppContext } from "@/app/[locale]/providers";
@@ -58,7 +58,7 @@ const RoomInputs = ({
   }
 
   return (
-    <div className="mb-4 flex flex-col sm:flex-row gap-0 sm:gap-4">
+    <div className="mb-3 flex flex-col sm:flex-row gap-0 sm:gap-4">
       <div className="flex flex-1 items-center gap-2 mb-2 sm:mb-0">
         {stayType === "group" ? (
           <>
