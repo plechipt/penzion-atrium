@@ -21,11 +21,10 @@ import { cs } from "date-fns/locale";
 const MY_EMAIL = "mail@jakubplechac.cz";
 const PENZION_EMAIL = "ubytovani@penziontrutnov.cz";
 const FORM_SUBMIT_URL = "https://formsubmit.co/ajax";
+
 axios.defaults.headers.post["Content-Type"] = "application/json";
 
 dotenv.config();
-
-const SUCCESS_URL = "https://web3forms.com/success";
 
 const roomTypeOptions = ["Tourist", "Standard"];
 
@@ -100,18 +99,17 @@ const ContactForm = () => {
       });
 
     //data["access_key"] = process.env.NEXT_PUBLIC_FORM_API_KEY_DAD;
-    /*
+
     axios
       .post(`${FORM_SUBMIT_URL}/${PENZION_EMAIL}`, data)
       .then((res) => {
         console.log(res);
-        router.push(SUCCESS_URL);
+        router.push("/success");
       })
       .catch((error) => {
         console.log(error);
         console.log(error.message);
       });
-      */
 
     clearInputs();
   };

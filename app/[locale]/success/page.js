@@ -1,7 +1,11 @@
+import { useTranslations } from "next-intl";
+
 const Success = () => {
+  const tSuccess = useTranslations("Success");
+
   return (
     <div
-      className="sm:w-[90%] md:w-[60%] lg:w-[40%] xl:w-[30%] w-[90%] mt-10 mb-[560px] flex items-center justify-center m-auto p-4 mb-4 text-sm text-green-800 rounded-lg bg-green-50 dark:bg-gray-800 dark:text-green-400"
+      className="sm:w-[90%] md:w-[60%] lg:w-[40%] xl:w-[20%] w-[90%] mt-10 mb-[560px] flex items-center justify-center m-auto p-4 mb-4 text-sm text-green-800 rounded-lg bg-green-50 dark:bg-gray-800 dark:text-green-400"
       role="alert"
     >
       <svg
@@ -15,8 +19,8 @@ const Success = () => {
       </svg>
       <span className="sr-only">Info</span>
       <div>
-        <span className="font-medium">Success alert!</span> Change a few things
-        up and try submitting again.
+        <span className="font-medium">{tSuccess("success")}</span>{" "}
+        {tSuccess("text")}
       </div>
     </div>
   );

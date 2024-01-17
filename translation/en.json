@@ -145,5 +145,9 @@
     "location": "541 01 - Trutnov, Žižkova 504",
     "telephone": "tel.: (+420) 731 415 455",
     "primaryEmail": "ubytovani@penziontrutnov.cz"
+  },
+  "Success": {
+    "success": "Success!",
+    "text": "The email has been sent"
   }
 }
