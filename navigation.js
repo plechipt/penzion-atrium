@@ -22,6 +22,10 @@ export const pathnames = {
     cs: "/kontakt",
     en: "/contact",
   },
+  "/success": {
+    cs: "/uspech",
+    en: "/success",
+  },
 };
 
 export const { Link, redirect, usePathname, useRouter, getPathname } =

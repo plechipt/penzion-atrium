@@ -19,6 +19,8 @@ import { format } from "date-fns";
 import { cs } from "date-fns/locale";
 
 const MY_EMAIL = "mail@jakubplechac.cz";
+const PENZION_EMAIL = "ubytovani@penziontrutnov.cz";
+const FORM_SUBMIT_URL = "https://formsubmit.co/ajax";
 axios.defaults.headers.post["Content-Type"] = "application/json";
 
 dotenv.config();
@@ -75,8 +77,7 @@ const ContactForm = () => {
     const subject = `${name} ${checkInDate} - ${checkOutDate}`;
 
     const data = {
-      access_key: process.env.NEXT_PUBLIC_FORM_API_KEY_MY,
-      subject,
+      _subject: subject,
       "Jméno a přijmení": name,
       Email: email,
       Zpráva: message,
@@ -89,7 +90,7 @@ const ContactForm = () => {
     };
 
     axios
-      .post(`https://api.web3forms.com/submit`, data)
+      .post(`${FORM_SUBMIT_URL}/${MY_EMAIL}`, data)
       .then((res) => {
         console.log(res);
       })
@@ -98,10 +99,10 @@ const ContactForm = () => {
         console.log(error.message);
       });
 
-    data["access_key"] = process.env.NEXT_PUBLIC_FORM_API_KEY_DAD;
-
+    //data["access_key"] = process.env.NEXT_PUBLIC_FORM_API_KEY_DAD;
+    /*
     axios
-      .post(`https://api.web3forms.com/submit`, data)
+      .post(`${FORM_SUBMIT_URL}/${PENZION_EMAIL}`, data)
       .then((res) => {
         console.log(res);
         router.push(SUCCESS_URL);
@@ -110,6 +111,7 @@ const ContactForm = () => {
         console.log(error);
         console.log(error.message);
       });
+      */
 
     clearInputs();
   };
@@ -196,6 +198,7 @@ const ContactForm = () => {
         />
         <div className="flex flex-1 items-center gap-y-4">
           <Dropdown
+            required
             value={roomType}
             options={roomTypeOptions}
             onChange={(value) => setRoomType(value)}
