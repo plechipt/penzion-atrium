@@ -49,7 +49,7 @@
     "transportTitle": "Doprava",
     "transportDescription": "VW Transporter, max. 8 osob",
     "laundryTitle": "Praní prádla",
-    "laundryDescription": "Max. 7 kg",
+    "laundryDescription": "Max. 9 kg",
     "tvTitle": "Půjčení TV",
     "tvDescription": "Pouze pro Tourist pokoje",
     "tvPrice": "50 Kč/den",
@@ -82,7 +82,7 @@
 
     "informationNoticeTitle": "Oznámení",
     "informationNoticeDescription1": "Podle zákona o evidenci tržeb je prodávající povinen vystavit kupujícímu účtenku. Zároveň je povinen zaevidovat přijatou tržbu u správce daně online; v případě technického výpadku pak nejpozději do 48 hodin",
-    "informationNoticeDescription2": "Do cen není započítán obecní poplatek z pobytu ve výši 40Kč osoba/den. Od tohoto poplatku jsou osvobozeny osoby mladší 18 let a starší 65 let. Provozovatel není plátcem DPH."
+    "informationNoticeDescription2": "V ceně pobytu není započten mistní poplatek z ubytovaní ve výši 50Kč osoba/den. Provozovatel není plátce DPH. Ceník je platný od 1.1. 2024."
   },
   "Services": {
     "title": "Služby",

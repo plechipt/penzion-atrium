@@ -66,17 +66,17 @@ const AccommodationData = () => {
     {
       icon: <CupIcon className="w-5 h-5" />,
       title: t("breakfast"),
-      price: 80,
+      price: 90,
     },
     {
       icon: <SupperIcon className="w-5 h-5" />,
       title: t("halfBoard"),
-      price: 160,
+      price: 180,
     },
     {
       icon: <SupperIcon className="w-5 h-5" />,
       title: t("fullBoard"),
-      price: 240,
+      price: 270,
     },
   ];
 
@@ -91,7 +91,7 @@ const AccommodationData = () => {
       icon: <LaundryIcon className="w-5 h-5" />,
       title: t("laundryTitle"),
       description: t("laundryDescription"),
-      price: "150 Kč",
+      price: "200 Kč",
     },
     {
       icon: <TVRoundedIcon className="w-5 h-5" />,
