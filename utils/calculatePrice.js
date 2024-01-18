@@ -11,16 +11,14 @@ export const calculatePrice = (
     console.log("Invalid stay type or room category");
   }
 
-  const daysIndex = numberOfDays === "1-2" ? 1 : 0;
+  const daysIndex = numberOfDays === "1" ? 1 : 0;
 
   if (stayType === "group") {
     let groupPrice;
 
     if (numberOfPeople === "10-19") {
       groupPrice = prices.group.TOURIST[numberOfPeople][daysIndex];
-    } else if (numberOfPeople === "20-29") {
-      groupPrice = prices.group.TOURIST[numberOfPeople][daysIndex];
-    } else if (numberOfPeople === "30+") {
+    } else if (numberOfPeople === "20+") {
       groupPrice = prices.group.TOURIST[numberOfPeople][daysIndex];
     } else {
       throw new Error("Invalid number of people for group stay");

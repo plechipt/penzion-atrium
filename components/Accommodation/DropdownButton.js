@@ -14,7 +14,7 @@ import { calculatePrice } from "@/utils/calculatePrice";
 const shortTermPeople = [1, 2, 3, 4, 5, 6, 7, 8];
 const mediumTermPeople = [1, 2, 3, 4];
 const longTermPeople = [1, 2, 3];
-const groupPeople = ["10-19", "20-29", "30+"];
+const groupPeople = ["10-19", "20+"];
 
 const DropdownButton = ({
   divClass,
@@ -82,7 +82,7 @@ const DropdownButton = ({
       setPeopleOptions(longTermPeople);
     }
     if (value == options[3]) {
-      setNumberOfDays("1-2");
+      setNumberOfDays("1");
       setNumberOfPeople("10-19");
       setStayType("group");
       setPricePer(t("pricePerPerson"));

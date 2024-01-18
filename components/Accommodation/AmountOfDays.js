@@ -11,8 +11,10 @@ const AmountOfDays = ({
   setNumberOfDays,
   daysOptions,
 }) => {
+  console.log(numberOfDays);
+
   const t = useTranslations("Accommodation");
-  const daysText = numberOfDays === "1-2" ? t("daysText") : t("moreDaysText");
+  const daysText = numberOfDays === "1" ? t("daysText") : t("moreDaysText");
 
   return (
     <div className={containerClass}>

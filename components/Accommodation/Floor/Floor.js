@@ -25,8 +25,8 @@ const CustomComponent = () => {
   const [touristPrice, setTouristPrice] = useState(500);
   const [standardPrice, setStandardPrice] = useState(600);
 
-  const [numberOfDays, setNumberOfDays] = useState("1-2");
-  const [daysOptions, setDaysOptions] = useState(["1-2", "3"]); // 3 and more days
+  const [numberOfDays, setNumberOfDays] = useState("1");
+  const [daysOptions, setDaysOptions] = useState(["1", "2"]); // 3 and more days
   const [pricePer, setPricePer] = useState(t("pricePerDayShortTerm"));
 
   return (

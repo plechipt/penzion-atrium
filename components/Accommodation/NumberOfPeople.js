@@ -25,7 +25,7 @@ const NumberOfPeople = ({
   }
 
   const handleOnChange = (value) => {
-    setNumberOfDays("1-2");
+    setNumberOfDays("1");
     setNumberOfPeople(value);
   };
 
