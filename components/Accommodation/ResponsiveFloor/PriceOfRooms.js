@@ -1,4 +1,8 @@
+import { useTranslations } from "next-intl";
+
 const PriceOfRooms = ({ stayType, touristPrice, standardPrice, pricePer }) => {
+  const tGeneral = useTranslations("General");
+
   return (
     <div className="flex flex-col items-center">
       <div className="mt-3 flex justify-center gap-6">
@@ -6,7 +10,7 @@ const PriceOfRooms = ({ stayType, touristPrice, standardPrice, pricePer }) => {
           <p className="md:text-2xl text-base text-indigo-900 font-bold">
             {touristPrice} Kč
           </p>
-          <p className="text-black text-base">Tourist</p>
+          <p className="text-black text-base">{tGeneral("tourist")}</p>
         </div>
 
         {standardPrice !== undefined && stayType !== "group" ? (

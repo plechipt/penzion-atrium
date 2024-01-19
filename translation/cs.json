@@ -1,5 +1,6 @@
 {
   "General": {
+    "tourist": "Turist",
     "contactInfo": "Kontakt",
     "emails": "Emaily",
     "bookNow": "Rezervovat",
@@ -51,7 +52,7 @@
     "laundryTitle": "Praní prádla",
     "laundryDescription": "Max. 9 kg",
     "tvTitle": "Půjčení TV",
-    "tvDescription": "Pouze pro Tourist pokoje",
+    "tvDescription": "Pouze pro Turist pokoje",
     "tvPrice": "50 Kč/den",
 
     "chooseRoomTitle": "Vybrat pokoj",

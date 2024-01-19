@@ -1,17 +1,19 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 import AccommodationData from "@/data/AccommodationData";
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 
 const RoomImages = ({ numberOfPeople, divClass }) => {
+  const tGeneral = useTranslations("General");
   const { rooms } = AccommodationData();
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const currentImages = rooms[numberOfPeople - 1];
   const roomsImages = [
-    { src: currentImages["tourist"].src, label: "Tourist" },
+    { src: currentImages["tourist"].src, label: tGeneral("tourist") },
     { src: currentImages["standard"].src, label: "Standard" },
   ];
 

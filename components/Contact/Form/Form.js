@@ -26,19 +26,22 @@ axios.defaults.headers.post["Content-Type"] = "application/json";
 
 dotenv.config();
 
-const roomTypeOptions = ["Tourist", "Standard"];
-
 const ContactForm = () => {
   const router = useRouter();
 
   const tHome = useTranslations("Home");
+  const tGeneral = useTranslations("General");
   const tContact = useTranslations("Contact");
   const tAcc = useTranslations("Accommodation");
+
+  const tourist = tGeneral("tourist");
+
+  const roomTypeOptions = [tourist, "Standard"];
 
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-  const [roomType, setRoomType] = useState("Tourist");
+  const [roomType, setRoomType] = useState(tourist);
   let {
     checkInDate,
     checkOutDate,
@@ -57,7 +60,7 @@ const ContactForm = () => {
     setGroup(tAcc("oneDay"));
     setPeople(1);
     setStay(tAcc("shortTermStayWithDays"));
-    setRoomType("Tourist");
+    setRoomType(tourist);
   };
 
   const handleOnSubmit = (e) => {

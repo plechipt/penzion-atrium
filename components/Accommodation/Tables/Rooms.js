@@ -1,12 +1,14 @@
+import { useTranslations } from "next-intl";
 import AccommodationData from "@/data/AccommodationData";
 
 const Rooms = () => {
+  const tGeneral = useTranslations("General");
   const { tourists, standards } = AccommodationData();
 
   return (
     <div className="p-6 w-full">
       <h4 className="text-center text-black text-xl font-bold leading-loose">
-        Tourist
+        {tGeneral("tourist")}
       </h4>
       <div className="w-full grid grid-cols-2 grid-rows-2 gap-2.5 mt-2">
         {tourists.map((tourist, i) => (
