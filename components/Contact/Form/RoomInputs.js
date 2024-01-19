@@ -25,9 +25,8 @@ const RoomInputs = ({
   const { shortStay, mediumStay, longStay, groupStay } = stays;
   const stayOptions = [shortStay, mediumStay, longStay, groupStay];
 
-  const { oneOrTwoDays, threeOrMoreDays, bedroom, moreBedroom, peoplet } =
-    groups;
-  const groupOptions = [oneOrTwoDays, threeOrMoreDays];
+  const { oneDay, twoOrMoreDays, bedroom, moreBedroom, peoplet } = groups;
+  const groupOptions = [oneDay, twoOrMoreDays];
 
   const handleStayOnChange = (value) => {
     setStay(value);
@@ -44,7 +43,7 @@ const RoomInputs = ({
       setStayType("long");
     } else if (value === groupStay) {
       setStayType("group");
-      setGroup(oneOrTwoDays);
+      setGroup(oneDay);
       setPeople("10-19");
       setPeopleOptions(groupPeople);
     }

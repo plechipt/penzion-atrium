@@ -54,7 +54,7 @@ const ContactForm = () => {
     setName("");
     setEmail("");
     setMessage("");
-    setGroup(tAcc("oneOrTwoDays"));
+    setGroup(tAcc("oneDay"));
     setPeople(1);
     setStay(tAcc("shortTermStayWithDays"));
     setRoomType("Tourist");
@@ -187,8 +187,8 @@ const ContactForm = () => {
             groupStay: tAcc("groupStayWithDays"),
           }}
           groups={{
-            oneOrTwoDays: tAcc("oneOrTwoDays"),
-            threeOrMoreDays: tAcc("threeOrMoreDays"),
+            oneDay: tAcc("oneDay"),
+            twoOrMoreDays: tAcc("twoOrMoreDays"),
             bedroom: tAcc("bedroom"),
             moreBedroom: tAcc("moreBedroom"),
             peoplet: tAcc("people"),
