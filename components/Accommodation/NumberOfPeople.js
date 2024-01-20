@@ -18,7 +18,7 @@ const NumberOfPeople = ({
 
   let numberText;
   if (stayType === "group") {
-    numberText = t("people");
+    numberText = tAcc("people");
   } else {
     numberText =
       locale === "en" && numberOfPeople > 1
