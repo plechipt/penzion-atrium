@@ -2,13 +2,13 @@ import { useTranslations } from "next-intl";
 import AmenitiesData from "@/data/HomeData";
 
 const Amenities = () => {
-  const t = useTranslations("Home");
+  const tHome = useTranslations("Home");
   const { amenities } = AmenitiesData();
 
   return (
     <div className="container max-w-fit mx-auto mb-16 mt-16 lg:my-16 text-center">
       <h1 className="text-center text-black text-4xl font-bold mb-16">
-        {t("amenitiesTitle")}
+        {tHome("amenitiesTitle")}
       </h1>
 
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-10 place-items-center place-content-center ">

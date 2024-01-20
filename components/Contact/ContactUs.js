@@ -12,12 +12,12 @@ import GoogleMaps from "./GoogleMaps";
 
 const ContactUs = () => {
   const messages = useMessages();
-  const t = useTranslations("Contact");
+  const tContact = useTranslations("Contact");
 
   return (
     <div className="mt-10">
       <h1 className="md:text-5xl text-4xl font-bold mb-8 lg:mb-10 text-center">
-        {t("title")}
+        {tContact("title")}
       </h1>
 
       <div className="flex flex-col-reverse lg:flex-row justify-center mb-20 items-stretch">

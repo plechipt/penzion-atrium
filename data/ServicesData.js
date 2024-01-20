@@ -13,53 +13,53 @@ import {
 import { useTranslations } from "next-intl";
 
 const ServicesData = () => {
-  const t = useTranslations("Services");
+  const tServices = useTranslations("Services");
 
   const sports = [
     {
       id: 1,
       icon: <SportsHallIcon className="w-8 h-8 text-indigo-800" />,
-      text: t("sportsHall"),
+      text: tServices("sportsHall"),
     },
     {
       id: 2,
       icon: <AthleticStadiumIcon className="w-8 h-8 text-indigo-900" />,
-      text: t("athleticStadium"),
+      text: tServices("athleticStadium"),
     },
     {
       id: 3,
       icon: <MultipurposeGymIcon className="w-8 h-8" />,
-      text: t("multipurposeGym"),
+      text: tServices("multipurposeGym"),
     },
     {
       id: 4,
       icon: <MultipurposeCourtIcon className="w-8 h-8" />,
-      text: t("multipurposeCourt"),
+      text: tServices("multipurposeCourt"),
     },
     {
       id: 5,
       icon: <GymnasticHallIcon className="w-8 h-8" />,
-      text: t("gymnasticHall"),
+      text: tServices("gymnasticHall"),
     },
     {
       id: 6,
       icon: <VolleyBallHallIcon className="w-8 h-8" />,
-      text: t("beach"),
+      text: tServices("beach"),
     },
     {
       id: 7,
       icon: <AsphaltCircuitIcon className="w-8 h-8" />,
-      text: t("asphaltCircuit"),
+      text: tServices("asphaltCircuit"),
     },
     {
       id: 8,
       icon: <ClimbingWallIcon className="w-8 h-8" />,
-      text: t("climbingWall"),
+      text: tServices("climbingWall"),
     },
     {
       id: 9,
       icon: <SkiTrailsIcon className="w-8 h-8" />,
-      text: t("ski"),
+      text: tServices("ski"),
     },
   ];
 
@@ -67,25 +67,25 @@ const ServicesData = () => {
     {
       id: 1,
       icon: <SkiResortsIcon className="w-8 h-8" />,
-      text: t("mladeBuky"),
+      text: tServices("mladeBuky"),
       link: "https://www.areal-mladebuky.cz",
     },
     {
       id: 2,
       icon: <SkiResortsIcon className="w-8 h-8" />,
-      text: t("cernaHora"),
+      text: tServices("cernaHora"),
       link: "https://www.skiresort.cz",
     },
     {
       id: 3,
       icon: <SkiResortsIcon className="w-8 h-8" />,
-      text: t("petrikovice"),
+      text: tServices("petrikovice"),
       link: "https://www.skipetrikovice.cz",
     },
     {
       id: 4,
       icon: <SkiResortsIcon className="w-8 h-8" />,
-      text: t("zacler"),
+      text: tServices("zacler"),
       link: "https://www.skizacler.com",
     },
   ];

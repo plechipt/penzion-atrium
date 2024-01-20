@@ -18,22 +18,22 @@ const BorderedBox = ({ headerText, section }) => {
 };
 
 const Tables = () => {
-  const t = useTranslations("Accommodation");
+  const tAcc = useTranslations("Accommodation");
 
   return (
     <div className="mt-10 container w-full">
       <h1 className="md:text-5xl text-4xl font-bold mb-14 text-center">
-        {t("title")}
+        {tAcc("title")}
       </h1>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-fit place-content-center place-items-center gap-6 lg:gap-8 w-full mx-auto md:[&>*:nth-child(3)]:col-span-2 lg:[&>*:nth-child(3)]:col-span-1">
-        <BorderedBox headerText={t("roomTypeTitle")} section={<Rooms />} />
+        <BorderedBox headerText={tAcc("roomTypeTitle")} section={<Rooms />} />
         <BorderedBox
-          headerText={t("mealTitle")}
-          section={<Meal mealText={t("mealDescription")} />}
+          headerText={tAcc("mealTitle")}
+          section={<Meal mealText={tAcc("mealDescription")} />}
         />
         <BorderedBox
-          headerText={t("otherServicesTitle")}
+          headerText={tAcc("otherServicesTitle")}
           section={<Others />}
         />
       </div>

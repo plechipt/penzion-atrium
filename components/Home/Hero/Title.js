@@ -1,9 +1,9 @@
 import { useTranslations } from "next-intl";
 
 const Title = () => {
-  const t = useTranslations("Home");
+  const tHome = useTranslations("Home");
 
-  const title = t("heroTitle").split(" ");
+  const title = tHome("heroTitle").split(" ");
   const blueFont =
     "bg-primary-gradient inline-block text-transparent bg-clip-text";
 
@@ -22,7 +22,7 @@ const Title = () => {
         ))}
       </h2>
       <p className="text-neutral-700 text-base text-center lg:text-start lg:text-xl font-light">
-        {t("subtext")}
+        {tHome("subtext")}
       </p>
     </>
   );

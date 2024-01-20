@@ -4,14 +4,14 @@ import ServicesData from "@/data/ServicesData";
 
 const SkiText = () => {
   const { ski } = ServicesData();
-  const t = useTranslations("Services");
+  const tServices = useTranslations("Services");
 
   return (
     <div className=" w-full space-y-6 max-w-[720px]">
       <h2 className="text-2xl font-bold mb-2 text-center md:text-start">
-        {t("skiTitle")}
+        {tServices("skiTitle")}
       </h2>
-      <p className="text-gray-600">{t("skiDescription")}</p>
+      <p className="text-gray-600">{tServices("skiDescription")}</p>
 
       <div className="space-y-5">
         {ski.map((item) => (

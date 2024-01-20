@@ -10,30 +10,30 @@ import DesktopLinks from "./Desktop/DesktopLinks";
 import MobileSection from "./Mobile/MobileSection";
 
 const Navbar = () => {
-  const t = useTranslations("Navbar");
+  const tNavbar = useTranslations("Navbar");
 
   return (
     <header className="container flex items-center justify-between pb-6 pt-8">
       {/* Left side with icon */}
 
       <MobileSection
-        home={t("home")}
-        accommodation={t("accommodation")}
-        services={t("services")}
-        surroundings={t("surroundings")}
-        contact={t("contact")}
-        bookNow={t("bookNow")}
+        home={tNavbar("home")}
+        accommodation={tNavbar("accommodation")}
+        services={tNavbar("services")}
+        surroundings={tNavbar("surroundings")}
+        contact={tNavbar("contact")}
+        bookNow={tNavbar("bookNow")}
       />
 
       <div className="hidden lg:flex items-center gap-8 ">
         {/*  Links */}
         <DesktopLinks
-          home={t("home")}
-          accommodation={t("accommodation")}
-          services={t("services")}
-          surroundings={t("surroundings")}
-          contact={t("contact")}
-          bookNow={t("bookNow")}
+          home={tNavbar("home")}
+          accommodation={tNavbar("accommodation")}
+          services={tNavbar("services")}
+          surroundings={tNavbar("surroundings")}
+          contact={tNavbar("contact")}
+          bookNow={tNavbar("bookNow")}
         />
 
         <div className="flex items-center gap-4">
@@ -42,7 +42,7 @@ const Navbar = () => {
 
           {/* Button */}
           <BookNow
-            bookNow={t("bookNow")}
+            bookNow={tNavbar("bookNow")}
             buttonClassName="bg-primary-gradient text-base py-3 px-4 gap-2.5 hidden lg:flex items-center justify-center font-bold"
           />
         </div>

@@ -1,4 +1,4 @@
-import { useTranslations, useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import Dropdown from "@/components/Other/Dropdown";
 import { UserIcon, UserIcon2 } from "@/public/vectors/getIcons";
 
@@ -14,14 +14,16 @@ const NumberOfPeople = ({
   setNumberOfDays,
 }) => {
   const locale = useLocale();
-  const t = useTranslations("Accommodation");
+  const tAcc = useTranslations("Accommodation");
 
   let numberText;
   if (stayType === "group") {
     numberText = t("people");
   } else {
     numberText =
-      locale === "en" && numberOfPeople > 1 ? t("moreBedroom") : t("bedroom");
+      locale === "en" && numberOfPeople > 1
+        ? tAcc("moreBedroom")
+        : tAcc("bedroom");
   }
 
   const handleOnChange = (value) => {

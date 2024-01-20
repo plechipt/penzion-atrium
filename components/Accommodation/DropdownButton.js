@@ -34,12 +34,12 @@ const DropdownButton = ({
   let { stay: dropdownValue, setStay: setDropdownValue } =
     useContext(AppContext);
 
-  const t = useTranslations("Accommodation");
+  const tAcc = useTranslations("Accommodation");
   const options = [
-    t("shortTermStay"),
-    t("mediumTermStay"),
-    t("longTermStay"),
-    t("groupStay"),
+    tAcc("shortTermStay"),
+    tAcc("mediumTermStay"),
+    tAcc("longTermStay"),
+    tAcc("groupStay"),
   ];
 
   useEffect(() => {
@@ -68,24 +68,24 @@ const DropdownButton = ({
 
     if (value == options[0]) {
       setStayType("short");
-      setPricePer(t("pricePerDayShortTerm"));
+      setPricePer(tAcc("pricePerDayShortTerm"));
       setPeopleOptions(shortTermPeople);
     }
     if (value == options[1]) {
       setStayType("medium");
-      setPricePer(t("pricePerDayMediumTerm"));
+      setPricePer(tAcc("pricePerDayMediumTerm"));
       setPeopleOptions(mediumTermPeople);
     }
     if (value == options[2]) {
       setStayType("long");
-      setPricePer(t("pricePerMonthLongTerm"));
+      setPricePer(tAcc("pricePerMonthLongTerm"));
       setPeopleOptions(longTermPeople);
     }
     if (value == options[3]) {
       setNumberOfDays("1");
       setNumberOfPeople("10-19");
       setStayType("group");
-      setPricePer(t("pricePerPerson"));
+      setPricePer(tAcc("pricePerPerson"));
       setPeopleOptions(groupPeople);
     }
   };
@@ -94,14 +94,16 @@ const DropdownButton = ({
     <div className={divClass}>
       <Dropdown
         options={options}
-        value={dropdownValue === undefined ? t("shortTermStay") : dropdownValue}
+        value={
+          dropdownValue === undefined ? tAcc("shortTermStay") : dropdownValue
+        }
         onChange={(value) => onInputClick(value)}
         divClass={"relative"}
       />
       <Link className="w-full" href="/contact">
         <Button className={buttonClass}>
           <BookNowIcon className="w-4 h-4" />
-          {t("bookNow")}
+          {tAcc("bookNow")}
         </Button>
       </Link>
     </div>

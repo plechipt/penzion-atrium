@@ -11,7 +11,7 @@ import AmountOfDays from "../AmountOfDays";
 import { AppContext } from "@/app/[locale]/providers";
 
 const ResponsiveFloor = () => {
-  const t = useTranslations("Accommodation");
+  const tAcc = useTranslations("Accommodation");
 
   let {
     people: numberOfPeople,
@@ -27,17 +27,17 @@ const ResponsiveFloor = () => {
 
   const [numberOfDays, setNumberOfDays] = useState("1");
   const [daysOptions, setDaysOptions] = useState(["1", "2"]); // 3 and more days
-  const [pricePer, setPricePer] = useState(t("pricePerDayShortTerm"));
+  const [pricePer, setPricePer] = useState(tAcc("pricePerDayShortTerm"));
 
   return (
     <div id="choose-room" className="block lg:hidden mb-4 mx-4">
       {/* Heading and Subtext */}
       <div className="mb-4">
         <h2 className="text-2xl text-center font-bold mb-6 mt-4">
-          {t("chooseRoomTitle")}
+          {tAcc("chooseRoomTitle")}
         </h2>
-        <p className="text-gray-500 text-center">{t("groundFloor")}</p>
-        <p className="mt-1 text-gray-500 text-center">{t("firstFloor")}</p>
+        <p className="text-gray-500 text-center">{tAcc("groundFloor")}</p>
+        <p className="mt-1 text-gray-500 text-center">{tAcc("firstFloor")}</p>
       </div>
 
       <div className="mt-10 flex-col items-center bg-floor rounded">

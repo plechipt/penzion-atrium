@@ -11,7 +11,7 @@ import AmountOfDays from "../AmountOfDays";
 import { AppContext } from "@/app/[locale]/providers";
 
 const CustomComponent = () => {
-  const t = useTranslations("Accommodation");
+  const tAcc = useTranslations("Accommodation");
 
   let {
     people: numberOfPeople,
@@ -27,7 +27,7 @@ const CustomComponent = () => {
 
   const [numberOfDays, setNumberOfDays] = useState("1");
   const [daysOptions, setDaysOptions] = useState(["1", "2"]); // 3 and more days
-  const [pricePer, setPricePer] = useState(t("pricePerDayShortTerm"));
+  const [pricePer, setPricePer] = useState(tAcc("pricePerDayShortTerm"));
 
   return (
     <div id="choose-room" className="container">
@@ -35,10 +35,10 @@ const CustomComponent = () => {
         {/* Heading and Subtext */}
         <div className="mb-4">
           <h2 className="text-2xl font-bold mb-6 mt-4">
-            {t("chooseRoomTitle")}
+            {tAcc("chooseRoomTitle")}
           </h2>
-          <p className="text-gray-500">{t("groundFloor")}</p>
-          <p className="mt-1 text-gray-500">{t("firstFloor")}</p>
+          <p className="text-gray-500">{tAcc("groundFloor")}</p>
+          <p className="mt-1 text-gray-500">{tAcc("firstFloor")}</p>
         </div>
 
         <div className="flex items-center w-full justify-between bg-floor p-6 rounded">

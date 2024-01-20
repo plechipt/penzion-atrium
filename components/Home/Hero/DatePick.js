@@ -6,23 +6,23 @@ import { BookNowIcon } from "@/public/vectors/getIcons";
 import CheckInAndOut from "@/components/Other/CheckInAndOut";
 
 const DatePick = () => {
-  const t = useTranslations("Home");
+  const tHome = useTranslations("Home");
 
   return (
     <div>
       {/* Check-in section */}
       <CheckInAndOut
         translation={{
-          checkInTitle: t("checkInTitle"),
-          checkInPlaceholder: t("checkInPlaceholder"),
-          checkOutTitle: t("checkOutTitle"),
-          checkOutPlaceholder: t("checkOutPlaceholder"),
+          checkInTitle: tHome("checkInTitle"),
+          checkInPlaceholder: tHome("checkInPlaceholder"),
+          checkOutTitle: tHome("checkOutTitle"),
+          checkOutPlaceholder: tHome("checkOutPlaceholder"),
         }}
       />
       <Link href="/contact">
         <Button className="w-full bg-primary-gradient text-base py-3 px-4 gap-2.5 flex items-center justify-center font-bold">
           <BookNowIcon className="w-4 h-4" />
-          {t("bookNow")}
+          {tHome("bookNow")}
         </Button>
       </Link>
     </div>

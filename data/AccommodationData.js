@@ -22,60 +22,60 @@ import {
 import { useTranslations } from "next-intl";
 
 const AccommodationData = () => {
-  const t = useTranslations("Accommodation");
+  const tAcc = useTranslations("Accommodation");
 
   const tourists = [
     {
       icon: <BathtubIcon className="w-5 h-5" />,
-      title: t("shared"),
+      title: tAcc("shared"),
     },
     {
       icon: <TVSquareIcon className="w-5 h-5" />,
-      title: t("shared"),
+      title: tAcc("shared"),
     },
     {
       icon: <ToiletIcon className="w-5 h-5" />,
-      title: t("shared"),
+      title: tAcc("shared"),
     },
     {
       icon: <FridgeIcon className="w-5 h-5" />,
-      title: t("shared"),
+      title: tAcc("shared"),
     },
   ];
 
   const standards = [
     {
       icon: <BathtubIcon className="w-5 h-5" />,
-      title: t("private"),
+      title: tAcc("private"),
     },
     {
       icon: <TVSquareIcon className="w-5 h-5" />,
-      title: t("private"),
+      title: tAcc("private"),
     },
     {
       icon: <ToiletIcon className="w-5 h-5" />,
-      title: t("private"),
+      title: tAcc("private"),
     },
     {
       icon: <FridgeIcon className="w-5 h-5" />,
-      title: t("shared"),
+      title: tAcc("shared"),
     },
   ];
 
   const meals = [
     {
       icon: <CupIcon className="w-5 h-5" />,
-      title: t("breakfast"),
+      title: tAcc("breakfast"),
       price: 90,
     },
     {
       icon: <SupperIcon className="w-5 h-5" />,
-      title: t("halfBoard"),
+      title: tAcc("halfBoard"),
       price: 180,
     },
     {
       icon: <SupperIcon className="w-5 h-5" />,
-      title: t("fullBoard"),
+      title: tAcc("fullBoard"),
       price: 270,
     },
   ];
@@ -83,21 +83,21 @@ const AccommodationData = () => {
   const others = [
     {
       icon: <TransportIcon className="w-5 h-5" />,
-      title: t("transportTitle"),
-      description: t("transportDescription"),
+      title: tAcc("transportTitle"),
+      description: tAcc("transportDescription"),
       price: "10 Kč/km",
     },
     {
       icon: <LaundryIcon className="w-5 h-5" />,
-      title: t("laundryTitle"),
-      description: t("laundryDescription"),
+      title: tAcc("laundryTitle"),
+      description: tAcc("laundryDescription"),
       price: "200 Kč",
     },
     {
       icon: <TVRoundedIcon className="w-5 h-5" />,
-      title: t("tvTitle"),
-      description: t("tvDescription"),
-      price: t("tvPrice"),
+      title: tAcc("tvTitle"),
+      description: tAcc("tvDescription"),
+      price: tAcc("tvPrice"),
     },
   ];
 

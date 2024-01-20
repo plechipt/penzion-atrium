@@ -15,53 +15,53 @@ import {
 } from "@/public/images/getImages";
 
 const SurrondingsData = () => {
-  const t = useTranslations("Surroundings");
-  const title = t("title");
+  const tSurr = useTranslations("Surroundings");
+  const title = tSurr("title");
 
   const surrondings = [
     {
-      heading: t("trutnovTitle"),
-      text: t("trutnovDescription"),
+      heading: tSurr("trutnovTitle"),
+      text: tSurr("trutnovDescription"),
       large_img: TrutnovCentrumImage,
       small_img: TrutnovCentrumResponsiveImage,
       reverse: false,
       link: "https://www.ictrutnov.cz/je-na-draka",
     },
     {
-      heading: t("krkonoseTitle"),
-      text: t("krkonoseDescription"),
+      heading: tSurr("krkonoseTitle"),
+      text: tSurr("krkonoseDescription"),
       large_img: KrkonoseImage,
       small_img: KrkonoseResponsiveImage,
       reverse: true,
       link: "https://www.krnap.cz",
     },
     {
-      heading: t("adrspachTitle"),
-      text: t("adrspachDescription"),
+      heading: tSurr("adrspachTitle"),
+      text: tSurr("adrspachDescription"),
       large_img: AdrspachImage,
       small_img: AdrspachResponsiveImage,
       reverse: false,
       link: "https://www.adrspasskeskaly.cz",
     },
     {
-      heading: t("kuksTitle"),
-      text: t("kuksDescription"),
+      heading: tSurr("kuksTitle"),
+      text: tSurr("kuksDescription"),
       large_img: KuksImage,
       small_img: KuksResponsiveImage,
       reverse: true,
       link: "https://www.hospital-kuks.cz",
     },
     {
-      heading: t("zooTitle"),
-      text: t("zooDescription"),
+      heading: tSurr("zooTitle"),
+      text: tSurr("zooDescription"),
       large_img: ZooImage,
       small_img: ZooResponsiveImage,
       reverse: false,
       link: "https://safaripark.cz",
     },
     {
-      heading: t("dolceTitle"),
-      text: t("dolceDescription"),
+      heading: tSurr("dolceTitle"),
+      text: tSurr("dolceDescription"),
       large_img: DolceImage,
       small_img: DolceImage,
       reverse: true,

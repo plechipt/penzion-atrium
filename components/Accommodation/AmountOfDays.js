@@ -12,8 +12,9 @@ const AmountOfDays = ({
 }) => {
   console.log(numberOfDays);
 
-  const t = useTranslations("Accommodation");
-  const daysText = numberOfDays === "1" ? t("daysText") : t("moreDaysText");
+  const tAcc = useTranslations("Accommodation");
+  const daysText =
+    numberOfDays === "1" ? tAcc("daysText") : tAcc("moreDaysText");
 
   return (
     <div className={containerClass}>

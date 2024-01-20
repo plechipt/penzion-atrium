@@ -17,37 +17,37 @@ import {
 import { useTranslations } from "next-intl";
 
 const HomeData = () => {
-  const t = useTranslations("Home");
+  const tHome = useTranslations("Home");
 
   const amenities = [
-    { icon: <FreeWifiIcon className="w-20 h-14" />, text: t("wifi") },
+    { icon: <FreeWifiIcon className="w-20 h-14" />, text: tHome("wifi") },
     {
       icon: <GardenWithPlaygroundIcon className="w-20 h-14" />,
-      text: t("garden"),
+      text: tHome("garden"),
     },
     {
       icon: <BedsIcon className="w-20 h-14" />,
-      text: t("beds"),
+      text: tHome("beds"),
     },
     {
       icon: <FreeParkingIcon className="w-20 h-14" />,
-      text: t("parking"),
+      text: tHome("parking"),
     },
     {
       icon: <WheelchairIcon className="w-20 h-14" />,
-      text: t("wheelchair"),
+      text: tHome("wheelchair"),
     },
     {
       icon: <BusIcon className="w-20 h-14" />,
-      text: t("bus"),
+      text: tHome("bus"),
     },
     {
       icon: <GroupDiscountsIcon className="w-20 h-14" />,
-      text: t("groups"),
+      text: tHome("groups"),
     },
     {
       icon: <TVIcon className="w-20 h-14" />,
-      text: t("tv"),
+      text: tHome("tv"),
     },
   ];
 
