@@ -2,14 +2,9 @@
 import { Link } from "@/navigation";
 import { usePathname } from "@/navigation";
 
-const MobileLinks = ({
-  setIsMenuOpen,
-  home,
-  accommodation,
-  services,
-  surroundings,
-  contact,
-}) => {
+const MobileLinks = ({ tNavbar, setIsMenuOpen }) => {
+  const { home, accommodation, services, surroundings, contact } = tNavbar;
+
   const pathname = usePathname();
 
   const notActiveLinkClass = "text-xl font-bold";

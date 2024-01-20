@@ -17,23 +17,27 @@ const Navbar = () => {
       {/* Left side with icon */}
 
       <MobileSection
-        home={tNavbar("home")}
-        accommodation={tNavbar("accommodation")}
-        services={tNavbar("services")}
-        surroundings={tNavbar("surroundings")}
-        contact={tNavbar("contact")}
-        bookNow={tNavbar("bookNow")}
+        tNavbar={{
+          home: tNavbar("home"),
+          accommodation: tNavbar("accommodation"),
+          services: tNavbar("services"),
+          surroundings: tNavbar("surroundings"),
+          contact: tNavbar("contact"),
+          bookNow: tNavbar("bookNow"),
+        }}
       />
 
       <div className="hidden lg:flex items-center gap-8 ">
         {/*  Links */}
         <DesktopLinks
-          home={tNavbar("home")}
-          accommodation={tNavbar("accommodation")}
-          services={tNavbar("services")}
-          surroundings={tNavbar("surroundings")}
-          contact={tNavbar("contact")}
-          bookNow={tNavbar("bookNow")}
+          tNavbar={{
+            home: tNavbar("home"),
+            accommodation: tNavbar("accommodation"),
+            services: tNavbar("services"),
+            surroundings: tNavbar("surroundings"),
+            contact: tNavbar("contact"),
+            bookNow: tNavbar("bookNow"),
+          }}
         />
 
         <div className="flex items-center gap-4">

@@ -2,13 +2,9 @@
 import { Link } from "@/navigation";
 import { usePathname } from "@/navigation";
 
-const DesktopLinks = ({
-  home,
-  accommodation,
-  services,
-  surroundings,
-  contact,
-}) => {
+const DesktopLinks = ({ tNavbar }) => {
+  const { home, accommodation, services, surroundings, contact } = tNavbar;
+
   const pathname = usePathname();
 
   const notActiveLinkClass = "text-base font-bold";
