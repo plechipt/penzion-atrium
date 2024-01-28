@@ -113,7 +113,7 @@ const ContactForm = () => {
       .post(`https://api.web3forms.com/submit`, data)
       .then((res) => {
         console.log(res);
-        router.push(SUCCESS_URL);
+        router.push("/success");
       })
       .catch((error) => {
         console.log(error);
