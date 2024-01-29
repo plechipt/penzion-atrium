@@ -4,6 +4,7 @@
 const withNextIntl = require("next-intl/plugin")("./i18n.js");
 
 const nextConfig = {
+  productionBrowserSourceMaps: true,
   webpack(config) {
     config.module.rules.push({
       test: /\.svg$/,

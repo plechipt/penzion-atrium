@@ -13,15 +13,17 @@ const LogoWithSocials = () => {
       <div className="lg:flex hidden items-center gap-3">
         <Link
           href="https://www.instagram.com/penzionatriumtrutnov"
-          target="_blank"
           className="w-9 h-9 rounded-full border border-stone-300 flex items-center justify-center text-stone-300 hover:bg-secondary-gradient hover:border-0 transition-all duration-300"
+          target="_blank"
+          aria-label="Check Instagram"
         >
           <FaInstagram />
         </Link>
         <Link
           href="https://www.facebook.com/penzionatriumtrutnov"
-          target="_blank"
           className="w-9 h-9 rounded-full border border-stone-300 flex items-center justify-center text-stone-300 hover:bg-secondary-gradient hover:border-0 transition-all duration-300"
+          target="_blank"
+          aria-label="Check Facebook"
         >
           <FaFacebookF />
         </Link>

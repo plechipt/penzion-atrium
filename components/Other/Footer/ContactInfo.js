@@ -6,7 +6,7 @@ const ContactInfo = () => {
 
   return (
     <div className="space-y-3 lg:text-start text-center flex items-center flex-col lg:items-start">
-      <h3 className="text-base font-bold">{tContact("contactInfo")}</h3>
+      <p className="text-base font-bold">{tContact("contactInfo")}</p>
 
       <div className="flex items-center gap-2">
         <LocationIcon className="w-5 h-5 text-[#fff]" />
