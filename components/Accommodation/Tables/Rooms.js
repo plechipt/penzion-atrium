@@ -7,9 +7,9 @@ const Rooms = () => {
 
   return (
     <div className="p-6 w-full">
-      <h4 className="text-center text-black text-xl font-bold leading-loose">
+      <h3 className="text-center text-black text-xl font-bold leading-loose">
         {tGeneral("tourist")}
-      </h4>
+      </h3>
       <div className="w-full grid grid-cols-2 grid-rows-2 gap-2.5 mt-2">
         {tourists.map((tourist, i) => (
           <div key={i} className="flex items-center gap-4 even:ml-auto">
@@ -23,9 +23,9 @@ const Rooms = () => {
 
       <hr className="bg-black/10 my-3" />
 
-      <h4 className="text-center text-black text-xl font-bold leading-loose">
+      <h3 className="text-center text-black text-xl font-bold leading-loose">
         Standard
-      </h4>
+      </h3>
       <div className="w-full grid grid-cols-2 grid-rows-2 gap-2.5 mt-2">
         {standards.map((standard, i) => (
           <div key={i} className="flex items-center gap-4 even:ml-auto">
