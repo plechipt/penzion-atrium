@@ -23,7 +23,7 @@ const urbanist = Urbanist({
 export const metadata = {
   title: "Penzion Atrium Trutnov",
   description:
-    "Naše výhodná a cenově dostupná poloha v blízkosti historického centra Trutnova zajišťuje pohodlí a snadný přístup ke všem atrakcí, které město nabízí.",
+    "Naše výhodná a cenově dostupná poloha v blízkosti historického centra Trutnova zajišťuje pohodlí a snadný přístup ke všem zajímavostem, které město nabízí.",
 };
 
 export default function RootLayout({ children, params: { locale } }) {
