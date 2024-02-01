@@ -18,8 +18,8 @@
     "bookNow": "Rezervovat"
   },
   "Home": {
-    "heroTitle": "Objevte krásu Trutnova",
-    "subtext": "Náš penzion poskytuje výhodné a cenově dostupné ubytování v blízkosti historického centra Trutnov. Zajišťujeme pohodlí a snadný přístup ke všem zajímavostem, které město nabízí.",
+    "heroTitle": "Objevte krásu Trutnova  a okolí",
+    "subtext": "Náš penzion poskytuje výhodné a cenově dostupné ubytování v blízkosti historického centra Trutnova. Zajišťujeme pohodlí a snadný přístup ke všem zajímavostem, které město nabízí.",
     "checkInTitle": "Příjezd:",
     "checkInPlaceholder": "Datum příjezdu",
     "checkOutTitle": "Odjezd:",
@@ -62,7 +62,7 @@
     "moreDaysText": "a více dnů",
     "bedroom": "lůžkový pokoj",
     "moreBedroom": "lůžkový pokoj",
-    "people": "Lidí",
+    "people": "osob",
     "oneDay": "1 den",
     "twoOrMoreDays": "2 a více dní",
     "pricePerDayShortTerm": "Cena za den (1-6 dní)",
@@ -83,7 +83,7 @@
 
     "informationNoticeTitle": "Oznámení",
     "informationNoticeDescription1": "Podle zákona o evidenci tržeb je prodávající povinen vystavit kupujícímu účtenku. Zároveň je povinen zaevidovat přijatou tržbu u správce daně online; v případě technického výpadku pak nejpozději do 48 hodin",
-    "informationNoticeDescription2": "V ceně pobytu není započten mistní poplatek z ubytovaní ve výši 40Kč osoba/den. Provozovatel není plátce DPH. Ceník je platný od 1.1. 2024."
+    "informationNoticeDescription2": "V ceně pobytu je započten mistní poplatek z ubytovaní ve výši 40Kč osoba/den. Provozovatel není plátce DPH. Ceník je platný od 1.1. 2024."
   },
   "Services": {
     "title": "Služby",
