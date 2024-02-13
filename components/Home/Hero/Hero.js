@@ -1,9 +1,9 @@
 import Image from "next/image";
+import { CardImage } from "@/public/images/getImages";
 
 import Title from "./Title";
 import DatePick from "./DatePick";
-
-import { CardImage } from "@/public/images/getImages";
+import { MotionDiv } from "@/components/Other/MotionComponents";
 
 const Hero = () => {
   return (
@@ -15,7 +15,13 @@ const Hero = () => {
       </div>
 
       {/* Right side */}
-      <div className="w-full max-w-[609px] p-4">
+      <MotionDiv
+        initial={{ opacity: 0, y: 0 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.75, ease: "easeInOut" }}
+        viewport={{ amount: 0 }}
+        className="w-full max-w-[609px] p-4"
+      >
         <Image
           src={CardImage}
           className="rounded h-full w-full "
@@ -24,7 +30,7 @@ const Hero = () => {
           alt="City Image"
           priority={true}
         />
-      </div>
+      </MotionDiv>
     </div>
   );
 };

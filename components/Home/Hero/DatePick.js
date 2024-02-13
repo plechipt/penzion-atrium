@@ -1,5 +1,6 @@
 import { Link } from "@/navigation";
 import { useTranslations } from "next-intl";
+import { MotionDiv } from "@/components/Other/MotionComponents";
 
 import { Button } from "@/components/UI/button";
 import { BookNowIcon } from "@/public/vectors/getIcons";
@@ -9,7 +10,11 @@ const DatePick = () => {
   const tHome = useTranslations("Home");
 
   return (
-    <div>
+    <MotionDiv
+      initial={{ opacity: 0, y: -20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ delay: 0.5 }}
+    >
       {/* Check-in section */}
       <CheckInAndOut
         translation={{
@@ -25,7 +30,7 @@ const DatePick = () => {
           {tHome("bookNow")}
         </Button>
       </Link>
-    </div>
+    </MotionDiv>
   );
 };
 
