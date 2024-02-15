@@ -3,6 +3,7 @@ import {
   useMessages,
   NextIntlClientProvider,
 } from "next-intl";
+import { MotionH1 } from "@/components/Other/MotionComponents";
 
 import Form from "./Form/Form";
 import Details from "./Details";
@@ -16,9 +17,14 @@ const ContactUs = () => {
 
   return (
     <div className="mt-10">
-      <h1 className="md:text-5xl text-4xl font-bold mb-8 lg:mb-10 text-center">
+      <MotionH1
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.25 }}
+        className="md:text-5xl text-4xl font-bold mb-8 lg:mb-10 text-center"
+      >
         {tContact("title")}
-      </h1>
+      </MotionH1>
 
       <div className="flex flex-col-reverse lg:flex-row justify-center mb-20 items-stretch">
         {/* Left side with Google Map */}
