@@ -3,7 +3,7 @@ import {
   useMessages,
   NextIntlClientProvider,
 } from "next-intl";
-import { MotionH1 } from "@/components/Other/MotionComponents";
+import { MotionH1, MotionDiv } from "@/components/Other/MotionComponents";
 
 import Form from "./Form/Form";
 import Details from "./Details";
@@ -29,18 +29,58 @@ const ContactUs = () => {
       <div className="flex flex-col-reverse lg:flex-row justify-center mb-20 items-stretch">
         {/* Left side with Google Map */}
         <div className="flex-1 h-80 lg:h-auto w-full mt-6 lg:mt-0 lg:w-4/5 lg:p-4">
-          <GoogleMaps />
+          <MotionDiv
+            className="w-full h-full"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{
+              delay: 0.5,
+              ease: "easeInOut",
+            }}
+          >
+            <GoogleMaps />
+          </MotionDiv>
 
-          <Details />
+          <MotionDiv
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{
+              delay: 0.75,
+              ease: "easeInOut",
+            }}
+          >
+            <Details />
+          </MotionDiv>
         </div>
         {/* Right side with contact form */}
         <div className="flex-1 w-full lg:w-1/2 lg:p-4 px-4">
           <NextIntlClientProvider messages={messages}>
-            <Form />
+            <MotionDiv
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{
+                delay: 0.75,
+                ease: "easeInOut",
+              }}
+            >
+              <Form />
+            </MotionDiv>
           </NextIntlClientProvider>
           <div className="mt-10 lg:grid grid-cols-2 w-full hidden">
-            <LeftSide />
-            <RightSide />
+            <MotionDiv
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 1 }}
+            >
+              <LeftSide />
+            </MotionDiv>
+            <MotionDiv
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 1.25 }}
+            >
+              <RightSide />
+            </MotionDiv>
           </div>
         </div>
       </div>

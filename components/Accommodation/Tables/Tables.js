@@ -35,17 +35,17 @@ const Tables = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-fit place-content-center place-items-center gap-6 lg:gap-8 w-full mx-auto md:[&>*:nth-child(3)]:col-span-2 lg:[&>*:nth-child(3)]:col-span-1">
         <MotionDiv
           className="h-full w-full"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.5, ease: "easeInOut" }}
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.5 }}
         >
           <BorderedBox headerText={tAcc("roomTypeTitle")} section={<Rooms />} />
         </MotionDiv>
         <MotionDiv
           className="h-full w-full"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.75, ease: "easeInOut" }}
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.75 }}
         >
           <BorderedBox
             headerText={tAcc("mealTitle")}
@@ -54,9 +54,9 @@ const Tables = () => {
         </MotionDiv>
         <MotionDiv
           className="h-full w-full"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1, ease: "easeInOut" }}
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 1 }}
         >
           <BorderedBox
             headerText={tAcc("otherServicesTitle")}

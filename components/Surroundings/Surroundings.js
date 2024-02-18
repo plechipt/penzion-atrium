@@ -1,6 +1,6 @@
 import SurroundingElement from "./SurroundingElement";
 import SurroundingsData from "@/data/SurroundingsData";
-import { MotionH1 } from "@/components/Other/MotionComponents";
+import { MotionH1, MotionDiv } from "@/components/Other/MotionComponents";
 
 const Surroundings = () => {
   const { title, surrondings } = SurroundingsData();
@@ -16,15 +16,24 @@ const Surroundings = () => {
         {title}
       </MotionH1>
       {surrondings.map((item, index) => (
-        <SurroundingElement
+        <MotionDiv
           key={index}
-          heading={item.heading}
-          text={item.text}
-          large_img={item.large_img.src}
-          small_img={item.small_img.src}
-          reverse={item.reverse}
-          link={item.link}
-        />
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{
+            delay: index * 0.25 + 0.5,
+            ease: "easeInOut",
+          }}
+        >
+          <SurroundingElement
+            heading={item.heading}
+            text={item.text}
+            large_img={item.large_img.src}
+            small_img={item.small_img.src}
+            reverse={item.reverse}
+            link={item.link}
+          />
+        </MotionDiv>
       ))}
     </div>
   );
