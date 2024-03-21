@@ -6,6 +6,10 @@ export default function sitemap() {
       lastModified: new Date(),
     },
     {
+      url: "https://www.penziontrutnov.cz/cs/cenik",
+      lastModified: new Date(),
+    },
+    {
       url: "https://www.penziontrutnov.cz/cs/ubytovani",
       lastModified: new Date(),
     },
@@ -25,6 +29,10 @@ export default function sitemap() {
     // English
     {
       url: "https://www.penziontrutnov.cz/en",
+      lastModified: new Date(),
+    },
+    {
+      url: "https://www.penziontrutnov.cz/en/rates",
       lastModified: new Date(),
     },
     {
