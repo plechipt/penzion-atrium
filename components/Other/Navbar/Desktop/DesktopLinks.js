@@ -3,7 +3,8 @@ import { Link } from "@/navigation";
 import { usePathname } from "@/navigation";
 
 const DesktopLinks = ({ tNavbar }) => {
-  const { home, accommodation, services, surroundings, contact } = tNavbar;
+  const { home, rates, accommodation, services, surroundings, contact } =
+    tNavbar;
 
   const pathname = usePathname();
 
@@ -17,6 +18,16 @@ const DesktopLinks = ({ tNavbar }) => {
         href="/"
       >
         {home}
+      </Link>
+      <Link
+        className={
+          pathname === "/rates" || pathname === "/rates"
+            ? activeLinkClass
+            : notActiveLinkClass
+        }
+        href="/rates"
+      >
+        {rates}
       </Link>
       <Link
         className={

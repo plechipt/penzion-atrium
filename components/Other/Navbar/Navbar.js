@@ -19,6 +19,7 @@ const Navbar = () => {
       <MobileSection
         tNavbar={{
           home: tNavbar("home"),
+          rates: tNavbar("rates"),
           accommodation: tNavbar("accommodation"),
           services: tNavbar("services"),
           surroundings: tNavbar("surroundings"),
@@ -32,6 +33,7 @@ const Navbar = () => {
         <DesktopLinks
           tNavbar={{
             home: tNavbar("home"),
+            rates: tNavbar("rates"),
             accommodation: tNavbar("accommodation"),
             services: tNavbar("services"),
             surroundings: tNavbar("surroundings"),

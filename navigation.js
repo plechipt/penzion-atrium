@@ -10,6 +10,10 @@ export const pathnames = {
     cs: "/ubytovani",
     en: "/accommodation",
   },
+  "/rates": {
+    cs: "/cenik",
+    en: "/rates",
+  },
   "/services": {
     cs: "/sluzby",
     en: "/services",

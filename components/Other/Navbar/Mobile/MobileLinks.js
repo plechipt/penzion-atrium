@@ -3,7 +3,8 @@ import { Link } from "@/navigation";
 import { usePathname } from "@/navigation";
 
 const MobileLinks = ({ tNavbar, setIsMenuOpen }) => {
-  const { home, accommodation, services, surroundings, contact } = tNavbar;
+  const { home, rates, accommodation, services, surroundings, contact } =
+    tNavbar;
 
   const pathname = usePathname();
 
@@ -18,6 +19,16 @@ const MobileLinks = ({ tNavbar, setIsMenuOpen }) => {
         onClick={() => setIsMenuOpen(false)}
       >
         {home}
+      </Link>
+      <Link
+        className={
+          pathname === "/rates" || pathname === "/rates"
+            ? activeLinkClass
+            : notActiveLinkClass
+        }
+        href="/rates"
+      >
+        {rates}
       </Link>
       <Link
         className={
