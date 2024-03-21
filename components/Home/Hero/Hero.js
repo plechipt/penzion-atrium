@@ -18,6 +18,7 @@ const Hero = () => {
       <MotionDiv
         initial={{ opacity: 0, y: 0 }}
         animate={{ opacity: 1, y: 0 }}
+        whileInView={{ opacity: 1, scale: 1 }}
         transition={{ delay: 0.75, ease: "easeInOut" }}
         viewport={{ amount: 0 }}
         className="w-full max-w-[609px] p-4"
