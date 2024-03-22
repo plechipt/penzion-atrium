@@ -11,7 +11,7 @@ const Table = () => {
   const longStandard = long.STANDARD;
 
   return (
-    <div className="columns-2 gap-10">
+    <div className="md:columns-2 gap-10">
       <TableComponent
         type={short}
         typeOfStay={tAcc("shortTermStayWithDays")}

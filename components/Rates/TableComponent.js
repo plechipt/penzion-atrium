@@ -5,7 +5,7 @@ const TableComponent = ({ type, typeOfStay, standard }) => {
   const tGeneral = useTranslations("General");
 
   return (
-    <div className="mb-3 w-full w-[55%] justify-center align-center m-auto relative overflow-x-auto shadow-md sm:rounded-lg">
+    <div className="md:mb-3 mb-10 w-full w-[55%] justify-center align-center m-auto relative overflow-x-auto shadow-md sm:rounded-lg">
       <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
         <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
           <tr>
