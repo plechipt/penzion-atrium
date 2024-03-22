@@ -27,6 +27,7 @@ const MobileLinks = ({ tNavbar, setIsMenuOpen }) => {
             : notActiveLinkClass
         }
         href="/rates"
+        onClick={() => setIsMenuOpen(false)}
       >
         {rates}
       </Link>
