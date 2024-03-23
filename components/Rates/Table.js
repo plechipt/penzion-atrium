@@ -1,5 +1,7 @@
 import { prices } from "@/utils/prices";
 import { useTranslations } from "next-intl";
+
+import TableGroup from "./TableGroup";
 import TableComponent from "./TableComponent";
 
 const Table = () => {
@@ -25,6 +27,11 @@ const Table = () => {
       <TableComponent
         type={long}
         typeOfStay={tAcc("longTermStayWithDays")}
+        standard={longStandard}
+      />
+      <TableGroup
+        type={group}
+        typeOfStay={tAcc("groupStayWithDays")}
         standard={longStandard}
       />
     </div>
