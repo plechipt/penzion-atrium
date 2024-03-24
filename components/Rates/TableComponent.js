@@ -1,3 +1,4 @@
+import { Link } from "@/navigation";
 import { useTranslations } from "next-intl";
 
 const TableComponent = ({ type, typeOfStay, standard }) => {
@@ -13,10 +14,10 @@ const TableComponent = ({ type, typeOfStay, standard }) => {
               {typeOfStay}
             </th>
             <th scope="col" className="px-6 py-3">
-              {tGeneral("tourist")}
+              <Link href="/accommodation">{tGeneral("tourist")}</Link>
             </th>
             <th scope="col" className="px-6 py-3">
-              STANDARD
+              <Link href="/accommodation">STANDARD</Link>
             </th>
           </tr>
         </thead>
