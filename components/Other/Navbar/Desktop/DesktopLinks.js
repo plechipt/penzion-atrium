@@ -21,7 +21,7 @@ const DesktopLinks = ({ tNavbar }) => {
       </Link>
       <Link
         className={
-          pathname === "/rates" || pathname === "/rates"
+          pathname === "/rates" || pathname === "/cenik"
             ? activeLinkClass
             : notActiveLinkClass
         }
