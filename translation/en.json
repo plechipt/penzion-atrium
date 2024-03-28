@@ -2,7 +2,7 @@
   "General": {
     "tourist": "Tourist",
     "contactInfo": "Contact",
-    "emails": "Emails",
+    "emails": "Email",
     "bookNow": "Book Now",
     "cookieNotice": "🍪 Cookie Notice",
     "cookieText": "We use cookies to ensure that we give you the best experience on our website.",
@@ -133,7 +133,7 @@
   "Contact": {
     "title": "Contact Us",
     "contactInfo": "Contact",
-    "emails": "Emails",
+    "emails": "Email",
     "formTitle": "Leave Us a Message",
     "nameLabel": "Full name",
     "namePlaceholder": "Your full name...",

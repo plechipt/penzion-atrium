@@ -2,7 +2,7 @@
   "General": {
     "tourist": "Turist",
     "contactInfo": "Kontakt",
-    "emails": "Emaily",
+    "emails": "Email",
     "bookNow": "Rezervovat",
     "cookieNotice": "🍪 Oznámení o souborech cookie",
     "cookieText": "Používáme soubory cookie, abychom zajistili, že vám poskytneme nejlepší zážitek na našem webu.",
@@ -132,7 +132,7 @@
   "Contact": {
     "title": "Kontaktujte nás",
     "contactInfo": "Kontakt",
-    "emails": "Emaily",
+    "emails": "Email",
     "formTitle": "Zanechte nám zprávu",
     "nameLabel": "Jméno a přijmení",
     "namePlaceholder": "Vaše jméno a přijmení...",
