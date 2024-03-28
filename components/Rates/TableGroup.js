@@ -2,7 +2,6 @@ import { useTranslations } from "next-intl";
 
 const TableGroup = ({ type, typeOfStay, standard }) => {
   const tAcc = useTranslations("Accommodation");
-  const tGeneral = useTranslations("General");
 
   const groupListBig = type.TOURIST["20+"];
   const groupListSmall = type.TOURIST["10-19"];
