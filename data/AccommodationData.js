@@ -67,20 +67,22 @@ const AccommodationData = () => {
   ];
 
   const meals = [
+    /*
     {
       icon: <CupIcon className="w-5 h-5" />,
       title: tAcc("breakfast"),
       price: 90,
     },
+    */
     {
       icon: <SupperIcon className="w-5 h-5" />,
       title: tAcc("halfBoard"),
-      price: 180,
+      price: 200,
     },
     {
       icon: <SupperIcon className="w-5 h-5" />,
       title: tAcc("fullBoard"),
-      price: 270,
+      price: 330,
     },
   ];
 
@@ -89,13 +91,13 @@ const AccommodationData = () => {
       icon: <TransportIcon className="w-5 h-5" />,
       title: tAcc("transportTitle"),
       description: tAcc("transportDescription"),
-      price: "10 Kč/km",
+      price: "12 Kč/km",
     },
     {
       icon: <LaundryIcon className="w-5 h-5" />,
       title: tAcc("laundryTitle"),
       description: tAcc("laundryDescription"),
-      price: "200 Kč",
+      price: "150 Kč",
     },
     {
       icon: <TVRoundedIcon className="w-5 h-5" />,

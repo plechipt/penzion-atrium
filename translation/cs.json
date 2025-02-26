@@ -52,7 +52,7 @@
     "title": "Ubytování",
     "roomTypeTitle": "Typ Pokoje",
     "mealTitle": "Stravování",
-    "mealDescription": "Pouze pro skupiny od 20 osob po předchozí objednávce",
+    "mealDescription": "Pouze pro skupiny při vícedenním pobytu",
     "otherServicesTitle": "Další služby",
     "shared": "Sdílený",
     "private": "Soukromý",
@@ -62,7 +62,7 @@
     "transportTitle": "Doprava",
     "transportDescription": "VW Transporter, max. 8 osob",
     "laundryTitle": "Praní prádla",
-    "laundryDescription": "Max. 9 kg",
+    "laundryDescription": "Max. 9 kg jedna dávka",
     "tvTitle": "Půjčení TV",
     "tvDescription": "Pouze pro Turist pokoje",
     "tvPrice": "50 Kč/den",
@@ -95,12 +95,12 @@
 
     "informationNoticeTitle": "Oznámení",
     "informationNoticeDescription1": "Podle zákona o evidenci tržeb je prodávající povinen vystavit kupujícímu účtenku. Zároveň je povinen zaevidovat přijatou tržbu u správce daně online; v případě technického výpadku pak nejpozději do 48 hodin",
-    "informationNoticeDescription2": "V ceně pobytu je započten mistní poplatek z ubytovaní ve výši 40Kč osoba/den. Provozovatel není plátce DPH. Ceník je platný od 1.1. 2024."
+    "informationNoticeDescription2": "V ceně pobytu je započten obecní poplatek z ubytovaní ve výši 40Kč osoba/den. Provozovatel není plátce DPH. Ceník je platný od 1.1. 2025."
   },
   "Services": {
     "title": "Služby",
     "mealsTitle": "Stravování",
-    "mealsDescription0": "Pouze pro skupiny od 20 osob po předchozí objednávce",
+    "mealsDescription0": "Pouze pro skupiny při vícedenním pobytu",
     "mealsDescription1": "Občerstvení na recepci (18:00–21:00)",
     "mealsDescription2": "Možnost vlastního vaření ve dvou vybavených kuchyňkách",
     "mealsDescription3": "Jídelna s kapacitou 35 míst",

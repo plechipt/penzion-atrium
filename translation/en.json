@@ -53,7 +53,7 @@
     "title": "Accommodation",
     "roomTypeTitle": "Room Type",
     "mealTitle": "Meal",
-    "mealDescription": "Only for group consisting of 20 people or more – need to order in advance",
+    "mealDescription": "Only for groups for multi-day stays",
     "otherServicesTitle": "Other services",
     "shared": "Shared",
     "private": "Private",
@@ -63,7 +63,7 @@
     "transportTitle": "Transport",
     "transportDescription": "VW Transporter, max. 8 people",
     "laundryTitle": "Laundry",
-    "laundryDescription": "Max. 9 kg",
+    "laundryDescription": "Max. 9 kg one dose",
     "tvTitle": "Borrowing TV",
     "tvDescription": "Only for Tourist Rooms",
     "tvPrice": "50 Kč/day",
@@ -96,12 +96,12 @@
 
     "informationNoticeTitle": "Information Notice",
     "informationNoticeDescription1": "According to the Sales Registration Act, the seller is obliged to issue a receipt to the buyer. At the same time, he is obliged to register the received sales with the tax administrator online, within 48 hours in the event of a technical failure",
-    "informationNoticeDescription2": "The price of the stay does include the local accommodation fee of 40Kč person/day. The price list is valid from 1.1. 2024."
+    "informationNoticeDescription2": "The price of the stay does include the local accommodation fee of 40Kč person/day. The price list is valid from 1.1. 2025."
   },
   "Services": {
     "title": "Services",
     "mealsTitle": "Meals",
-    "mealsDescription0": "Only for group consisting of 20 people or more – need to order in advance",
+    "mealsDescription0": "Only for groups for multi-day stays",
     "mealsDescription1": "Snacks and drinks at the reception desk (18:00–21:00)",
     "mealsDescription2": "Self cooking (induction cooker, microwave oven, dishes available)",
     "mealsDescription3": "Dining room for 35 people",
