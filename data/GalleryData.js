@@ -75,33 +75,18 @@ const GalleryData = () => {
       alt: "Room4SImage",
       index: 7,
     },
-    {
-      src: Room5TImage,
-      alt: "Room5TImage",
-      index: 8,
-    },
-    {
-      src: Room6TImage,
-      alt: "Room6TImage",
-      index: 9,
-    },
-    {
-      src: Room7TImage,
-      alt: "Room7TImage",
-      index: 10,
-    },
   ];
 
   const kitchenImages = [
     {
       src: BottomKitchenImage,
       alt: "BottomKitchenImage",
-      index: 11,
+      index: 8,
     },
     {
       src: UpperKitchenImage,
       alt: "UpperKitchenImage",
-      index: 12,
+      index: 9,
     },
   ];
 
@@ -109,22 +94,22 @@ const GalleryData = () => {
     {
       src: FrontImage,
       alt: "FrontImage",
-      index: 13,
+      index: 10,
     },
     {
       src: FrontMainImage,
       alt: "FrontMainImage",
-      index: 14,
+      index: 11,
     },
     {
       src: PlaygroundImage,
       alt: "PlaygroundImage",
-      index: 15,
+      index: 12,
     },
     {
       src: EntranceImage,
       alt: "EntranceImage",
-      index: 16,
+      index: 13,
     },
   ];
 
@@ -132,32 +117,28 @@ const GalleryData = () => {
     {
       src: WC1Image,
       alt: "WC1Image",
-      index: 17,
+      index: 14,
     },
     {
       src: WC2Image,
       alt: "WC2Image",
-      index: 18,
+      index: 15,
     },
     {
       src: WC3Image,
       alt: "WC3Image",
-      index: 19,
+      index: 16,
     },
-    {
-      src: WC4Image,
-      alt: "WC4Image",
-      index: 20,
-    },
+   
     {
       src: WC5Image,
       alt: "WC5Image",
-      index: 21,
+      index: 17,
     },
     {
       src: WC6Image,
       alt: "WC6Image",
-      index: 22,
+      index: 18,
     },
   ];
 
