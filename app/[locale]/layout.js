@@ -23,7 +23,7 @@ export const metadata = {
     "Náš penzion poskytuje výhodné a cenově dostupné ubytování v blízkosti historického centra Trutnov. Zajišťujeme pohodlí a snadný přístup ke všem zajímavostem, které město nabízí.",
 };
 
-export default function RootLayout({ children, params: { locale } }) {
+export default async function RootLayout({ children, params: { locale } }) {
   if (!locales.includes(locale)) {
     redirect("/");
   }
