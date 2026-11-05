@@ -1,16 +1,20 @@
 import { useTranslations } from "next-intl";
 import Table from "@/components/Rates/Table";
-import ContactUs from "@/components/Contact/ContactUs";
+import { useMessages, NextIntlClientProvider } from "next-intl";
 
 export default function Page() {
-  const tNavbar = useTranslations("Navbar");
+  const messages = useMessages();
+  const tRates = useTranslations("Rates");
 
   return (
     <main className="lg:container container py-8 lg:py-10 ">
-      <h1 className="md:text-5xl text-4xl font-bold mb-16 lg:mb-14 text-center">
-        {tNavbar("rates")}
+      <h1 className="md:text-5xl text-4xl font-bold mb-8 text-center">
+        {tRates("title")}
       </h1>
-      <Table />
+
+      <NextIntlClientProvider messages={messages}>
+        <Table />
+      </NextIntlClientProvider>
     </main>
   );
 }

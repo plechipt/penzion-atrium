@@ -1,7 +1,6 @@
 export { default as LogoIcon } from "@/public/images/vectors/navbar_logo.png";
 export { default as MainIcon } from "@/public/images/vectors/book.png";
 export { default as DatetimeIcon } from "@/public/images/vectors/datetime.png";
-export { default as CardIcon } from "@/public/images/gallery/card.png";
 export { default as WifiIcon } from "@/public/images/vectors/wifi.png";
 export { default as PlaygroundIcon } from "@/public/images/vectors/playground.png";
 export { default as RoomIcon } from "@/public/images/vectors/room.png";
@@ -23,11 +22,11 @@ export { default as MenuIcon } from "@/public/images/vectors/menu.png";
 export { default as USFlagIcon } from "@/public/images/vectors/usa_flag.png";
 export { default as CzechFlagIcon } from "@/public/images/vectors/czech_flag.png";
 
-export { default as CardImage } from "@/public/images/gallery/card.png";
-export { default as HomeImage1 } from "@/public/images/gallery/1-home.png";
-export { default as HomeImage2 } from "@/public/images/gallery/2-home.png";
-export { default as HomeImage3 } from "@/public/images/gallery/3-home.png";
-export { default as HomeImage4 } from "@/public/images/gallery/4-home.png";
+export { default as CardImage } from "@/public/images/gallery/Home/card.webp";
+export { default as HomeImage1 } from "@/public/images/gallery/Home/1-home.webp";
+export { default as HomeImage2 } from "@/public/images/gallery/Home/2-home.webp";
+export { default as HomeImage3 } from "@/public/images/gallery/Home/3-home.webp";
+export { default as HomeImage4 } from "@/public/images/gallery/Home/4-home.webp";
 
 export { default as ShowerIcon } from "@/public/images/vectors/shower.png";
 export { default as TV2Icon } from "@/public/images/vectors/tv2.png";
@@ -40,21 +39,37 @@ export { default as LaundryIcon } from "@/public/images/vectors/laundry.png";
 export { default as ImageIcon } from "@/public/images/vectors/icon_image.png";
 export { default as ProfileIcon } from "@/public/images/vectors/profile.png";
 
-export { default as Room1Image } from "@/public/images/gallery/1room.jpg";
-export { default as Room2Image } from "@/public/images/gallery/2room.jpg";
-export { default as Room3Image } from "@/public/images/gallery/3room.jpg";
-export { default as Room4Image } from "@/public/images/gallery/4room.jpg";
-export { default as Room5Image } from "@/public/images/gallery/5room.jpg";
-export { default as Room6Image } from "@/public/images/gallery/6room.jpg";
-export { default as Room7Image } from "@/public/images/gallery/7room.jpg";
-export { default as Room8Image } from "@/public/images/gallery/8room.jpg";
+export { default as Room1TImage } from "@/public/images/gallery/Rooms/1T.webp";
+export { default as Room1SImage } from "@/public/images/gallery/Rooms/1S.webp";
+export { default as Room2TImage } from "@/public/images/gallery/Rooms/2T.webp";
+export { default as Room2SImage } from "@/public/images/gallery/Rooms/2S.webp";
+export { default as Room3TImage } from "@/public/images/gallery/Rooms/3T.webp";
+export { default as Room3TImage2 } from "@/public/images/gallery/Rooms/3T-2.webp";
+export { default as Room4TImage } from "@/public/images/gallery/Rooms/4T.webp";
+export { default as Room4SImage } from "@/public/images/gallery/Rooms/4S.webp";
+export { default as Room5TImage } from "@/public/images/gallery/Rooms/6T.webp";
+export { default as Room6TImage } from "@/public/images/gallery/Rooms/6T-2.webp";
+export { default as Room7TImage } from "@/public/images/gallery/Rooms/6T-3.webp";
+export { default as Room8TImage } from "@/public/images/gallery/Rooms/6T-3.webp";
 
-export { default as MeetingRoomImage } from "@/public/images/gallery/meeting_room.png";
-export { default as MeetingRoomResponsiveImage } from "@/public/images/gallery/meeting_room_responsive.png";
-export { default as KomendaImage } from "@/public/images/gallery/komenda.png";
-export { default as KomendaResponsiveImage } from "@/public/images/gallery/komenda_responsive.png";
-export { default as SkiImage } from "@/public/images/gallery/ski.png";
-export { default as SkiResponsiveImage } from "@/public/images/gallery/ski_responsive.png";
+export { default as BottomKitchenImage } from "@/public/images/gallery/Kitchen/bottom_kitchen.webp";
+export { default as UpperKitchenImage } from "@/public/images/gallery/Kitchen/upper_kitchen.webp";
+
+export { default as WC1Image } from "@/public/images/gallery/WC/20240619_153549.webp";
+export { default as WC2Image } from "@/public/images/gallery/WC/20240619_154318.webp";
+export { default as WC3Image } from "@/public/images/gallery/WC/20240619_154331.webp";
+export { default as WC4Image } from "@/public/images/gallery/WC/20240619_161844.webp";
+export { default as WC5Image } from "@/public/images/gallery/WC/20240619_162044.webp";
+export { default as WC6Image } from "@/public/images/gallery/WC/20240619_162055.webp";
+
+export { default as FrontImage } from "@/public/images/gallery/Exterier/front.webp";
+export { default as FrontMainImage } from "@/public/images/gallery/Exterier/front-main.webp";
+export { default as PlaygroundImage } from "@/public/images/gallery/Exterier/playground.webp";
+export { default as EntranceImage } from "@/public/images/gallery/Exterier/entrance.webp";
+
+export { default as MeetingRoomImage } from "@/public/images/gallery/Services/meeting_room.webp";
+export { default as KomendaImage } from "@/public/images/gallery/Services/komenda.webp";
+export { default as SkiImage } from "@/public/images/gallery/Services/ski.webp";
 
 export { default as GymnasticHallIcon } from "@/public/images/vectors/gymnastic_hall.png";
 export { default as BeachIcon } from "@/public/images/vectors/beach.png";
@@ -68,14 +83,9 @@ export { default as MultipurposeCourtIcon } from "@/public/images/vectors/multip
 export { default as AthleticStadiumIcon } from "@/public/images/vectors/athletic_stadium.png";
 export { default as MultipurposeGymIcon } from "@/public/images/vectors/multipurpose_gym.png";
 
-export { default as TrutnovCentrumImage } from "@/public/images/gallery/trutnov_centrum.png";
-export { default as TrutnovCentrumResponsiveImage } from "@/public/images/gallery/trutnov_centrum_responsive.png";
-export { default as KrkonoseImage } from "@/public/images/gallery/krkonose.png";
-export { default as KrkonoseResponsiveImage } from "@/public/images/gallery/krkonose_responsive.png";
-export { default as KuksImage } from "@/public/images/gallery/kuks.png";
-export { default as KuksResponsiveImage } from "@/public/images/gallery/kuks_responsive.png";
-export { default as AdrspachImage } from "@/public/images/gallery/adrspach.png";
-export { default as AdrspachResponsiveImage } from "@/public/images/gallery/adrspach_responsive.png";
-export { default as ZooImage } from "@/public/images/gallery/zoo.png";
-export { default as ZooResponsiveImage } from "@/public/images/gallery/zoo_responsive.png";
-export { default as DolceImage } from "@/public/images/gallery/dolce.png";
+export { default as TrutnovCentrumImage } from "@/public/images/gallery/Surrondings/trutnov_centrum.webp";
+export { default as KrkonoseImage } from "@/public/images/gallery/Surrondings/krkonose.webp";
+export { default as KuksImage } from "@/public/images/gallery/Surrondings/kuks.webp";
+export { default as AdrspachImage } from "@/public/images/gallery/Surrondings/adrspach.webp";
+export { default as ZooImage } from "@/public/images/gallery/Surrondings/zoo.webp";
+export { default as DolceImage } from "@/public/images/gallery/Surrondings/dolce.webp";

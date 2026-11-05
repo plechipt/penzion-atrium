@@ -10,14 +10,18 @@ import {
   ToiletIcon,
 } from "@/public/vectors/getIcons";
 import {
-  Room1Image,
-  Room2Image,
-  Room3Image,
-  Room4Image,
-  Room5Image,
-  Room6Image,
-  Room7Image,
-  Room8Image,
+  Room1TImage,
+  Room1SImage,
+  Room2TImage,
+  Room2SImage,
+  Room3TImage,
+  Room3TImage2,
+  Room4TImage,
+  Room4SImage,
+  Room5TImage,
+  Room6TImage,
+  Room7TImage,
+  Room8TImage,
 } from "@/public/images/getImages";
 import { useTranslations } from "next-intl";
 
@@ -63,20 +67,22 @@ const AccommodationData = () => {
   ];
 
   const meals = [
+    /*
     {
       icon: <CupIcon className="w-5 h-5" />,
       title: tAcc("breakfast"),
       price: 90,
     },
+    */
     {
       icon: <SupperIcon className="w-5 h-5" />,
       title: tAcc("halfBoard"),
-      price: 180,
+      price: 200,
     },
     {
       icon: <SupperIcon className="w-5 h-5" />,
       title: tAcc("fullBoard"),
-      price: 270,
+      price: 330,
     },
   ];
 
@@ -85,13 +91,13 @@ const AccommodationData = () => {
       icon: <TransportIcon className="w-5 h-5" />,
       title: tAcc("transportTitle"),
       description: tAcc("transportDescription"),
-      price: "10 Kč/km",
+      price: "12 Kč/km",
     },
     {
       icon: <LaundryIcon className="w-5 h-5" />,
       title: tAcc("laundryTitle"),
       description: tAcc("laundryDescription"),
-      price: "200 Kč",
+      price: "150 Kč",
     },
     {
       icon: <TVRoundedIcon className="w-5 h-5" />,
@@ -102,14 +108,14 @@ const AccommodationData = () => {
   ];
 
   const rooms = [
-    { tourist: Room1Image, standard: Room1Image },
-    { tourist: Room2Image, standard: Room2Image },
-    { tourist: Room3Image, standard: Room3Image },
-    { tourist: Room4Image, standard: Room4Image },
-    { tourist: Room5Image, standard: Room5Image },
-    { tourist: Room6Image, standard: Room6Image },
-    { tourist: Room7Image, standard: Room7Image },
-    { tourist: Room8Image, standard: Room8Image },
+    { tourist: Room1TImage, standard: Room1SImage },
+    { tourist: Room2TImage, standard: Room2SImage },
+    { tourist: Room3TImage, standard: Room3TImage2 },
+    { tourist: Room4TImage, standard: Room4SImage },
+    { tourist: Room5TImage, standard: Room5TImage },
+    { tourist: Room6TImage, standard: Room6TImage },
+    { tourist: Room7TImage, standard: Room7TImage },
+    { tourist: Room8TImage, standard: Room8TImage },
   ];
 
   return {

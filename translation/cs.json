@@ -15,6 +15,7 @@
     "accommodation": "Ubytování",
     "services": "Služby",
     "surroundings": "Okolí",
+    "gallery": "Galerie",
     "contact": "Kontakt",
     "bookNow": "Rezervovat"
   },
@@ -37,11 +38,21 @@
     "groups": "Slevy pro skupiny a dlouhodobě ubytované",
     "tv": "Kuchyňka a společenská místnost s televizí"
   },
+  "Rates": {
+    "title": "Ceník",
+    "buttonExplanation": "Vysvětlení typy pokojů",
+    "close": "Zavřít",
+    "shared": "Sdílený",
+    "private": "Soukromý",
+    "tourist": "Turist",
+    "bathroom": "Koupelna",
+    "fridge": "Lednice"
+  },
   "Accommodation": {
     "title": "Ubytování",
     "roomTypeTitle": "Typ Pokoje",
     "mealTitle": "Stravování",
-    "mealDescription": "Pouze pro skupiny od 20 osob po předchozí objednávce",
+    "mealDescription": "Pouze pro skupiny při vícedenním pobytu",
     "otherServicesTitle": "Další služby",
     "shared": "Sdílený",
     "private": "Soukromý",
@@ -51,7 +62,7 @@
     "transportTitle": "Doprava",
     "transportDescription": "VW Transporter, max. 8 osob",
     "laundryTitle": "Praní prádla",
-    "laundryDescription": "Max. 9 kg",
+    "laundryDescription": "Max. 9 kg jedna dávka",
     "tvTitle": "Půjčení TV",
     "tvDescription": "Pouze pro Turist pokoje",
     "tvPrice": "50 Kč/den",
@@ -84,12 +95,12 @@
 
     "informationNoticeTitle": "Oznámení",
     "informationNoticeDescription1": "Podle zákona o evidenci tržeb je prodávající povinen vystavit kupujícímu účtenku. Zároveň je povinen zaevidovat přijatou tržbu u správce daně online; v případě technického výpadku pak nejpozději do 48 hodin",
-    "informationNoticeDescription2": "V ceně pobytu je započten mistní poplatek z ubytovaní ve výši 40Kč osoba/den. Provozovatel není plátce DPH. Ceník je platný od 1.1. 2024."
+    "informationNoticeDescription2": "V ceně pobytu je započten obecní poplatek z ubytovaní ve výši 40Kč osoba/den. Provozovatel není plátce DPH. Ceník je platný od 1.1. 2025."
   },
   "Services": {
     "title": "Služby",
     "mealsTitle": "Stravování",
-    "mealsDescription0": "Pouze pro skupiny od 20 osob po předchozí objednávce",
+    "mealsDescription0": "Pouze pro skupiny při vícedenním pobytu",
     "mealsDescription1": "Občerstvení na recepci (18:00–21:00)",
     "mealsDescription2": "Možnost vlastního vaření ve dvou vybavených kuchyňkách",
     "mealsDescription3": "Jídelna s kapacitou 35 míst",
@@ -128,6 +139,12 @@
     "zooDescription": "ZOO Dvůr Králové je známá zoologická zahrada nacházející se poblíž Trutnova, Česká republika. Je jednou z největších a nejuznávanějších zoo v Evropě, známou svými úsilími o ochranu a programy chovu ohrožených druhů. Návštěvníci mohou prozkoumat různé biotopy a vidět širokou škálu zvířat, včetně slonů, nosorožců, žiraf a velkých koček. Posláním zoo je podporovat ochranu divoké přírody a vzdělávat návštěvníky o důležitosti ochrany ohrožených druhů.",
     "dolceTitle": "Rybník Dolce",
     "dolceDescription": "Rybník Dolce je klidné a malebné místo poblíž Trutnova, Česká republika. Je ideálním místem pro milovníky přírody, kteří si chtějí užít aktivit jako rybaření, plavání a piknikování. Obklopen krásnými lesy je to ideální místo k relaxaci a spojení s přírodou."
+  },
+  "Gallery": {
+    "title": "Galerie",
+    "rooms": "Pokoje",
+    "kitchen": "Kuchyň",
+    "exterior": "Exteriér"
   },
   "Contact": {
     "title": "Kontaktujte nás",

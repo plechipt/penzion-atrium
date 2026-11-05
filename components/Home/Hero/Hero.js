@@ -25,9 +25,7 @@ const Hero = () => {
       >
         <Image
           src={CardImage}
-          className="rounded h-full w-full "
-          width={570}
-          height={564}
+          className="mt-4 rounded-2xl h-full w-full "
           alt="City Image"
           priority={true}
         />
