@@ -1,5 +1,4 @@
 import { Link } from "@/navigation";
-
 import { MainIcon as MainIconIC } from "@/public/vectors/getIcons";
 
 const MainIcon = ({ setIsMenuOpen }) => {

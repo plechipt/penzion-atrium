@@ -1,9 +1,8 @@
 import { useTranslations } from "next-intl";
 import Table from "@/components/Rates/Table";
-import { useMessages, NextIntlClientProvider } from "next-intl";
+import { NextIntlClientProvider } from "next-intl";
 
 export default function Page() {
-  const messages = useMessages();
   const tRates = useTranslations("Rates");
 
   return (
@@ -12,7 +11,7 @@ export default function Page() {
         {tRates("title")}
       </h1>
 
-      <NextIntlClientProvider messages={messages}>
+      <NextIntlClientProvider>
         <Table />
       </NextIntlClientProvider>
     </main>

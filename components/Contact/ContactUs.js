@@ -23,7 +23,7 @@ const ContactUs = () => {
         {/* Right side with contact form */}
         <div className="flex-1 w-full lg:w-1/2 lg:p-4 px-4">
           {/*
-          <NextIntlClientProvider messages={messages}>
+          <NextIntlClientProvider>
             <MotionDiv
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
